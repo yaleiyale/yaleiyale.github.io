@@ -1,0 +1,17 @@
+{
+    "lang": "zh-CN",
+    "name": "时砂凝几页",
+    "short_name": "时砂",
+    "description": "时砂凝几页",
+    "start_url": "/",
+    "background_color": "#2f3d58",
+    "theme_color": "#2f3d58",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/pwa.png",
+            "sizes": "144x144"
+        }
+    ]
+}
