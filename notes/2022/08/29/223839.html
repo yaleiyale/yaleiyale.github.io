@@ -772,7 +772,7 @@ p-&gt;next 等价于 (*p).next //-&gt;是解引用后获取成员变量的同义
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
     var checkbox = document.querySelector("#sidebar-checkbox");
     checkbox.addEventListener("click", function (e) {
-      if(pio_container.style.right === "14rem")
+      if(!e.checked)
       {
         pio_container.style.right = "0rem";
       }

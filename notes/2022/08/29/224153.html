@@ -831,7 +831,7 @@ PS:我认为，这个冲锋在一定距离内必中，在此距离外只会冲�
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
     var checkbox = document.querySelector("#sidebar-checkbox");
     checkbox.addEventListener("click", function (e) {
-      if(pio_container.style.right === "14rem")
+      if(!e.checked)
       {
         pio_container.style.right = "0rem";
       }

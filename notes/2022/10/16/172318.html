@@ -806,7 +806,7 @@ The settings panel after installing and enabling the plugin for the first time w
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
     var checkbox = document.querySelector("#sidebar-checkbox");
     checkbox.addEventListener("click", function (e) {
-      if(pio_container.style.right === "14rem")
+      if(!e.checked)
       {
         pio_container.style.right = "0rem";
       }

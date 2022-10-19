@@ -793,7 +793,7 @@ Boss疯狂炼金术士，在高台上经常会对玩家视而不见，这大半�
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
     var checkbox = document.querySelector("#sidebar-checkbox");
     checkbox.addEventListener("click", function (e) {
-      if(pio_container.style.right === "14rem")
+      if(!e.checked)
       {
         pio_container.style.right = "0rem";
       }

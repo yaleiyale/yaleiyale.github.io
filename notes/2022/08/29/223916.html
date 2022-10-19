@@ -1110,7 +1110,7 @@ Obsidian URI：[打开Mermaid书写范例](obsidian://open?vault=_notes&amp;file
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
     var checkbox = document.querySelector("#sidebar-checkbox");
     checkbox.addEventListener("click", function (e) {
-      if(pio_container.style.right === "14rem")
+      if(!e.checked)
       {
         pio_container.style.right = "0rem";
       }
