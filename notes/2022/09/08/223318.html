@@ -835,15 +835,16 @@ AI作画，开源colab文档，google可提供在线算力。免费方案单次�
     pio_canvas.height = "800";
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
     var checkbox = document.querySelector("#sidebar-checkbox");
+    var checking = checkbox.checked;
     checkbox.addEventListener("click", function (e) {
-      if(e.checked)
+      if(checking)
       {
         pio_container.style.right = "0rem";
-        e.checked = false;
+        checking = false;
       }
       else{
         pio_container.style.right = "14rem";
-        e.checked = true;
+        checking = true;
       }
       })
     let pio = new Paul_Pio({
