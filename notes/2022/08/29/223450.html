@@ -720,14 +720,14 @@
         for (let index = 1; index <= space; index++) {
           window.setTimeout(() => {
             pio_container.style.right = index + "rem";
-            }, index*20);
+            }, index*30);
         }
       }
       else{
         for (let index = 1; index <= space; index++) {
           window.setTimeout(() => {
             pio_container.style.right = space - index + "rem";
-            }, index*20);
+            }, (space-index)*30);
         }
       }
       })
