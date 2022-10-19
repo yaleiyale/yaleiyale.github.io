@@ -768,10 +768,18 @@
     checkbox.addEventListener("click", function (e) {
       if(pio_container.style.right === "14rem")
       {
-        pio_container.style.right = "0rem";
+        for (let index = 1; index <= space; index++) {
+          setTimeout(() => {
+            pio_container.style.right = index + "rem";
+            }, 20);
+        }
       }
       else{
-        pio_container.style.right = "14rem";
+        for (let index = 1; index <= space; index++) {
+          setTimeout(() => {
+            pio_container.style.right = space - index + "rem";
+            }, 20);
+        }
       }
       })
     let pio = new Paul_Pio({
