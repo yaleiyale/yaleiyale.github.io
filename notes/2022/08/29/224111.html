@@ -859,25 +859,32 @@
     pio_canvas.width = "600";
     pio_canvas.height = "800";
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
-    var checkbox = document.querySelector("#sidebar-checkbox");
-    var space = 14;
-    checkbox.addEventListener("click", function (e) {
-      if(pio_container.style.right === "14rem")
-      {
-        for (let index = 1; index <= space; index++) {
-          window.setTimeout(() => {
-            pio_container.style.right = space - index + "rem";
-            }, index*30);
-        }
+    <style>
+      #sidebar-checkbox:checked ~ .pio-container right {
+        -webkit-transform: translateX(-14rem);
+            -ms-transform: translateX(-14rem);
+                  transform: translateX(-14rem);
       }
-      else{
-        for (let index = 1; index <= space; index++) {
-          window.setTimeout(() => {
-            pio_container.style.right = index + "rem";
-            }, index*30);
-        }
-      }
-      })
+    </style>
+    # var checkbox = document.querySelector("#sidebar-checkbox");
+    # var space = 14;
+    # checkbox.addEventListener("click", function (e) {
+    #   if(pio_container.style.right === "14rem")
+    #   {
+    #     for (let index = 1; index <= space; index++) {
+    #       window.setTimeout(() => {
+    #         pio_container.style.right = space - index + "rem";
+    #         }, index*30);
+    #     }
+    #   }
+    #   else{
+    #     for (let index = 1; index <= space; index++) {
+    #       window.setTimeout(() => {
+    #         pio_container.style.right = index + "rem";
+    #         }, index*30);
+    #     }
+    #   }
+    #   })
     let pio = new Paul_Pio({
       "mode": "fixed",
       "hidden": true,
