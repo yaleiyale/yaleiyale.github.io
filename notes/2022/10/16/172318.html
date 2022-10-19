@@ -787,6 +787,11 @@ The settings panel after installing and enabling the plugin for the first time w
       display: none;
     }
   }
+  #sidebar-checkbox:checked ~ .pio-container right {
+     -webkit-transform: translateX(-14rem);
+        -ms-transform: translateX(-14rem);
+              transform: translateX(-14rem);
+   }
 </style>
 <script async="async" src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js,gh/Dreamer-Paul/Pio@2.4/static/pio.min.js" onload='
     let pio_container = document.createElement("div");
@@ -804,13 +809,6 @@ The settings panel after installing and enabling the plugin for the first time w
     pio_canvas.width = "600";
     pio_canvas.height = "800";
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
-    &lt;style&gt;
-      #sidebar-checkbox:checked ~ .pio-container right {
-        -webkit-transform: translateX(-14rem);
-            -ms-transform: translateX(-14rem);
-                  transform: translateX(-14rem);
-      }
-    &lt;/style&gt;
     # var checkbox = document.querySelector("#sidebar-checkbox");
     # var space = 14;
     # checkbox.addEventListener("click", function (e) {

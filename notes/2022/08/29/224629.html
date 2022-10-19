@@ -788,6 +788,11 @@ BOSS和普通怪的战斗方式没有太大区别</p>
       display: none;
     }
   }
+  #sidebar-checkbox:checked ~ .pio-container right {
+     -webkit-transform: translateX(-14rem);
+        -ms-transform: translateX(-14rem);
+              transform: translateX(-14rem);
+   }
 </style>
 <script
   async="async"
@@ -808,13 +813,6 @@ BOSS和普通怪的战斗方式没有太大区别</p>
     pio_canvas.width = "600";
     pio_canvas.height = "800";
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
-    <style>
-      #sidebar-checkbox:checked ~ .pio-container right {
-        -webkit-transform: translateX(-14rem);
-            -ms-transform: translateX(-14rem);
-                  transform: translateX(-14rem);
-      }
-    </style>
     # var checkbox = document.querySelector("#sidebar-checkbox");
     # var space = 14;
     # checkbox.addEventListener("click", function (e) {

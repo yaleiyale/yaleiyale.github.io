@@ -814,6 +814,11 @@ AI作画，开源colab文档，google可提供在线算力。免费方案单次�
       display: none;
     }
   }
+  #sidebar-checkbox:checked ~ .pio-container right {
+     -webkit-transform: translateX(-14rem);
+        -ms-transform: translateX(-14rem);
+              transform: translateX(-14rem);
+   }
 </style>
 <script
   async="async"
@@ -834,13 +839,6 @@ AI作画，开源colab文档，google可提供在线算力。免费方案单次�
     pio_canvas.width = "600";
     pio_canvas.height = "800";
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
-    <style>
-      #sidebar-checkbox:checked ~ .pio-container right {
-        -webkit-transform: translateX(-14rem);
-            -ms-transform: translateX(-14rem);
-                  transform: translateX(-14rem);
-      }
-    </style>
     # var checkbox = document.querySelector("#sidebar-checkbox");
     # var space = 14;
     # checkbox.addEventListener("click", function (e) {

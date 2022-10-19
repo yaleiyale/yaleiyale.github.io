@@ -1088,6 +1088,11 @@ Obsidian URI：[打开Mermaid书写范例](obsidian://open?vault=_notes&amp;file
       display: none;
     }
   }
+  #sidebar-checkbox:checked ~ .pio-container right {
+     -webkit-transform: translateX(-14rem);
+        -ms-transform: translateX(-14rem);
+              transform: translateX(-14rem);
+   }
 </style>
 <script
   async="async"
@@ -1108,13 +1113,6 @@ Obsidian URI：[打开Mermaid书写范例](obsidian://open?vault=_notes&amp;file
     pio_canvas.width = "600";
     pio_canvas.height = "800";
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
-    <style>
-      #sidebar-checkbox:checked ~ .pio-container right {
-        -webkit-transform: translateX(-14rem);
-            -ms-transform: translateX(-14rem);
-                  transform: translateX(-14rem);
-      }
-    </style>
     # var checkbox = document.querySelector("#sidebar-checkbox");
     # var space = 14;
     # checkbox.addEventListener("click", function (e) {

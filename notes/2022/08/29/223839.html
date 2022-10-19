@@ -750,6 +750,11 @@ p-&gt;next 等价于 (*p).next //-&gt;是解引用后获取成员变量的同义
       display: none;
     }
   }
+  #sidebar-checkbox:checked ~ .pio-container right {
+     -webkit-transform: translateX(-14rem);
+        -ms-transform: translateX(-14rem);
+              transform: translateX(-14rem);
+   }
 </style>
 <script
   async="async"
@@ -770,13 +775,6 @@ p-&gt;next 等价于 (*p).next //-&gt;是解引用后获取成员变量的同义
     pio_canvas.width = "600";
     pio_canvas.height = "800";
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
-    <style>
-      #sidebar-checkbox:checked ~ .pio-container right {
-        -webkit-transform: translateX(-14rem);
-            -ms-transform: translateX(-14rem);
-                  transform: translateX(-14rem);
-      }
-    </style>
     # var checkbox = document.querySelector("#sidebar-checkbox");
     # var space = 14;
     # checkbox.addEventListener("click", function (e) {
