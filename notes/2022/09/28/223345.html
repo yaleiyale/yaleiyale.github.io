@@ -704,10 +704,10 @@ Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /AL
       display: none;
     }
   }
-  #sidebar-checkbox:checked ~ .pio-container right {
-     -webkit-transform: translateX(-14rem);
-        -ms-transform: translateX(-14rem);
-              transform: translateX(-14rem);
+  .layout-reverse #sidebar-checkbox:checked ~ .pio-container right {
+     -webkit-transform: translateX(14rem);
+        -ms-transform: translateX(14rem);
+              transform: translateX(-4rem);
    }
 </style>
 <script

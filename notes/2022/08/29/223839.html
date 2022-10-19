@@ -750,10 +750,10 @@ p-&gt;next 等价于 (*p).next //-&gt;是解引用后获取成员变量的同义
       display: none;
     }
   }
-  #sidebar-checkbox:checked ~ .pio-container right {
-     -webkit-transform: translateX(-14rem);
-        -ms-transform: translateX(-14rem);
-              transform: translateX(-14rem);
+  .layout-reverse #sidebar-checkbox:checked ~ .pio-container right {
+     -webkit-transform: translateX(14rem);
+        -ms-transform: translateX(14rem);
+              transform: translateX(-4rem);
    }
 </style>
 <script
