@@ -3,7 +3,7 @@
 	"file": "styles.css",
 	"sources": [
 		"styles.scss",
-		"../../../../../tmp/jekyll-remote-theme-20221019-1707-bysjut/_sass/_style.scss"
+		"../../../../../tmp/jekyll-remote-theme-20221019-1704-bwoynr/_sass/_style.scss"
 	],
 	"sourcesContent": [
 		"@import \"../_sass/style\";\n/*Jekyll provides built-in support for Sass and can \nwork with CoffeeScript via a Ruby gem. In order to \nuse them, you must first create a file with the proper \nextension name (one of .sass, .scss, or .coffee) and \nstart the file with two lines of triple dashes*/",

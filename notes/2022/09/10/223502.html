@@ -668,14 +668,14 @@
       if(pio_container.style.right === "14rem")
       {
         for (let index = 1; index &lt;= space; index++) {
-          setTimeout(() =&gt; {
+          window.setTimeout(() =&gt; {
             pio_container.style.right = index + "rem";
             }, 20);
         }
       }
       else{
         for (let index = 1; index &lt;= space; index++) {
-          setTimeout(() =&gt; {
+          window.setTimeout(() =&gt; {
             pio_container.style.right = space - index + "rem";
             }, 20);
         }
