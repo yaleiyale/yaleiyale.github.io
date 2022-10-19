@@ -758,6 +758,15 @@ i的层次：$\lceil log_2(i+1 )\rceil$</p>
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
     var checkbox = document.querySelector("#sidebar-checkbox");
     var checking = checkbox.checked;
+    if(checking)
+    {
+        pio_container.style.right = "0rem";
+        checking = false;
+    }
+    else{
+        pio_container.style.right = "14rem";
+        checking = true;
+    }
     checkbox.addEventListener("click", function (e) {
       if(checking)
       {
@@ -820,6 +829,8 @@ i的层次：$\lceil log_2(i+1 )\rceil$</p>
 ></script>
 <script type="text/javascript">
  var content = document.querySelector(".wrapper");
+ if(!content)
+ {
  var list = content.querySelectorAll("img");
  var imgCount =list.length;
  var imgNow;
@@ -832,6 +843,7 @@ i的层次：$\lceil log_2(i+1 )\rceil$</p>
   //console.log(imgNow.src);
   viewer[i-1] = new Viewer(imgNow);
   }
+ }
  }
 </script>
 

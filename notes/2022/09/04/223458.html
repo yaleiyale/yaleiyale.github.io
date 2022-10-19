@@ -701,6 +701,15 @@ python环境还没有配全，但还是，空间大户出现了！<br>
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
     var checkbox = document.querySelector("#sidebar-checkbox");
     var checking = checkbox.checked;
+    if(checking)
+    {
+        pio_container.style.right = "0rem";
+        checking = false;
+    }
+    else{
+        pio_container.style.right = "14rem";
+        checking = true;
+    }
     checkbox.addEventListener("click", function (e) {
       if(checking)
       {
@@ -757,6 +766,8 @@ python环境还没有配全，但还是，空间大户出现了！<br>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.js"></script>
 <script type="text/javascript">
  var content = document.querySelector(".wrapper");
+ if(!content)
+ {
  var list = content.querySelectorAll("img");
  var imgCount =list.length;
  var imgNow;
@@ -769,6 +780,7 @@ python环境还没有配全，但还是，空间大户出现了！<br>
   //console.log(imgNow.src);
   viewer[i-1] = new Viewer(imgNow);
   }
+ }
  }
 </script>
 
