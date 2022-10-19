@@ -690,25 +690,7 @@
     pio_canvas.width = "600";
     pio_canvas.height = "800";
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
-    # var checkbox = document.querySelector("#sidebar-checkbox");
-    # var space = 14;
-    # checkbox.addEventListener("click", function (e) {
-    #   if(pio_container.style.right === "14rem")
-    #   {
-    #     for (let index = 1; index &lt;= space; index++) {
-    #       window.setTimeout(() =&gt; {
-    #         pio_container.style.right = space - index + "rem";
-    #         }, index*30);
-    #     }
-    #   }
-    #   else{
-    #     for (let index = 1; index &lt;= space; index++) {
-    #       window.setTimeout(() =&gt; {
-    #         pio_container.style.right = index + "rem";
-    #         }, index*30);
-    #     }
-    #   }
-    #   })
+    var checkbox = document.querySelector("#sidebar-checkbox");
     let pio = new Paul_Pio({
       "mode": "fixed",
       "hidden": true,
