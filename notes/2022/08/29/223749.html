@@ -816,14 +816,14 @@ i≥(k+2)/3，则i = $\lfloor (k+2)/3 \rfloor$</p>
       if(pio_container.style.right === "14rem")
       {
         for (let index = 1; index <= space; index++) {
-          setInterval(() => {
+          setTimeout(() => {
             pio_container.style.right = index + "rem";
             }, 20);
         }
       }
       else{
         for (let index = 1; index <= space; index++) {
-          setInterval(() => {
+          setTimeout(() => {
             pio_container.style.right = space - index + "rem";
             }, 20);
         }
