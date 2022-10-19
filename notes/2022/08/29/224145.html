@@ -766,15 +766,19 @@
   href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css"
 />
 <style>
+  .pio-container{
+    -webkit-transition: transform all .3s ease-in-out;
+               transition: transform .3s ease-in-out;
+  }
   @media only print {
     .pio-container {
       display: none;
     }
   }
-  .layout-reverse #sidebar-checkbox:checked ~ .pio-container right {
-     -webkit-transform: translateX(14rem);
-        -ms-transform: translateX(14rem);
-              transform: translateX(-4rem);
+ .layout-reverse #sidebar-checkbox:checked~.pio-container {
+     -webkit-transform: translateX(-14rem);
+        -ms-transform: translateX(-14rem);
+              transform: translateX(-14rem);
    }
 </style>
 <script
