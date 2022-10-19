@@ -797,8 +797,6 @@ Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /AL
 ></script>
 <script type="text/javascript">
  var content = document.querySelector(".wrapper");
- if(content)
- {
  var list = content.querySelectorAll("img");
  var imgCount =list.length;
  var imgNow;
@@ -811,7 +809,6 @@ Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /AL
   //console.log(imgNow.src);
   viewer[i-1] = new Viewer(imgNow);
   }
- }
  }
 </script>
 
