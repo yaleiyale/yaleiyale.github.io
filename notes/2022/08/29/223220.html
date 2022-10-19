@@ -790,16 +790,7 @@
     pio_canvas.height = "800";
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
     var checkbox = document.querySelector("#sidebar-checkbox");
-    var checking = checkbox.checked;
-    if(checking)
-    {
-        pio_container.style.right = "0rem";
-        checking = false;
-    }
-    else{
-        pio_container.style.right = "14rem";
-        checking = true;
-    }
+    var checking = false;
     checkbox.addEventListener("click", function (e) {
       if(checking)
       {
