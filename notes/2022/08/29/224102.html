@@ -839,12 +839,14 @@
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
     var checkbox = document.querySelector("#sidebar-checkbox");
     checkbox.addEventListener("click", function (e) {
-      if(!e.checked)
+      if(e.checked)
       {
         pio_container.style.right = "0rem";
+        e.checked = false;
       }
       else{
         pio_container.style.right = "14rem";
+        e.checked = true;
       }
       })
     let pio = new Paul_Pio({
