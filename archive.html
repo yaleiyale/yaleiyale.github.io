@@ -18,11 +18,11 @@
 <meta property="og:url" content="https://lestua.ml/archive" />
 <meta property="og:site_name" content="时砂凝几页" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-10-19T17:57:03+08:00" />
+<meta property="article:published_time" content="2022-10-19T18:12:14+08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="归档" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-10-19T17:57:03+08:00","datePublished":"2022-10-19T17:57:03+08:00","description":"已写下 221 篇，长路漫漫！ { &quot;data&quot;: { &quot;url&quot;: &quot;/assets/simple-jekyll-search/search.json&quot; }, &quot;encoding&quot;: { &quot;y&quot;: {&quot;field&quot;: &quot;date&quot;, &quot;timeUnit&quot;: &quot;month&quot;, &quot;type&quot;: &quot;ordinal&quot;}, &quot;x&quot;: {&quot;field&quot;: &quot;date&quot;, &quot;timeUnit&quot;: &quot;year&quot;}, &quot;color&quot;: {&quot;field&quot;: &quot;date&quot;, &quot;aggregate&quot;: &quot;count&quot;} }, &quot;mark&quot;: &quot;rect&quot; }","headline":"归档","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.ml/archive"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://gravatar.loli.net/avatar/81da22ab6461e4b650e7542751d6ae45"},"name":"yaleiyale"},"url":"https://lestua.ml/archive"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-10-19T18:12:14+08:00","datePublished":"2022-10-19T18:12:14+08:00","description":"已写下 221 篇，长路漫漫！ { &quot;data&quot;: { &quot;url&quot;: &quot;/assets/simple-jekyll-search/search.json&quot; }, &quot;encoding&quot;: { &quot;y&quot;: {&quot;field&quot;: &quot;date&quot;, &quot;timeUnit&quot;: &quot;month&quot;, &quot;type&quot;: &quot;ordinal&quot;}, &quot;x&quot;: {&quot;field&quot;: &quot;date&quot;, &quot;timeUnit&quot;: &quot;year&quot;}, &quot;color&quot;: {&quot;field&quot;: &quot;date&quot;, &quot;aggregate&quot;: &quot;count&quot;} }, &quot;mark&quot;: &quot;rect&quot; }","headline":"归档","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.ml/archive"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://gravatar.loli.net/avatar/81da22ab6461e4b650e7542751d6ae45"},"name":"yaleiyale"},"url":"https://lestua.ml/archive"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1240,20 +1240,23 @@
   src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.js"
 ></script>
 <script type="text/javascript">
- var content = document.querySelector(".wrapper");
- var list = content.querySelectorAll("img");
- var imgCount =list.length;
- var imgNow;
- var viewer = [];
- if(imgCount>0)
- {
-  for(var i = 0; i<imgCount-1; i++) //去除末尾咖啡
-  {
-  imgNow = list[i];
-  //console.log(imgNow.src);
-  viewer[i-1] = new Viewer(imgNow);
+  var content = document.querySelector(".wrapper");
+   if (content) {
+     var list = content.querySelectorAll("img");
+     if (list) {
+      var imgCount = list.length;
+      var imgNow;
+      var viewer = [];
+      if (imgCount > 0) {
+         for (var i = 0; i < imgCount - 1; i++) //去除末尾咖啡
+         {
+           imgNow = list[i];
+          //console.log(imgNow.src);
+          viewer[i - 1] = new Viewer(imgNow);
+         }
+      }
+     }
   }
- }
 </script>
 
 

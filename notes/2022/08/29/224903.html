@@ -885,20 +885,23 @@ Gloo炮是本作中最具特色的武器，但是它的战斗体验却极其糟�
   src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.js"
 ></script>
 <script type="text/javascript">
- var content = document.querySelector(".wrapper");
- var list = content.querySelectorAll("img");
- var imgCount =list.length;
- var imgNow;
- var viewer = [];
- if(imgCount>0)
- {
-  for(var i = 0; i<imgCount-1; i++) //去除末尾咖啡
-  {
-  imgNow = list[i];
-  //console.log(imgNow.src);
-  viewer[i-1] = new Viewer(imgNow);
+  var content = document.querySelector(".wrapper");
+   if (content) {
+     var list = content.querySelectorAll("img");
+     if (list) {
+      var imgCount = list.length;
+      var imgNow;
+      var viewer = [];
+      if (imgCount > 0) {
+         for (var i = 0; i < imgCount - 1; i++) //去除末尾咖啡
+         {
+           imgNow = list[i];
+          //console.log(imgNow.src);
+          viewer[i - 1] = new Viewer(imgNow);
+         }
+      }
+     }
   }
- }
 </script>
 
 
