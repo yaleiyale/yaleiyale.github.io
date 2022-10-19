@@ -778,14 +778,14 @@ p-&gt;next 等价于 (*p).next //-&gt;是解引用后获取成员变量的同义
         for (let index = 1; index <= space; index++) {
           window.setTimeout(() => {
             pio_container.style.right = index + "rem";
-            }, 20);
+            }, index*20);
         }
       }
       else{
         for (let index = 1; index <= space; index++) {
           window.setTimeout(() => {
             pio_container.style.right = space - index + "rem";
-            }, 20);
+            }, index*20);
         }
       }
       })

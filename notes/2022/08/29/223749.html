@@ -818,14 +818,14 @@ i≥(k+2)/3，则i = $\lfloor (k+2)/3 \rfloor$</p>
         for (let index = 1; index <= space; index++) {
           window.setTimeout(() => {
             pio_container.style.right = index + "rem";
-            }, 20);
+            }, index*20);
         }
       }
       else{
         for (let index = 1; index <= space; index++) {
           window.setTimeout(() => {
             pio_container.style.right = space - index + "rem";
-            }, 20);
+            }, index*20);
         }
       }
       })

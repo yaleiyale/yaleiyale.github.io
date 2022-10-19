@@ -816,14 +816,14 @@ BOSS和普通怪的战斗方式没有太大区别</p>
         for (let index = 1; index <= space; index++) {
           window.setTimeout(() => {
             pio_container.style.right = index + "rem";
-            }, 20);
+            }, index*20);
         }
       }
       else{
         for (let index = 1; index <= space; index++) {
           window.setTimeout(() => {
             pio_container.style.right = space - index + "rem";
-            }, 20);
+            }, index*20);
         }
       }
       })

@@ -837,14 +837,14 @@ PS:我认为，这个冲锋在一定距离内必中，在此距离外只会冲�
         for (let index = 1; index <= space; index++) {
           window.setTimeout(() => {
             pio_container.style.right = index + "rem";
-            }, 20);
+            }, index*20);
         }
       }
       else{
         for (let index = 1; index <= space; index++) {
           window.setTimeout(() => {
             pio_container.style.right = space - index + "rem";
-            }, 20);
+            }, index*20);
         }
       }
       })
