@@ -799,16 +799,29 @@ end
     pio_canvas.height = "800";
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
     var checkbox = document.querySelector("#sidebar-checkbox");
-    var checking = false;
-    checkbox.addEventListener("click", function (e) {
-      if(checking)
+    if(e.checked)
       {
-        pio_container.style.right = "0rem";
-        checking = false;
+         pio_container.style.right =  '14rem';
       }
       else{
-        pio_container.style.right = "14rem";
-        checking = true;
+       pio_container.style.right =  '0rem';
+      }
+    var space = 14;
+    checkbox.addEventListener("click", function (e) {
+      if(e.checked)
+      {
+        for (let index = 1; index <= space; index++) {
+            setTimeout(()=>{
+                pio_container.style.right =  index + 'rem';
+            },20)
+        }
+      }
+      else{
+        for (let index = 1; index <= space; index++) {
+            setTimeout(()=>{
+                pio_container.style.right =  space - index + 'rem';
+            },20)
+        }
       }
       })
     let pio = new Paul_Pio({
