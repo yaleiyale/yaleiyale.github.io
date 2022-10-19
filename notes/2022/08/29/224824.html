@@ -859,31 +859,27 @@
     pio_canvas.height = "800";
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
     var checkbox = document.querySelector("#sidebar-checkbox");
-    if(e.checked)
-      {
-         pio_container.style.right =  '14rem';
-      }
-      else{
-       pio_container.style.right =  '0rem';
-      }
+    if (e.checked) {
+      pio_container.style.right = "14rem";
+    } else {
+      pio_container.style.right = "0rem";
+    }
     var space = 14;
     checkbox.addEventListener("click", function (e) {
-      if(e.checked)
-      {
+      if (e.checked) {
         for (let index = 1; index <= space; index++) {
-            setTimeout(()=>{
-                pio_container.style.right =  index + 'rem';
-            },20)
+          setTimeout(() => {
+            pio_container.style.right = index + "rem";
+          }, 20)
+        }
+      } else {
+        for (let index = 1; index <= space; index++) {
+          setTimeout(() => {
+            pio_container.style.right = space - index + "rem";
+          }, 20)
         }
       }
-      else{
-        for (let index = 1; index <= space; index++) {
-            setTimeout(()=>{
-                pio_container.style.right =  space - index + 'rem';
-            },20)
-        }
-      }
-      })
+    })
     let pio = new Paul_Pio({
       "mode": "fixed",
       "hidden": true,
@@ -892,7 +888,7 @@
         "link": ["https://github.com/yaleiyale/obsidian-jekyll-blog"],
         "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
         "hidden": true,
-        "touch": ["hentai!","hentai!!","hentai!!!"],
+        "touch": ["hentai!", "hentai!!", "hentai!!!"],
         "referer": "你通过 %t 来到了这里",
         "custom": [{
           "selector": "a",
@@ -919,7 +915,7 @@
         "https://lestua.ml/web_kanbanniang_collection/Kobayaxi/Kobayaxi.model.json",
         "https://lestua.ml/web_kanbanniang_collection/rem/model.json",
         "https://lestua.ml/web_kanbanniang_collection/kurumi/model.json"
-        ]
+      ]
     });'
 ></script>
 

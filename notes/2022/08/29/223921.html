@@ -810,30 +810,36 @@
     pio_canvas.height = "800";
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
     var checkbox = document.querySelector("#sidebar-checkbox");
-    if(e.checked)
-      {
-         pio_container.style.right =  ' else pio_container.style.right="0rem" var space="14;" checkbox.addeventlistener function if for index="1;" settimeout>{
-                pio_container.style.right =  index + 'rem';
-            },20)
+    if (e.checked) {
+      pio_container.style.right = "14rem";
+    } else {
+      pio_container.style.right = "0rem";
+    }
+    var space = 14;
+    checkbox.addEventListener("click", function (e) {
+      if (e.checked) {
+        for (let index = 1; index &lt;= space; index++) {
+          setTimeout(() =&gt; {
+            pio_container.style.right = index + "rem";
+          }, 20)
+        }
+      } else {
+        for (let index = 1; index &lt;= space; index++) {
+          setTimeout(() =&gt; {
+            pio_container.style.right = space - index + "rem";
+          }, 20)
         }
       }
-      else{
-        for (let index = 1; index <= space; index++) {
-            setTimeout(()=>{
-                pio_container.style.right =  space - index + 'rem';
-            },20)
-        }
-      }
-      })
+    })
     let pio = new Paul_Pio({
       "mode": "fixed",
       "hidden": true,
-      "night": "for(let i=7; i<16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
+      "night": "for(let i=7; i&lt;16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
       "content": {
         "link": ["https://github.com/yaleiyale/obsidian-jekyll-blog"],
         "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
         "hidden": true,
-        "touch": ["hentai!","hentai!!","hentai!!!"],
+        "touch": ["hentai!", "hentai!!", "hentai!!!"],
         "referer": "你通过 %t 来到了这里",
         "custom": [{
           "selector": "a",
@@ -860,9 +866,8 @@
         "https://lestua.ml/web_kanbanniang_collection/Kobayaxi/Kobayaxi.model.json",
         "https://lestua.ml/web_kanbanniang_collection/rem/model.json",
         "https://lestua.ml/web_kanbanniang_collection/kurumi/model.json"
-        ]
-    });'
-></script>
+      ]
+    });'></script>
 
 
 
