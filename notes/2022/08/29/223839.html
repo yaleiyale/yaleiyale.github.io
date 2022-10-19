@@ -746,7 +746,7 @@ p-&gt;next 等价于 (*p).next //-&gt;是解引用后获取成员变量的同义
 />
 <style>
   .pio-container{
-    -webkit-transition: transform all .3s ease-in-out;
+    -webkit-transition: transform .3s ease-in-out;
                transition: transform .3s ease-in-out;
   }
   @media only print {
@@ -779,7 +779,6 @@ p-&gt;next 等价于 (*p).next //-&gt;是解引用后获取成员变量的同义
     pio_canvas.width = "600";
     pio_canvas.height = "800";
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
-    var checkbox = document.querySelector("#sidebar-checkbox");
     let pio = new Paul_Pio({
       "mode": "fixed",
       "hidden": true,

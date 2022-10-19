@@ -1176,7 +1176,7 @@ $$\begin{Vmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;1\\\end{Vmatrix}$$
 />
 <style>
   .pio-container{
-    -webkit-transition: transform all .3s ease-in-out;
+    -webkit-transition: transform .3s ease-in-out;
                transition: transform .3s ease-in-out;
   }
   @media only print {
@@ -1209,7 +1209,6 @@ $$\begin{Vmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;1\\\end{Vmatrix}$$
     pio_canvas.width = "600";
     pio_canvas.height = "800";
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
-    var checkbox = document.querySelector("#sidebar-checkbox");
     let pio = new Paul_Pio({
       "mode": "fixed",
       "hidden": true,

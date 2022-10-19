@@ -805,7 +805,7 @@ PS:我认为，这个冲锋在一定距离内必中，在此距离外只会冲�
 />
 <style>
   .pio-container{
-    -webkit-transition: transform all .3s ease-in-out;
+    -webkit-transition: transform .3s ease-in-out;
                transition: transform .3s ease-in-out;
   }
   @media only print {
@@ -838,7 +838,6 @@ PS:我认为，这个冲锋在一定距离内必中，在此距离外只会冲�
     pio_canvas.width = "600";
     pio_canvas.height = "800";
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
-    var checkbox = document.querySelector("#sidebar-checkbox");
     let pio = new Paul_Pio({
       "mode": "fixed",
       "hidden": true,
