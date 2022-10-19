@@ -840,14 +840,14 @@ AI作画，开源colab文档，google可提供在线算力。免费方案单次�
       if(pio_container.style.right === "14rem")
       {
         for (let index = 1; index <= space; index++) {
-          setTimeout(() => {
+          setInterval(() => {
             pio_container.style.right = index + "rem";
             }, 20);
         }
       }
       else{
         for (let index = 1; index <= space; index++) {
-          setTimeout(() => {
+          setInterval(() => {
             pio_container.style.right = space - index + "rem";
             }, 20);
         }

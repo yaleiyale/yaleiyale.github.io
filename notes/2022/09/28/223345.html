@@ -730,14 +730,14 @@ Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /AL
       if(pio_container.style.right === "14rem")
       {
         for (let index = 1; index <= space; index++) {
-          setTimeout(() => {
+          setInterval(() => {
             pio_container.style.right = index + "rem";
             }, 20);
         }
       }
       else{
         for (let index = 1; index <= space; index++) {
-          setTimeout(() => {
+          setInterval(() => {
             pio_container.style.right = space - index + "rem";
             }, 20);
         }

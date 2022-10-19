@@ -762,14 +762,14 @@ i的层次：$\lceil log_2(i+1 )\rceil$</p>
       if(pio_container.style.right === "14rem")
       {
         for (let index = 1; index <= space; index++) {
-          setTimeout(() => {
+          setInterval(() => {
             pio_container.style.right = index + "rem";
             }, 20);
         }
       }
       else{
         for (let index = 1; index <= space; index++) {
-          setTimeout(() => {
+          setInterval(() => {
             pio_container.style.right = space - index + "rem";
             }, 20);
         }
