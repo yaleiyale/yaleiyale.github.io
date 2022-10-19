@@ -827,15 +827,15 @@
       {
         for (let index = 1; index <= space; index++) {
           window.setTimeout(() => {
-            pio_container.style.right = index + "rem";
+            pio_container.style.right = space - index + "rem";
             }, index*30);
         }
       }
       else{
         for (let index = 1; index <= space; index++) {
           window.setTimeout(() => {
-            pio_container.style.right = space - index + "rem";
-            }, (space-index)*30);
+            pio_container.style.right = index + "rem";
+            }, index*30);
         }
       }
       })
