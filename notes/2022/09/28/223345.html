@@ -725,6 +725,7 @@ Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /AL
     pio_canvas.height = "800";
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
     var checkbox = document.querySelector("#sidebar-checkbox");
+    var space = 14;
     checkbox.addEventListener("click", function (e) {
       if(pio_container.style.right === "14rem")
       {
