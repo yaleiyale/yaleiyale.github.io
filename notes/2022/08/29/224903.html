@@ -835,6 +835,13 @@ Gloo炮是本作中最具特色的武器，但是它的战斗体验却极其糟�
     pio_canvas.width = "600";
     pio_canvas.height = "800";
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
+    var helloword = "";
+    fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      helloword = data.hitokoto
+    })
+    .catch(console.error);
     let pio = new Paul_Pio({
       "mode": "fixed",
       "hidden": true,
@@ -843,6 +850,7 @@ Gloo炮是本作中最具特色的武器，但是它的战斗体验却极其糟�
         "link": ["https://github.com/yaleiyale/obsidian-jekyll-blog"],
         "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
         "hidden": true,
+        "welcome":helloword,
         "touch": ["hentai!","hentai!!","hentai!!!"],
         "referer": "你通过 %t 来到了这里",
         "custom": [{

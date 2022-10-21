@@ -672,14 +672,21 @@
     pio_canvas.width = "600";
     pio_canvas.height = "800";
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
+    var helloword = "";
+    fetch(' https: .then> response.json())
+    .then(data => {
+      helloword = data.hitokoto
+    })
+    .catch(console.error);
     let pio = new Paul_Pio({
       "mode": "fixed",
       "hidden": true,
-      "night": "for(let i=7; i&lt;16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
+      "night": "for(let i=7; i<16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
       "content": {
         "link": ["https://github.com/yaleiyale/obsidian-jekyll-blog"],
         "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
         "hidden": true,
+        "welcome":helloword,
         "touch": ["hentai!","hentai!!","hentai!!!"],
         "referer": "你通过 %t 来到了这里",
         "custom": [{
@@ -723,7 +730,8 @@
         "https://lestua.ml/web_kanbanniang_collection/rem/model.json",
         "https://lestua.ml/web_kanbanniang_collection/kurumi/model.json"
       ]
-    });'></script>
+    });'
+></script>
 
 
 
