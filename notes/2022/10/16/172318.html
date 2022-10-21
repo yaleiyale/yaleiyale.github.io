@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Obsidian Github Uploader" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-10-18T09:08:43+08:00","datePublished":"2022-10-16T17:23:05+08:00","description":"[[Obsidian Github Uploader#设置相关]] [[Obsidian Github Uploader#English]]","headline":"Obsidian Github Uploader","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.ml/notes/2022/10/16/172318"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://sdn.geekzu.org/avatar/81da22ab6461e4b650e7542751d6ae45"},"name":"yaleiyale"},"url":"https://lestua.ml/notes/2022/10/16/172318"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-10-21T20:39:24+08:00","datePublished":"2022-10-16T17:23:05+08:00","description":"[[Obsidian Github Uploader#设置相关]] [[Obsidian Github Uploader#English]]","headline":"Obsidian Github Uploader","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.ml/notes/2022/10/16/172318"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://sdn.geekzu.org/avatar/81da22ab6461e4b650e7542751d6ae45"},"name":"yaleiyale"},"url":"https://lestua.ml/notes/2022/10/16/172318"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -372,11 +372,11 @@
         
         
         <i class="fa-solid fa-file-word fa-fw"></i>
-        3138字
+        3403字
         
         
         <i class="fa-solid fa-clock fa-fw"></i>
-        11分
+        12分
         
         
         <br>
@@ -402,7 +402,9 @@
 <p>这个插件可以让你自动上传粘贴到黑曜石的<strong>文件</strong>，直接进入你的github仓库（而不是存储在本地）。<br>
 当然，<strong>它也可以是一个简单的图片上传器</strong>。它能很好地将图片嵌入到markdown文件中。<br>
 但不仅仅是一个图片上传器，你可以上传<strong>各种类型的文件</strong>，只要github接受它们。<br>
-文件链接是否能在黑曜石中呈现，取决于黑曜石本身的支持情况。没关系，即使它们不能被渲染，它们仍然可以作为链接使用。只要去掉开头的感叹号就可以了。</p>
+文件链接是否能在黑曜石中呈现，取决于黑曜石本身的支持情况。没关系，即使它们不能被渲染，它们仍然可以作为链接使用。 <img class="emoji" title=":lollipop:" alt=":lollipop:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f36d.png" height="20" width="20"> 只要去掉开头的感叹号就可以了。</p>
+
+<p>注意，<img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> github目标仓库必须为public，这意味着上传的所有文件都是公开。github也更应该是为乐于共享者而服务的。请确保对你来说分享你上传的文件是无害的。我个人更期待着有一天你的某次上传就是为了无私共享。<img class="emoji" title=":sunflower:" alt=":sunflower:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f33b.png" height="20" width="20"></p>
 
 <h2 id="它是如何工作的">它是如何工作的</h2>
 
@@ -411,9 +413,9 @@
 <h2 id="配置">配置</h2>
 
 <ol>
-  <li>禁用黑曜石安全模式</li>
+  <li>禁用obsidian安全模式</li>
   <li>安装该插件<br>
-    <del>- 从黑曜石社区插件标签中安装</del> (等待代码审查)
+    <del>- 从obsidian社区插件标签中安装</del> (等待代码审查)
     <ul>
       <li>手动安装
         <ul>
@@ -469,7 +471,9 @@
   <li>
 <em>path</em>留空将在仓库根目录上传；如果设定为<code class="language-plaintext highlighter-rouge">image/</code>，（注意<code class="language-plaintext highlighter-rouge">/</code>）文件将上传到image文件夹下；<strong>如果设定为<code class="language-plaintext highlighter-rouge">image</code>，文件将组合上<em>image</em>，以形如<code class="language-plaintext highlighter-rouge">image123456xyz.png</code>的名称被上传到根目录。</strong>
 </li>
-  <li>妥善保管token，它很重要且机密</li>
+  <li>妥善保管token，它很重要且机密。</li>
+  <li>
+<em>github</em>是有上传大小上限的，太大的文件不建议上传到github。</li>
 </ol>
 
 <h2 id="english">English</h2>
@@ -510,7 +514,9 @@ The settings panel after installing and enabling the plugin for the first time w
 <em>branch</em> must be a branch that already exists(main is the default branch that already exists), the plugin cannot create its own branch for uploading.</li>
   <li>If <em>path</em> left empty, file will be uploaded in the root of the repository; if set to <code class="language-plaintext highlighter-rouge">image/</code>, (<strong>attention <code class="language-plaintext highlighter-rouge">/</code></strong> ) files will be uploaded to the image folder; <strong>if set to <code class="language-plaintext highlighter-rouge">image</code>, files will be combined with <em>image</em> and uploaded to the root, with a name like <code class="language-plaintext highlighter-rouge">image123456xyz.png</code>.</strong>
 </li>
-  <li>Keep the token safe, it is important and confidential</li>
+  <li>Keep the token safe, it is important and confidential.</li>
+  <li>
+<em>github</em> has a limit on upload size. It is not recommended to upload files that are too large to github.</li>
 </ol>
 
         </content>
