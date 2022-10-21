@@ -695,12 +695,7 @@
     pio_canvas.height = "800";
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
     var helloword = "";
-    fetch(' https: .then> response.json())
-    .then(data => {
-      helloword = data.hitokoto
-      console.log(helloword)
-    })
-    .catch(console.error);
+    fetch(' https:> response.json()).then(data => { helloword = data.hitokoto; console.log(helloword) }).catch(console.error);
     let pio = new Paul_Pio({
       "mode": "fixed",
       "hidden": true,

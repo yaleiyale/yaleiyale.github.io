@@ -1118,13 +1118,7 @@ Obsidian URI：[打开Mermaid书写范例](obsidian://open?vault=_notes&amp;file
     pio_canvas.height = "800";
     pio_container.insertAdjacentElement("beforeend", pio_canvas);
     var helloword = "";
-    fetch('https://v1.hitokoto.cn')
-    .then(response => response.json())
-    .then(data => {
-      helloword = data.hitokoto
-      console.log(helloword)
-    })
-    .catch(console.error);
+    fetch('https://v1.hitokoto.cn').then(response => response.json()).then(data => { helloword = data.hitokoto; console.log(helloword) }).catch(console.error);
     let pio = new Paul_Pio({
       "mode": "fixed",
       "hidden": true,
