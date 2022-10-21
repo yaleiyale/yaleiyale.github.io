@@ -536,7 +536,7 @@
         </side>
     </div>
 </div>
-<a href="/merger"> <img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1662123856/image_note/cedzxpfrow7ewrlkmq6d.png" alt="BuyMeACoffee" width="180"> </a>
+<a id="coffee" href="/merger"> <img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1662123856/image_note/cedzxpfrow7ewrlkmq6d.png" alt="BuyMeACoffee" width="180"> </a>
 
 </main>
 </div>
@@ -825,8 +825,20 @@
         "touch": ["hentai!","hentai!!","hentai!!!"],
         "referer": "你通过 %t 来到了这里",
         "custom": [{
+          "selector": "#coffee",
+          "text": "打赏要理性哦~",
+        },  {
           "selector": "a",
           "type": "link",
+        },  {
+          "selector": "img",
+          "text": "点开看看吧~",
+        },  {
+          "selector": "#waline",
+          "text": "文明发言，不然会被ban哦~",                                      
+        }, {
+          "selector": ".highlight",
+          "text": "代码可以复制呢~",
         }, {
           "selector": ".sidebar-toggle",
           "text": "打开侧边栏叭~"
@@ -835,7 +847,7 @@
           "text": "哇，你发现了什么！"
         }, {
           "selector": "#sidebar-search-input",
-          "text": "想搜索什么呢？很多干货哦！"
+          "text": "想搜索什么呢？"
         }, {
           "selector": "#toc",
           "text": "这是目录~"
