@@ -848,6 +848,7 @@ AI作画，开源colab文档，google可提供在线算力。免费方案单次�
     .then(response => response.json())
     .then(data => {
       helloword = data.hitokoto
+      console.log(helloword)
     })
     .catch(console.error);
     let pio = new Paul_Pio({
@@ -858,7 +859,7 @@ AI作画，开源colab文档，google可提供在线算力。免费方案单次�
         "link": ["https://github.com/yaleiyale/obsidian-jekyll-blog"],
         "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
         "hidden": true,
-        "welcome":helloword,
+        "welcome": helloword,
         "touch": ["hentai!","hentai!!","hentai!!!"],
         "referer": "你通过 %t 来到了这里",
         "custom": [{
