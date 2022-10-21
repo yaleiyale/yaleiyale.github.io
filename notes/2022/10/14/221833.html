@@ -665,76 +665,54 @@
    }
 </style>
 <script async="async" src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js,gh/Dreamer-Paul/Pio@2.4/static/pio.min.js" onload='
-    let pio_container = document.createElement("div");
-    pio_container.classList.add("pio-container");
-    pio_container.classList.add("right");
-    pio_container.style.bottom = "-2rem";
-    pio_container.style.zIndex = "1";
-    document.body.insertAdjacentElement("beforeend", pio_container);
-    let pio_action = document.createElement("div");
-    pio_action.classList.add("pio-action");
-    pio_container.insertAdjacentElement("beforeend", pio_action);
-    let pio_canvas = document.createElement("canvas");
-    pio_canvas.id = "pio";
-    pio_canvas.style.width = "14rem";
-    pio_canvas.width = "600";
-    pio_canvas.height = "800";
-    pio_container.insertAdjacentElement("beforeend", pio_canvas);
-    var helloword = "";
-    fetch("https://v1.hitokoto.cn").then(response =&gt; response.json()).then(data =&gt; { helloword = data.hitokoto; console.log(helloword) }).catch(console.error);
-    let pio = new Paul_Pio({
-      "mode": "fixed",
-      "hidden": true,
-      "night": "for(let i=7; i&lt;16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
-      "content": {
-        "link": ["https://github.com/yaleiyale/obsidian-jekyll-blog"],
-        "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
-        "hidden": true,
-        ”welcome": helloword,
-        "touch": ["hentai!","hentai!!","hentai!!!"],
-        "referer": "你通过 %t 来到了这里",
-        "custom": [{
-          "selector": "a",
-          "type": "link", 
-        },  {
-         "selector": "#coffee",
-          "text": "打赏要理性哦~",
-        },  {
-          "selector": "img",
-          "text": "点开看看吧~",
-        },  {
-          "selector": ".wl-reaction",
-          "text": "我来要赞咯~",                                      
-        },  {
-          "selector": ".wl-comment",
-          "text": "文明发言，不然会被ban哦~",                                      
-        },  {
-          "selector": ".highlight",
-          "text": "代码可以复制呢~",
-        }, {
-          "selector": ".sidebar-toggle",
-          "text": "打开侧边栏叭~"
-        }, {
-          "selector": ".effect-info",
-          "text": "哇，你发现了什么！"
-        }, {
-          "selector": "#sidebar-search-input",
-          "text": "想搜索什么呢？"
-        }, {
-          "selector": "#toc",
-          "text": "这是目录~"
-        }, {
-          "selector": ".page-title",
-          "text": "这是标题~"
-        }]
-      },
-      "model": [
-        "https://lestua.ml/web_kanbanniang_collection/xiaomai/xiaomai.model.json",
-        "https://lestua.ml/web_kanbanniang_collection/Kobayaxi/Kobayaxi.model.json",
-        "https://lestua.ml/web_kanbanniang_collection/rem/model.json",
-        "https://lestua.ml/web_kanbanniang_collection/kurumi/model.json"
-      ]
-    });'></script>
+  fetch("https://v1.hitokoto.cn")
+  .then(response=&gt;response.json())
+  .then(data=&gt;{var helloword=data.hitokoto;
+  var pio_container=document.createElement("div");
+  pio_container.classList.add("pio-container");
+  pio_container.classList.add("right");
+  pio_container.style.bottom="-2rem";
+  pio_container.style.zIndex="1";
+  document.body.insertAdjacentElement("beforeend",pio_container);
+  let pio_action=document.createElement("div");
+  pio_action.classList.add("pio-action");
+  pio_container.insertAdjacentElement("beforeend",pio_action);
+  let pio_canvas=document.createElement("canvas");
+  pio_canvas.id="pio";
+  pio_canvas.style.width="14rem";
+  pio_canvas.width="600";
+  pio_canvas.height="800";
+  pio_container.insertAdjacentElement("beforeend",pio_canvas);
+  let pio = new Paul_Pio({
+    "mode":"fixed",
+    "hidden":true,
+    "night":"for(let i=7;i&lt;16;++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break}",
+    "content":{
+      "link":["https://github.com/yaleiyale/obsidian-jekyll-blog"],
+      "skin":["要换成我的朋友吗？","让她放个假吧~"],
+      "hidden":true,
+      "welcome":helloword,
+      "touch":helloword,
+      "referer":"你通过 %t 来到了这里",
+      "custom":[
+        {"selector":"a","type":"link",},
+        {"selector":"#coffee","text":"打赏要理性哦~"},
+        {"selector":"img","text":"点开看看吧~"},
+        {"selector":".wl-reaction","text":"我来要赞咯~"},
+        {"selector":".wl-comment","text":"文明发言，不然会被ban哦~"},
+        {"selector":".highlight","text":"代码可以复制呢~"},
+        {"selector":".sidebar-toggle","text":"打开侧边栏叭~"},
+        {"selector":".effect-info","text":"哇，你发现了什么！"},
+        {"selector":"#sidebar-search-input","text":"想搜索什么呢？"},
+        {"selector":"#toc","text":"这是目录~"},
+        {"selector":".page-title","text":"这是标题~"}]
+        },
+    "model":[
+      "https://lestua.ml/web_kanbanniang_collection/xiaomai/xiaomai.model.json",
+      "https://lestua.ml/web_kanbanniang_collection/Kobayaxi/Kobayaxi.model.json",
+      "https://lestua.ml/web_kanbanniang_collection/rem/model.json",
+      "https://lestua.ml/web_kanbanniang_collection/kurumi/model.json"]
+        })}).catch(console.error);'></script>
 
 
 
