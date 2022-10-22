@@ -12,8 +12,8 @@
 <meta property="og:title" content="obsidian中的markdown书写范例实例" />
 <meta name="author" content="yaleiyale" />
 <meta property="og:locale" content="zh" />
-<meta name="description" content="枚举 obsidian 中支持的基本&amp;&amp;拓展 markdown 语法与特有的工具用法" />
-<meta property="og:description" content="枚举 obsidian 中支持的基本&amp;&amp;拓展 markdown 语法与特有的工具用法" />
+<meta name="description" content="枚举 obsidian 中支持的基本&amp;&amp;一点点拓展 markdown 通用语法，以及一些obsidian特性关键机制。 特性在obsidian外的展现极可能不正常，将额外给出截图供参考。" />
+<meta property="og:description" content="枚举 obsidian 中支持的基本&amp;&amp;一点点拓展 markdown 通用语法，以及一些obsidian特性关键机制。 特性在obsidian外的展现极可能不正常，将额外给出截图供参考。" />
 <link rel="canonical" href="https://lestua.ml/notes/2022/08/29/223916" />
 <meta property="og:url" content="https://lestua.ml/notes/2022/08/29/223916" />
 <meta property="og:site_name" content="时砂凝几页" />
@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="obsidian中的markdown书写范例实例" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-10-09T22:51:58+08:00","datePublished":"2022-07-30T20:46:11+08:00","description":"枚举 obsidian 中支持的基本&amp;&amp;拓展 markdown 语法与特有的工具用法","headline":"obsidian中的markdown书写范例实例","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.ml/notes/2022/08/29/223916"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://lestua.ml/pwa.png"},"name":"yaleiyale"},"url":"https://lestua.ml/notes/2022/08/29/223916"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-10-22T21:39:19+08:00","datePublished":"2022-07-30T20:46:11+08:00","description":"枚举 obsidian 中支持的基本&amp;&amp;一点点拓展 markdown 通用语法，以及一些obsidian特性关键机制。 特性在obsidian外的展现极可能不正常，将额外给出截图供参考。","headline":"obsidian中的markdown书写范例实例","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.ml/notes/2022/08/29/223916"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://lestua.ml/pwa.png"},"name":"yaleiyale"},"url":"https://lestua.ml/notes/2022/08/29/223916"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -213,8 +213,8 @@
       <li><a href="#%E8%A1%8C%E5%86%85%E4%BB%A3%E7%A0%81">行内代码：</a></li>
       <li><a href="#%E4%BB%A3%E7%A0%81%E5%9D%97">代码块：</a></li>
       <li><a href="#%E5%85%AC%E5%BC%8F">公式</a></li>
-      <li><a href="#%E6%B3%A8%E9%87%8A">注释</a></li>
-      <li><a href="#%E5%B5%8C%E5%85%A5%E6%96%87%E4%BB%B6">嵌入文件：</a></li>
+      <li><a href="#%E6%B3%A8%E9%87%8A%E7%89%B9%E6%80%A7">注释（特性）</a></li>
+      <li><a href="#%E5%B5%8C%E5%85%A5%E6%96%87%E4%BB%B6%E7%89%B9%E6%80%A7">嵌入文件（特性）</a></li>
       <li><a href="#%E5%A4%96%E9%83%A8%E9%93%BE%E6%8E%A5">外部链接</a></li>
     </ol>
   </li>
@@ -375,7 +375,7 @@
         
         
         <i class="fa-solid fa-file-word fa-fw"></i>
-        4847字
+        4934字
         
         
         <i class="fa-solid fa-clock fa-fw"></i>
@@ -394,7 +394,8 @@
     </span>
     <div id="notes-entry-container">
         <content>
-            <p>枚举 <em>obsidian</em> 中支持的基本&amp;&amp;拓展 <em>markdown</em> 语法与特有的工具用法</p>
+            <p>枚举 <em>obsidian</em> 中支持的基本&amp;&amp;一点点拓展 <em>markdown</em> 通用语法，以及一些obsidian特性关键机制。<br />
+特性在<em>obsidian</em>外的展现极可能不正常，将额外给出截图供参考。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 几级标题就有几个\#号 &lt;-转义，显示井号而不被识别为markdown语法标记
 </code></pre></div></div>
@@ -629,6 +630,11 @@ quote, cite</p>
 
 <p><code class="language-plaintext highlighter-rouge">这是一段能显示 `反引号` 的行内代码</code>^code</p>
 
+<blockquote>
+  <p>[!tip]<br />
+上文出现的<code class="language-plaintext highlighter-rouge">^code</code>为块链接标记，在后文会提及。</p>
+</blockquote>
+
 <h2 id="代码块">代码块：</h2>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```python
@@ -670,7 +676,7 @@ print "Good bye!"
 
 <p>$E = mc^2$</p>
 
-<h2 id="注释">注释</h2>
+<h2 id="注释特性">注释（特性）</h2>
 
 <div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%%这是一行Obsidian里的注释%%
 
@@ -697,7 +703,9 @@ Obsidian 里的
 编辑模式下注释才可见
 %%</p>
 
-<h2 id="嵌入文件">嵌入文件：</h2>
+<p><img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666445679/image_note/dxi0v9o6wqs6drridfwq.png" alt="" /></p>
+
+<h2 id="嵌入文件特性">嵌入文件（特性）</h2>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>!&lt;a class='internal-link' href='/notes/2022/08/29/223916#外部链接'&gt;obsidian中的markdown书写范例实例#外部链接&lt;/a&gt;  
 ![logo|200](https://res.cloudinary.com/dbbz8b3ce/image/upload/v1657596564/IMG_20220204_082019_600_pothy1.jpg " 悬浮提示文本 ")
@@ -705,6 +713,8 @@ Obsidian 里的
 
 <p>!<a class="internal-link" href="/notes/2022/08/29/223916#外部链接">obsidian中的markdown书写范例实例#外部链接</a><br />
 <img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1657596564/IMG_20220204_082019_600_pothy1.jpg" alt="logo|200" title=" 悬浮提示文本 " /></p>
+
+<p><img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666445810/image_note/s3add601xn7cwhggfsnr.png" alt="" /></p>
 
 <blockquote>
   <p>[!info] 支持格式</p>
@@ -730,6 +740,8 @@ Obsidian URI：[打开Mermaid书写范例](obsidian://open?vault=_notes&amp;file
 <p>块引用：!<span title="no link." class="invalid-link">  <span class="invalid-link-brackets">[[</span>  obsidian中的markdown书写范例实例#^code  <span class="invalid-link-brackets">]]</span></span></p>
 
 <p>Obsidian URI：<a href="obsidian://open?vault=_notes&amp;file=%E6%9D%82%E5%BD%95%2F%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%2Fobjekyll%E4%BD%BF%E7%94%A8%2Fobsidian%E4%BD%BF%E7%94%A8%2FMermaid%E4%B9%A6%E5%86%99%E8%8C%83%E4%BE%8B%E5%AE%9E%E4%BE%8B">打开Mermaid书写范例</a></p>
+
+<p><img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666445845/image_note/gwtuiohb6rsmlpualjeh.png" alt="" /></p>
 
 <h2 id="外部链接">外部链接</h2>
 
@@ -790,7 +802,8 @@ Obsidian URI：[打开Mermaid书写范例](obsidian://open?vault=_notes&amp;file
                 <div class="backlink-box">
                     <a class="internal-link"
                         href="/notes/2022/08/29/223916">obsidian中的markdown书写范例实例</a><br>
-                    <!-- <div style="font-size: 0.9em">枚举 obsidian 中支持的基本&amp;&amp;拓展 markdown 语法与特有的工具用法
+                    <!-- <div style="font-size: 0.9em">枚举 obsidian 中支持的基本&amp;&amp;一点点拓展 markdown 通用语法，以及一些obsidian特性关键机制。
+特性在obsidian外的展现极可能不正常，将额外给出截图供参考。
 </div> -->
                 </div>
                 
