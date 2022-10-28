@@ -8,7 +8,7 @@
   </title>
   
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<meta name="generator" content="Jekyll v4.3.0" />
+<meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="彻底清除git所有历史提交记录使其为“新”库" />
 <meta name="author" content="yaleiyale" />
 <meta property="og:locale" content="zh" />
@@ -375,31 +375,31 @@
     </span>
     <div id="notes-entry-container">
         <content>
-            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chcp 65001
+            <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chcp 65001
 @echo off
-set /p gd=输入要清除历史提交信息的仓库目录的绝对路径:
-echo 待处理的路径：%gd%
-set /p gm=输入提交说明：
-pushd
-set /p gb=输入要清除的分支:
-pushd
-cd /d %gd%
-git checkout --orphan latest_branch
-git add -A
-git commit -am "%gm%"
-git branch -D %gb%
-git branch -m %gb%
-git push -f origin %gb%
+<span class="nb">set</span> /p <span class="nv">gd</span><span class="o">=</span>输入要清除历史提交信息的仓库目录的绝对路径:
+<span class="nb">echo </span>待处理的路径：%gd%
+<span class="nb">set</span> /p <span class="nv">gm</span><span class="o">=</span>输入提交说明：
+<span class="nb">pushd
+set</span> /p <span class="nv">gb</span><span class="o">=</span>输入要清除的分支:
+<span class="nb">pushd
+cd</span> /d %gd%
+git checkout <span class="nt">--orphan</span> latest_branch
+git add <span class="nt">-A</span>
+git commit <span class="nt">-am</span> <span class="s2">"%gm%"</span>
+git branch <span class="nt">-D</span> %gb%
+git branch <span class="nt">-m</span> %gb%
+git push <span class="nt">-f</span> origin %gb%
 git pull
-echo "已清除全部的历史记录!"
-echo "查看新仓库信息："
-git log --pretty=oneline
-git branch -a
+<span class="nb">echo</span> <span class="s2">"已清除全部的历史记录!"</span>
+<span class="nb">echo</span> <span class="s2">"查看新仓库信息："</span>
+git log <span class="nt">--pretty</span><span class="o">=</span>oneline
+git branch <span class="nt">-a</span>
 git tag
-git ls-remote --tags
+git ls-remote <span class="nt">--tags</span>
 pause
-popd
-exit
+<span class="nb">popd
+exit</span>
 </code></pre></div></div>
 
 <p>windows下以bat格式运行<br />
@@ -416,14 +416,23 @@ exit
                         href="/notes/2022/08/29/223307">奇怪小妙招</a><br>
                     <!-- <div style="font-size: 0.9em">%% Begin Waypoint %%
 
-  [[彻底清除git所有历史提交记录使其为“新”库]]
   [[个人小站想远离秋秋和微信的内置浏览器]]
-  [[清除任务栏隐藏图标记录]]
   [[通过Parsers统一不同服务商的分流方案]]
+  一些有用的bat脚本
+    
+      [[彻底清除git所有历史提交记录使其为“新”库]]
+      [[清理windows图标缓存以处理快捷方式图标丢失]]
+    
+  
+  有时候只能对注册表动刀
+    
+      [[清除任务栏隐藏图标记录]]
+      [[VS重装时更换shared路径]]
+      [[windows删除无效自启动项目]]
+    
+  
   [[Disco Diffusion浅用]]
   [[VLC播放器皮肤不支持中文，不用Skin Editor也可以换字体]]
-  [[VS重装时更换shared路径]]
-  [[windows删除无效自启动项目]]
   [[windows下使用everything进行文件传递]]
   [[WSA预览版配置安装]]
 

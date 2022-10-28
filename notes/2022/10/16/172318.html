@@ -8,7 +8,7 @@
   </title>
   
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<meta name="generator" content="Jekyll v4.3.0" />
+<meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="Obsidian Github Uploader" />
 <meta name="author" content="yaleiyale" />
 <meta property="og:locale" content="zh" />
@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Obsidian Github Uploader" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-10-22T20:41:28+08:00","datePublished":"2022-10-16T17:23:05+08:00","description":"[[Obsidian Github Uploader#设置相关]] [[Obsidian Github Uploader#English]]","headline":"Obsidian Github Uploader","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.ml/notes/2022/10/16/172318"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://lestua.ml/pwa.png"},"name":"yaleiyale"},"url":"https://lestua.ml/notes/2022/10/16/172318"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-10-28T17:01:38+08:00","datePublished":"2022-10-16T17:23:05+08:00","description":"[[Obsidian Github Uploader#设置相关]] [[Obsidian Github Uploader#English]]","headline":"Obsidian Github Uploader","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.ml/notes/2022/10/16/172318"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://lestua.ml/pwa.png"},"name":"yaleiyale"},"url":"https://lestua.ml/notes/2022/10/16/172318"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -372,11 +372,11 @@
         
         
         <i class="fa-solid fa-file-word fa-fw"></i>
-        3394字
+        4058字
         
         
         <i class="fa-solid fa-clock fa-fw"></i>
-        12分
+        14分
         
         
         <br>
@@ -404,7 +404,14 @@
 但不仅仅是一个图片上传器，你可以上传<strong>各种类型的文件</strong>，只要github接受它们。<br>
 文件链接是否能在黑曜石中呈现，取决于黑曜石本身的支持情况。没关系，即使它们不能被渲染，它们仍然可以作为链接使用。 <img class="emoji" title=":lollipop:" alt=":lollipop:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f36d.png" height="20" width="20"> 只要去掉开头的感叹号就可以了。</p>
 
-<p>注意，<img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> github目标仓库必须为public，这意味着上传的所有文件都是公开。github也更应该是为乐于共享者而服务的。请确保对你来说分享你上传的文件是无害的。我个人更期待着有一天你的某次上传就是为了无私共享。<img class="emoji" title=":sunflower:" alt=":sunflower:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f33b.png" height="20" width="20"></p>
+<p><img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> 注意，</p>
+
+<ol>
+  <li>github目标仓库必须为public，这意味着上传的所有文件都是公开。github也更应该是为乐于共享者而服务的。请确保对你来说分享你上传的文件是无害的。我个人更期待着有一天你的某次上传就是为了无私共享。<img class="emoji" title=":sunflower:" alt=":sunflower:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f33b.png" height="20" width="20">
+</li>
+  <li>不要上传空文件。在这里是没有意义的，是错误的。</li>
+  <li>建议勾选面板中的随机文件名。重复的文件名会引起错误。随机文件名将大大避免重复的文件名。</li>
+</ol>
 
 <h2 id="它是如何工作的">它是如何工作的</h2>
 
@@ -440,6 +447,11 @@
 
 <p><img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666011210/image_note/ozaqeztjcwc0jl0xugcr.png" alt=""></p>
 
+<blockquote>
+  <p>[!info]<br>
+从0.0.2版本开始，添加了一个选框，让你可以在随机文件名和原文件名间做出选择。</p>
+</blockquote>
+
 <h3 id="github配置">Github配置</h3>
 
 <ul>
@@ -474,6 +486,7 @@
   <li>妥善保管token，它很重要且机密。</li>
   <li>
 <em>github</em>是有上传大小上限的，太大的文件不建议上传到github。</li>
+  <li>在同一路径下不允许有完全同名的文件，这是一个我从未见过被违背的惯例，在github中亦是如此。勾选<em>random filename</em>可以帮助你避免在这个细节上出现错误。如果你某次确实需要以一个自选的文件名上传文件，则可以不勾选该项，只要记得检查上述提到的重名问题。</li>
 </ol>
 
 <h2 id="english">English</h2>
@@ -484,6 +497,11 @@
 The settings panel after installing and enabling the plugin for the first time will look like this：</p>
 
 <p><img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666011210/image_note/ozaqeztjcwc0jl0xugcr.png" alt=""></p>
+
+<blockquote>
+  <p>[!info]<br>
+Starting with version 0.0.2, a checkbox has been added that allows you to choose between a random file name and the original file name.</p>
+</blockquote>
 
 <h4 id="github-configuration">Github Configuration</h4>
 
@@ -517,6 +535,7 @@ The settings panel after installing and enabling the plugin for the first time w
   <li>Keep the token safe, it is important and confidential.</li>
   <li>
 <em>github</em> has a limit on upload size. It is not recommended to upload files that are too large to github.</li>
+  <li>Files with the same name are not allowed in the same path, which is a convention I have never seen violated, as well as in github. Checking <em>random filename</em> will help you avoid making mistakes in this detail. If you do need to upload a file with a special file name at one time, you can uncheck this item, just remember to check the duplicate name problem mentioned above.</li>
 </ol>
 
         </content>

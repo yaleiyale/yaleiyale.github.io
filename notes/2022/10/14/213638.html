@@ -8,12 +8,12 @@
   </title>
   
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<meta name="generator" content="Jekyll v4.3.0" />
+<meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="二叉树的遍历" />
 <meta name="author" content="yaleiyale" />
 <meta property="og:locale" content="zh" />
-<meta name="description" content="#" />
-<meta property="og:description" content="#" />
+<meta name="description" content="先序遍历" />
+<meta property="og:description" content="先序遍历" />
 <link rel="canonical" href="https://lestua.ml/notes/2022/10/14/213638" />
 <meta property="og:url" content="https://lestua.ml/notes/2022/10/14/213638" />
 <meta property="og:site_name" content="时砂凝几页" />
@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="二叉树的遍历" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-10-14T21:36:39+08:00","datePublished":"2022-10-14T21:36:08+08:00","description":"#","headline":"二叉树的遍历","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.ml/notes/2022/10/14/213638"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://lestua.ml/pwa.png"},"name":"yaleiyale"},"url":"https://lestua.ml/notes/2022/10/14/213638"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-10-28T16:13:55+08:00","datePublished":"2022-10-14T21:36:08+08:00","description":"先序遍历","headline":"二叉树的遍历","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.ml/notes/2022/10/14/213638"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://lestua.ml/pwa.png"},"name":"yaleiyale"},"url":"https://lestua.ml/notes/2022/10/14/213638"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -199,7 +199,16 @@
 
       
       
-      
+      <ol id="toc">
+  <li><a href="#%E5%85%88%E5%BA%8F%E9%81%8D%E5%8E%86">先序遍历</a></li>
+  <li><a href="#%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86">中序遍历</a></li>
+  <li><a href="#%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86">后序遍历</a></li>
+  <li><a href="#%E9%80%92%E5%BD%92%E7%AE%97%E6%B3%95%E5%92%8C%E9%9D%9E%E9%80%92%E5%BD%92%E7%AE%97%E6%B3%95%E7%9A%84%E8%BD%AC%E6%8D%A2">递归算法和非递归算法的转换</a>
+    <ol>
+      <li><a href="#%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86%E7%9A%84%E9%9D%9E%E9%80%92%E5%BD%92%E7%AE%97%E6%B3%95">中序遍历的非递归算法</a></li>
+    </ol>
+  </li>
+</ol>
       
       
       <script defer="defer" >
@@ -356,11 +365,11 @@
         
         
         <i class="fa-solid fa-file-word fa-fw"></i>
-        1字
+        1210字
         
         
         <i class="fa-solid fa-clock fa-fw"></i>
-        1分
+        5分
         
         
         <br/>
@@ -375,7 +384,117 @@
     </span>
     <div id="notes-entry-container">
         <content>
-            <p>#</p>
+            <h1 id="先序遍历">先序遍历</h1>
+
+<p>先序遍历（PreOrder）的操作过程如下。</p>
+
+<p>若二叉树为空，则什么也不做;否则，</p>
+
+<ol>
+  <li>访问根结点;</li>
+  <li>先序遍历左子树;</li>
+  <li>先序遍历右子树。</li>
+</ol>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">PreOrder</span><span class="p">(</span><span class="n">BiTree</span> <span class="n">T</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">T</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">visit</span><span class="p">(</span><span class="n">T</span><span class="p">);</span><span class="c1">//访问根结点</span>
+		<span class="n">PreOrder</span><span class="p">(</span><span class="n">T</span><span class="o">-&gt;</span><span class="n">lchild</span><span class="p">);</span><span class="c1">//递归遍历左子树</span>
+		<span class="n">PreOrder</span><span class="p">(</span><span class="n">T</span><span class="o">-&gt;</span><span class="n">rchild</span><span class="p">);</span><span class="c1">//递归遍历右子树</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h1 id="中序遍历">中序遍历</h1>
+
+<p>中序遍历（InOrder）的操作过程如下。</p>
+
+<p>若二叉树为空，则什么也不做;否则，</p>
+
+<ol>
+  <li>中序遍历左子树;</li>
+  <li>访问根结点;</li>
+  <li>中序遍历右子树。</li>
+</ol>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">InOrder</span><span class="p">(</span><span class="n">BiTree</span> <span class="n">T</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">T</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">InOrder</span><span class="p">(</span><span class="n">T</span><span class="o">-&gt;</span><span class="n">lchild</span><span class="p">);</span><span class="c1">//递归遍历左子树</span>
+		<span class="n">visit</span><span class="p">(</span><span class="n">T</span><span class="p">);</span><span class="c1">//访问根结点</span>
+		<span class="n">InOrder</span><span class="p">(</span><span class="n">T</span><span class="o">-&gt;</span><span class="n">rchild</span><span class="p">);</span><span class="c1">//递归遍历右子树</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h1 id="后序遍历">后序遍历</h1>
+
+<p>后序遍历（PostOrder）的操作过程如下。</p>
+
+<p>若二叉树为空，则什么也不做;否则，</p>
+
+<ol>
+  <li>后序遍历左子树;</li>
+  <li>后序遍历右子树;</li>
+  <li>访问根结点。</li>
+</ol>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">PostOrder</span><span class="p">(</span><span class="n">BiTree</span> <span class="n">T</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">T</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">PostOrder</span><span class="p">(</span><span class="n">T</span><span class="o">-&gt;</span><span class="n">lchild</span><span class="p">);</span><span class="c1">//递归遍历左子树</span>
+		<span class="n">PostOrder</span><span class="p">(</span><span class="n">T</span><span class="o">-&gt;</span><span class="n">rchild</span><span class="p">);</span><span class="c1">//递归遍历右子树</span>
+		<span class="n">visit</span><span class="p">(</span><span class="n">T</span><span class="p">);</span><span class="c1">//访问根结点</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>三种遍历算法中，递归遍历左、右子树的顺序都是固定的，只是访问根结点的顺序不同。不管采用哪种遍历算法，每个结点都访问一次且仅访问一次，故时间复杂度都是O(n)。在递归遍历中，递归工作栈的栈深恰好为树的深度，所以在最坏情况下，二叉树是有n个结点且深度为n的单支树，遍历算法的空间复杂度为O(n)。</p>
+
+<h1 id="递归算法和非递归算法的转换">递归算法和非递归算法的转换</h1>
+
+<h2 id="中序遍历的非递归算法">中序遍历的非递归算法</h2>
+
+<p>分析中序遍历的访问过程：</p>
+
+<ol>
+  <li>沿着根的左孩子，依次入栈，直到左孩子为空，说明已找到可以输出的结点</li>
+  <li>栈顶元素出栈并访问∶若其右孩子为空，继续执行2；若其右孩子不空，将右子树转执行1</li>
+</ol>
+
+<p>根据分析得出中序遍历非递归算法</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span>  <span class="nf">InOrder2</span><span class="p">(</span><span class="n">BiTree</span> <span class="n">T</span><span class="p">)</span> <span class="p">{</span>
+	<span class="n">InitStack</span><span class="p">(</span><span class="n">S</span><span class="p">);</span>
+	<span class="n">BiTree</span> <span class="n">p</span> <span class="o">=</span> <span class="n">T</span><span class="p">;</span>
+	<span class="k">while</span> <span class="p">(</span><span class="n">p</span> <span class="o">||</span> <span class="o">!</span><span class="n">StackEmpty</span><span class="p">(</span><span class="n">S</span><span class="p">))</span> <span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="p">{</span>
+			<span class="n">Push</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">p</span><span class="p">);</span>
+			<span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">lchild</span><span class="p">;</span>
+		<span class="p">}</span>
+		<span class="k">else</span> <span class="p">{</span>
+			<span class="n">Pop</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">p</span><span class="p">);</span>
+			<span class="n">visit</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+			<span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">rchild</span><span class="p">;</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>先序遍历和中序遍历的基本思想是类似的，只需把访问结点操作放在入栈操作的前面</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">PreOrder2</span><span class="p">(</span><span class="n">BiTree</span> <span class="n">T</span><span class="p">)</span> <span class="p">{</span>
+	<span class="n">InitStack</span><span class="p">(</span><span class="n">S</span><span class="p">);</span> <span class="n">BiTree</span> <span class="n">p</span> <span class="o">=</span> <span class="n">T</span><span class="p">;</span>
+	<span class="k">while</span> <span class="p">(</span><span class="n">p</span> <span class="o">||</span> <span class="o">!</span><span class="n">StackEmpty</span><span class="p">(</span><span class="n">S</span><span class="p">))</span> <span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="p">{</span>
+			<span class="n">visit</span><span class="p">(</span><span class="n">p</span><span class="p">);</span> <span class="n">Push</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">p</span><span class="p">);</span>
+			<span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">lchild</span><span class="p">;</span>
+		<span class="p">}</span>
+		<span class="k">else</span> <span class="p">{</span>
+			<span class="n">Pop</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">p</span><span class="p">);</span>
+			<span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">-&gt;</span><span class="n">rchild</span><span class="p">;</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
         </content>
         <side style="font-size: 0.9em">

@@ -8,7 +8,7 @@
   </title>
   
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<meta name="generator" content="Jekyll v4.3.0" />
+<meta name="generator" content="Jekyll v4.3.1" />
 <meta property="og:title" content="树与二叉树 2022-10-06 14.36.30.excalidraw" />
 <meta name="author" content="yaleiyale" />
 <meta property="og:locale" content="zh" />
@@ -359,11 +359,11 @@
         
         
         <i class="fa-solid fa-file-word fa-fw"></i>
-        44348字
+        43676字
         
         
         <i class="fa-solid fa-clock fa-fw"></i>
-        148分
+        146分
         
         
         <br/>
@@ -1144,8 +1144,8 @@
 		</span><span class="p">},</span><span class="w">
 		</span><span class="p">{</span><span class="w">
 			</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"arrow"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">1482</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">761476451</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">1486</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1368711732</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"isDeleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0AY_LWfyBhEGqeL3A_nFj"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"fillStyle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"solid"</span><span class="p">,</span><span class="w">
@@ -1164,7 +1164,7 @@
 			</span><span class="nl">"groupIds"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
 			</span><span class="nl">"strokeSharpness"</span><span class="p">:</span><span class="w"> </span><span class="s2">"round"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"boundElements"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1665231897509</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1666789884576</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"locked"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"startBinding"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -1193,8 +1193,8 @@
 		</span><span class="p">},</span><span class="w">
 		</span><span class="p">{</span><span class="w">
 			</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"arrow"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">1080</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">448565507</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">1084</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">111311796</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"isDeleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hMGEuSR9w3XUU-jHV4TYt"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"fillStyle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"solid"</span><span class="p">,</span><span class="w">
@@ -1213,7 +1213,7 @@
 			</span><span class="nl">"groupIds"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
 			</span><span class="nl">"strokeSharpness"</span><span class="p">:</span><span class="w"> </span><span class="s2">"round"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"boundElements"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1665231897510</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1666789884577</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"locked"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"startBinding"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -1242,8 +1242,8 @@
 		</span><span class="p">},</span><span class="w">
 		</span><span class="p">{</span><span class="w">
 			</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"arrow"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">718</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">280484707</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">722</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">2039073332</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"isDeleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"H6Bv4kJ3nVdyzvrwndvJw"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"fillStyle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"solid"</span><span class="p">,</span><span class="w">
@@ -1262,7 +1262,7 @@
 			</span><span class="nl">"groupIds"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
 			</span><span class="nl">"strokeSharpness"</span><span class="p">:</span><span class="w"> </span><span class="s2">"round"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"boundElements"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1665231897485</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1666789884546</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"locked"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"startBinding"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -1291,8 +1291,8 @@
 		</span><span class="p">},</span><span class="w">
 		</span><span class="p">{</span><span class="w">
 			</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"arrow"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">619</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">512532131</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">623</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1469828404</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"isDeleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"r-IHtBJSFWyj96ob0zIJ4"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"fillStyle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"solid"</span><span class="p">,</span><span class="w">
@@ -1311,7 +1311,7 @@
 			</span><span class="nl">"groupIds"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
 			</span><span class="nl">"strokeSharpness"</span><span class="p">:</span><span class="w"> </span><span class="s2">"round"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"boundElements"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1665231897488</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1666789884549</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"locked"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"startBinding"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -1340,8 +1340,8 @@
 		</span><span class="p">},</span><span class="w">
 		</span><span class="p">{</span><span class="w">
 			</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"arrow"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">85</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">224842307</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">89</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">580126388</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"isDeleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LUR456u-YCobmXEujnMYH"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"fillStyle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"solid"</span><span class="p">,</span><span class="w">
@@ -1360,7 +1360,7 @@
 			</span><span class="nl">"groupIds"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
 			</span><span class="nl">"strokeSharpness"</span><span class="p">:</span><span class="w"> </span><span class="s2">"round"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"boundElements"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1665231897490</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1666789884551</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"locked"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"startBinding"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -1389,8 +1389,8 @@
 		</span><span class="p">},</span><span class="w">
 		</span><span class="p">{</span><span class="w">
 			</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"arrow"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">119</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">713957187</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1373311668</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"isDeleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"_7mx3q_4UjIXQEanAFhAD"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"fillStyle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"solid"</span><span class="p">,</span><span class="w">
@@ -1409,7 +1409,7 @@
 			</span><span class="nl">"groupIds"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
 			</span><span class="nl">"strokeSharpness"</span><span class="p">:</span><span class="w"> </span><span class="s2">"round"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"boundElements"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1665231897503</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1666789884567</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"locked"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"startBinding"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -1438,8 +1438,8 @@
 		</span><span class="p">},</span><span class="w">
 		</span><span class="p">{</span><span class="w">
 			</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"arrow"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">137</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1789869795</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">141</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1875811380</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"isDeleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"_IpnCH8s3R77kRQQBIV6Q"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"fillStyle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"solid"</span><span class="p">,</span><span class="w">
@@ -1458,7 +1458,7 @@
 			</span><span class="nl">"groupIds"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
 			</span><span class="nl">"strokeSharpness"</span><span class="p">:</span><span class="w"> </span><span class="s2">"round"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"boundElements"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1665231897503</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1666789884567</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"locked"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"startBinding"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -1487,8 +1487,8 @@
 		</span><span class="p">},</span><span class="w">
 		</span><span class="p">{</span><span class="w">
 			</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"arrow"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">126</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1377027469</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">130</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1508351500</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"isDeleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"QVWwOtsTl1-Oe8Liv_ZyF"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"fillStyle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"solid"</span><span class="p">,</span><span class="w">
@@ -1507,7 +1507,7 @@
 			</span><span class="nl">"groupIds"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
 			</span><span class="nl">"strokeSharpness"</span><span class="p">:</span><span class="w"> </span><span class="s2">"round"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"boundElements"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1665231897507</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1666789884571</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"locked"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"startBinding"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -1536,8 +1536,8 @@
 		</span><span class="p">},</span><span class="w">
 		</span><span class="p">{</span><span class="w">
 			</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"arrow"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">372</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">797008717</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">376</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1025070860</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"isDeleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hPEr7rxbRUMYI6dAin37H"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"fillStyle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"solid"</span><span class="p">,</span><span class="w">
@@ -1556,7 +1556,7 @@
 			</span><span class="nl">"groupIds"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
 			</span><span class="nl">"strokeSharpness"</span><span class="p">:</span><span class="w"> </span><span class="s2">"round"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"boundElements"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1665231897500</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1666789884563</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"locked"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"startBinding"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -1585,8 +1585,8 @@
 		</span><span class="p">},</span><span class="w">
 		</span><span class="p">{</span><span class="w">
 			</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"arrow"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">822</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">605489389</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">823</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">735725708</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"isDeleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1xGYIuDndql43wCrEqr7L"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"fillStyle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"solid"</span><span class="p">,</span><span class="w">
@@ -1605,7 +1605,7 @@
 			</span><span class="nl">"groupIds"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
 			</span><span class="nl">"strokeSharpness"</span><span class="p">:</span><span class="w"> </span><span class="s2">"round"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"boundElements"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1665231897498</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1666789884561</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"locked"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"startBinding"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
@@ -1630,8 +1630,8 @@
 		</span><span class="p">},</span><span class="w">
 		</span><span class="p">{</span><span class="w">
 			</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"arrow"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">545</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">830871747</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">549</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">319884468</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"isDeleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"gwfDDRT83U27DgW0QzZF4"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"fillStyle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"solid"</span><span class="p">,</span><span class="w">
@@ -1650,7 +1650,7 @@
 			</span><span class="nl">"groupIds"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
 			</span><span class="nl">"strokeSharpness"</span><span class="p">:</span><span class="w"> </span><span class="s2">"round"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"boundElements"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1665231897496</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1666789884558</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"locked"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"startBinding"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -1679,8 +1679,8 @@
 		</span><span class="p">},</span><span class="w">
 		</span><span class="p">{</span><span class="w">
 			</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"arrow"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">1069</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">933853347</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">1073</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1237378356</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"isDeleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"z5QywwFUzIMNqIEqNeKAa"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"fillStyle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"solid"</span><span class="p">,</span><span class="w">
@@ -1701,7 +1701,7 @@
 			</span><span class="p">],</span><span class="w">
 			</span><span class="nl">"strokeSharpness"</span><span class="p">:</span><span class="w"> </span><span class="s2">"round"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"boundElements"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1665231897510</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1666789884577</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"locked"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"startBinding"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -1864,8 +1864,8 @@
 		</span><span class="p">},</span><span class="w">
 		</span><span class="p">{</span><span class="w">
 			</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"text"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">160</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">49352429</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">161</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1024749492</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"isDeleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fw06h9q8"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"fillStyle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"solid"</span><span class="p">,</span><span class="w">
@@ -1887,7 +1887,7 @@
 			</span><span class="p">],</span><span class="w">
 			</span><span class="nl">"strokeSharpness"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sharp"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"boundElements"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1665231904643</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1666789884565</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"locked"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"fontSize"</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span><span class="w">
@@ -2122,8 +2122,8 @@
 		</span><span class="p">},</span><span class="w">
 		</span><span class="p">{</span><span class="w">
 			</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"text"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">391</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1608037165</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">392</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1587900300</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"isDeleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ZJEfHm21"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"fillStyle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"solid"</span><span class="p">,</span><span class="w">
@@ -2145,7 +2145,7 @@
 			</span><span class="p">],</span><span class="w">
 			</span><span class="nl">"strokeSharpness"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sharp"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"boundElements"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1665231897506</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1666789884570</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"locked"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"fontSize"</span><span class="p">:</span><span class="w"> </span><span class="mf">12.942419646961874</span><span class="p">,</span><span class="w">
@@ -2368,8 +2368,8 @@
 		</span><span class="p">},</span><span class="w">
 		</span><span class="p">{</span><span class="w">
 			</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"text"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">418</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1579083203</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">419</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1349654708</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"isDeleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0iNqEGx5"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"fillStyle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"solid"</span><span class="p">,</span><span class="w">
@@ -2391,7 +2391,7 @@
 			</span><span class="p">],</span><span class="w">
 			</span><span class="nl">"strokeSharpness"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sharp"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"boundElements"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1665231897508</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1666789884574</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"locked"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"fontSize"</span><span class="p">:</span><span class="w"> </span><span class="mf">13.797882284027487</span><span class="p">,</span><span class="w">
@@ -2582,8 +2582,8 @@
 		</span><span class="p">},</span><span class="w">
 		</span><span class="p">{</span><span class="w">
 			</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"text"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">496</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">205657869</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">497</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1527920652</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"isDeleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"zn1N6bFN"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"fillStyle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"solid"</span><span class="p">,</span><span class="w">
@@ -2604,7 +2604,7 @@
 			</span><span class="p">],</span><span class="w">
 			</span><span class="nl">"strokeSharpness"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sharp"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"boundElements"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1665231897511</span><span class="p">,</span><span class="w">
+			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1666789884579</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"locked"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"fontSize"</span><span class="p">:</span><span class="w"> </span><span class="mf">16.110443106466178</span><span class="p">,</span><span class="w">
@@ -2653,41 +2653,6 @@
 			</span><span class="nl">"verticalAlign"</span><span class="p">:</span><span class="w"> </span><span class="s2">"middle"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"containerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HkgG7ZVuO3-lbWqUNVZhi"</span><span class="p">,</span><span class="w">
 			</span><span class="nl">"originalText"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A"</span><span class="w">
-		</span><span class="p">},</span><span class="w">
-		</span><span class="p">{</span><span class="w">
-			</span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5EuO1U7C"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"text"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"x"</span><span class="p">:</span><span class="w"> </span><span class="mf">451.96066779693876</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"y"</span><span class="p">:</span><span class="w"> </span><span class="mf">-201.4365314615734</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"width"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"height"</span><span class="p">:</span><span class="w"> </span><span class="mi">46</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"angle"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"strokeColor"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#000000"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"backgroundColor"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#228be6"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"fillStyle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"solid"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"strokeWidth"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"strokeStyle"</span><span class="p">:</span><span class="w"> </span><span class="s2">"solid"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"roughness"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"opacity"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"groupIds"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-			</span><span class="nl">"strokeSharpness"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sharp"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"seed"</span><span class="p">:</span><span class="w"> </span><span class="mi">1343548333</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"versionNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">1641573443</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"isDeleted"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"boundElements"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1665231898605</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"link"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"locked"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"rawText"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"fontSize"</span><span class="p">:</span><span class="w"> </span><span class="mi">36</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"fontFamily"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"textAlign"</span><span class="p">:</span><span class="w"> </span><span class="s2">"left"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"verticalAlign"</span><span class="p">:</span><span class="w"> </span><span class="s2">"top"</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"baseline"</span><span class="p">:</span><span class="w"> </span><span class="mi">32</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"containerId"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-			</span><span class="nl">"originalText"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
 		</span><span class="p">}</span><span class="w">
 	</span><span class="p">],</span><span class="w">
 	</span><span class="nl">"appState"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
