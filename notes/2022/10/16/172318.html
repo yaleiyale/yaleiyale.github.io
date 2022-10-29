@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Obsidian Github Uploader" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-10-28T17:01:38+08:00","datePublished":"2022-10-16T17:23:05+08:00","description":"[[Obsidian Github Uploader#设置相关]] [[Obsidian Github Uploader#English]]","headline":"Obsidian Github Uploader","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.ml/notes/2022/10/16/172318"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://lestua.ml/pwa.png"},"name":"yaleiyale"},"url":"https://lestua.ml/notes/2022/10/16/172318"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-10-29T08:34:58+08:00","datePublished":"2022-10-16T17:23:05+08:00","description":"[[Obsidian Github Uploader#设置相关]] [[Obsidian Github Uploader#English]]","headline":"Obsidian Github Uploader","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.ml/notes/2022/10/16/172318"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://lestua.ml/pwa.png"},"name":"yaleiyale"},"url":"https://lestua.ml/notes/2022/10/16/172318"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -200,7 +200,7 @@
       <li>
 <a href="#%E8%AE%BE%E7%BD%AE%E7%9B%B8%E5%85%B3">设置相关</a>
         <ol>
-          <li><a href="#github%E9%85%8D%E7%BD%AE">Github配置</a></li>
+          <li><a href="#github%E9%85%8D%E7%BD%AE%E7%BB%99%E9%9D%9E%E6%8A%80%E6%9C%AF%E4%BA%BA%E5%91%98">Github配置（给非技术人员）</a></li>
           <li><a href="#%E6%B3%A8%E6%84%8F%E9%A1%B9">注意项</a></li>
         </ol>
       </li>
@@ -210,7 +210,7 @@
           <li>
 <a href="#about-setting">About Setting</a>
             <ol>
-              <li><a href="#github-configuration">Github Configuration</a></li>
+              <li><a href="#github-configurationfor-non-technologists">Github Configuration(for non-technologists)</a></li>
               <li><a href="#note">Note</a></li>
             </ol>
           </li>
@@ -372,7 +372,7 @@
         
         
         <i class="fa-solid fa-file-word fa-fw"></i>
-        4058字
+        4072字
         
         
         <i class="fa-solid fa-clock fa-fw"></i>
@@ -452,7 +452,7 @@
 从0.0.2版本开始，添加了一个选框，让你可以在随机文件名和原文件名间做出选择。</p>
 </blockquote>
 
-<h3 id="github配置">Github配置</h3>
+<h3 id="github配置给非技术人员">Github配置（给非技术人员）</h3>
 
 <ul>
   <li>注册登录你的github，github昵称将填入owner <a href="https://github.com/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F&amp;source=header-home">GitHub注册页</a> <img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666052490/image_note/pgpnnho3etykjb0zbh8v.png" alt="">
@@ -464,11 +464,11 @@
   <li>在登录状态下进入<a href="https://github.com/settings/tokens">Personal Access Tokens</a>，生成<em>Personal Access Tokens</em>，并确保它有repo权限。<img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666053826/image_note/ifocyea2afwkxzuyzx00.png" alt="">请及时保存该字符串，它只会可见一次，遗落后无法找回，需要重新生成新的。将该字符串填入<em>token</em>
 </li>
   <li>
-<em>message</em>是你图片上传时附带的解释性信息，可以填入你的相关注解，用途备忘等</li>
+<em>message</em>是你文件上传时附带的解释性信息，可以填入你的相关注解，用途备忘等</li>
   <li>
 <em>name</em>与<em>email</em>是提交者的相关信息，默认可以填入你的github昵称与邮箱，当然你可以自主更改你的填入</li>
   <li>
-<em>path</em>是图片被上传到repo中的路径，结合hint与<a class="internal-link" href="/notes/2022/10/16/172318#%E6%B3%A8%E6%84%8F%E9%A1%B9">Obsidian Github Uploader#注意项</a>理解后填入</li>
+<em>path</em>是文件被上传到repo中的路径，结合hint与<a class="internal-link" href="/notes/2022/10/16/172318#%E6%B3%A8%E6%84%8F%E9%A1%B9">Obsidian Github Uploader#注意项</a>理解后填入</li>
 </ul>
 
 <p>如果你对设置面板中的一些关于git与github的术语还是感到困惑，请额外查阅一些资料，相信了解这些相关内容不光可以帮助你明白如何进行本插件的设定，git本身还可以更多的帮助你的工作与生活。</p>
@@ -481,8 +481,7 @@
   <li>
 <em>branch</em>必须是已经存在的分支（main是默认已经存在的分支），插件不能自行创建分支来进行上传。</li>
   <li>
-<em>path</em>留空将在仓库根目录上传；如果设定为<code class="language-plaintext highlighter-rouge">image/</code>，（注意<code class="language-plaintext highlighter-rouge">/</code>）文件将上传到image文件夹下；<strong>如果设定为<code class="language-plaintext highlighter-rouge">image</code>，文件将组合上<em>image</em>，以形如<code class="language-plaintext highlighter-rouge">image123456xyz.png</code>的名称被上传到根目录。</strong>
-</li>
+<em>path</em>留空将在仓库根目录上传；如果设定为<code class="language-plaintext highlighter-rouge">image/</code>，（注意<code class="language-plaintext highlighter-rouge">/</code>）文件将上传到image文件夹下；<strong>如果设定为<code class="language-plaintext highlighter-rouge">image</code>，文件将组合上<em>image</em>，以形如<code class="language-plaintext highlighter-rouge">image123456xyz.png</code>的名称被上传到根目录</strong>。</li>
   <li>妥善保管token，它很重要且机密。</li>
   <li>
 <em>github</em>是有上传大小上限的，太大的文件不建议上传到github。</li>
@@ -503,7 +502,7 @@ The settings panel after installing and enabling the plugin for the first time w
 Starting with version 0.0.2, a checkbox has been added that allows you to choose between a random file name and the original file name.</p>
 </blockquote>
 
-<h4 id="github-configuration">Github Configuration</h4>
+<h4 id="github-configurationfor-non-technologists">Github Configuration(for non-technologists)</h4>
 
 <ul>
   <li>Register and login to your github, github nickname will be filled in with owner <a href="https://github.com/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F&amp;source=header-home">GitHub registration page</a> <img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666052490/image_note/pgpnnho3etykjb0zbh8v.png" alt="">
@@ -511,14 +510,13 @@ Starting with version 0.0.2, a checkbox has been added that allows you to choose
   <li>In the top right corner of the home page after login, create a new repository, the repository name will be filled in <em>repo</em>
 </li>
   <li>The default branch is <em>main</em>, if you want to change the branch, please create a branch on github first <img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666053392/image_note/zq8tovjkzvhflpc3iadw.png" alt=""> <img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666053455/image_note/oksudjsujv74kocprmd9.png" alt=""> and put <em>branch</em> in the branch name</li>
-  <li>Go to <a href="https://github.com/settings/tokens">Personal Access Tokens</a> while logged in, generate <em>Personal Access Tokens</em>, and make sure it has repo permissions. <img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666053826/image_note/ifocyea2afwkxzuyzx00.png" alt=""> Please save the string in time, it will only be visible once and cannot be retrieved after being lost, you need to regenerate it. Fill this string with <em>token</em>
-</li>
+  <li>Go to <a href="https://github.com/settings/tokens">Personal Access Tokens</a> while logged in, generate <em>Personal Access Tokens</em>, and make sure it has repo permissions. <img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1666053826/image_note/ifocyea2afwkxzuyzx00.png" alt=""> Please save the string in time, it will only be visible once and cannot be retrieved after being lost, you need to regenerate it. Fill <em>token</em> with this string.</li>
   <li>
-<em>message</em> is the explanatory message that comes with your image upload, you can fill it with your relevant comments, usage notes, etc.</li>
+<em>message</em> is the explanatory message that comes with your upload, you can fill it with your relevant comments, usage notes, etc.</li>
   <li>
-<em>name</em> and <em>email</em> are the information about the submitter, by default you can fill in your github nickname and email, but you can change your own input of course.</li>
+<em>name</em> and <em>email</em> are the information about the submitter, by default you can fill in your github nickname and email. Of course, you can change it.</li>
   <li>
-<em>path</em> is the path where the image was uploaded to the repo, combined with hint and <a class="internal-link" href="/notes/2022/10/16/172318#note">Obsidian Github Uploader#Note</a> to understand and fill in</li>
+<em>path</em> is the path where the file was uploaded to the repo, combined with hint and <a class="internal-link" href="/notes/2022/10/16/172318#note">Obsidian Github Uploader#Note</a> to understand and fill in.</li>
 </ul>
 
 <p>If you are still confused by some of the terms about git and github in the settings panel, please check some additional information. I believe that understanding these related contents will not only help you understand how to set up this plugin, but git itself can also help you more in your work and life.</p>
@@ -530,8 +528,7 @@ Starting with version 0.0.2, a checkbox has been added that allows you to choose
 <ol>
   <li>
 <em>branch</em> must be a branch that already exists(main is the default branch that already exists), the plugin cannot create its own branch for uploading.</li>
-  <li>If <em>path</em> left empty, file will be uploaded in the root of the repository; if set to <code class="language-plaintext highlighter-rouge">image/</code>, (<strong>attention <code class="language-plaintext highlighter-rouge">/</code></strong> ) files will be uploaded to the image folder; <strong>if set to <code class="language-plaintext highlighter-rouge">image</code>, files will be combined with <em>image</em> and uploaded to the root, with a name like <code class="language-plaintext highlighter-rouge">image123456xyz.png</code>.</strong>
-</li>
+  <li>If <em>path</em> left empty, file will be uploaded in the root of the repository; if set to <code class="language-plaintext highlighter-rouge">image/</code>, (<strong>attention <code class="language-plaintext highlighter-rouge">/</code></strong> ) files will be uploaded to the image folder; <strong>if set to <code class="language-plaintext highlighter-rouge">image</code>, files will be combined with <em>image</em> and uploaded to the root, with a name like <code class="language-plaintext highlighter-rouge">image123456xyz.png</code></strong>.</li>
   <li>Keep the token safe, it is important and confidential.</li>
   <li>
 <em>github</em> has a limit on upload size. It is not recommended to upload files that are too large to github.</li>
