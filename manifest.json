@@ -10,7 +10,7 @@
     "display": "standalone",
     "icons": [
         {
-            "src": "/pwa.png",
+            "src": "https://s1.ax1x.com/2022/10/30/xIMChq.png",
             "sizes": "144x144"
         }
     ]
