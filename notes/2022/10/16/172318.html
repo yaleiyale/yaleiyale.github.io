@@ -32,15 +32,6 @@
 </script>
 
   
-  <script type="text/javascript">
-  (function(c,l,a,r,i,t,y){
-  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
-  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window, document, "clarity", "script", "dl7z38t2nr");
-</script>
-
-  
   <style>
   .theme-base-07 {
     --theme-base-color: darkslateblue;
@@ -383,7 +374,7 @@
         
         
         <i class="fa-solid fa-file-word fa-fw"></i>
-        4928字
+        4919字
         
         
         <i class="fa-solid fa-clock fa-fw"></i>
@@ -427,7 +418,7 @@
 <p>这个插件可以让你自动上传粘贴到Obsidian的<strong>文件</strong>，直接进入你的github仓库（而不是存储在本地）。<br>
 当然，<strong>它也可以是一个简单的图片上传器</strong>。它能很好地将图片嵌入到markdown文件中。<br>
 但不仅仅是一个图片上传器，你可以上传<strong>各种类型的文件</strong>，只要github接受它们。<br>
-文件链接是否能在Obsidian中呈现，取决于黑曜石本身的支持情况。没关系，即使它们不能被渲染，它们仍然可以作为链接使用。 <img class="emoji" title=":lollipop:" alt=":lollipop:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f36d.png" height="20" width="20"> 只要去掉开头的感叹号就可以了。</p>
+文件链接是否能在Obsidian中呈现，取决于obsidian本身的支持情况。没关系，即使它们不能被渲染，它们仍然可以作为链接使用。 <img class="emoji" title=":lollipop:" alt=":lollipop:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f36d.png" height="20" width="20"> 只要去掉开头的感叹号就可以了。</p>
 
 <p><img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> 注意，</p>
 
@@ -479,11 +470,11 @@
 <p>想要支持更多平台？如果不想费太大力气，可以通过以下方式扩展。</p>
 
 <ul>
-  <li>参照一个现有的uploader文件，比如<code class="language-plaintext highlighter-rouge">uploader_github.ts</code>，建立一个新的uploader子类的结构。</li>
-  <li>使用你的新类。在<code class="language-plaintext highlighter-rouge">config.ts</code>中，添加关于你的类的参数配置，以提供选择并在运行时充当uploader的构造参数。</li>
+  <li>参考现有文件，通过将文件添加到src/Parms、src/Tab、src/uploader来添加新的<em>uploader</em>。</li>
+  <li>使用你的新<em>uploader</em>。在<code class="language-plaintext highlighter-rouge">config.ts</code>中，添加关于你的类的参数配置，以提供选择并在运行时充当uploader的构造参数。</li>
   <li>实现你的新类。</li>
-  <li>在<code class="language-plaintext highlighter-rouge">settings-tab.ts</code>中，将项目添加到<em>choiceRecords</em>，并添加<em>display()</em> 以在setting-tab中显示和设置参数。</li>
-  <li>将您的uploader添加到<code class="language-plaintext highlighter-rouge">main.ts</code>中的switch判断块。</li>
+  <li>在<code class="language-plaintext highlighter-rouge">settings-tab.ts</code>中，添加<em>display()</em> 以在setting-tab中显示和设置参数。</li>
+  <li>将你的<em>uploader</em>添加到<code class="language-plaintext highlighter-rouge">main.ts</code>中的switch判断块。</li>
   <li>测试一下。</li>
 </ul>
 

@@ -32,15 +32,6 @@
 </script>
 
   
-  <script type="text/javascript">
-  (function(c,l,a,r,i,t,y){
-  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
-  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window, document, "clarity", "script", "dl7z38t2nr");
-</script>
-
-  
   <style>
   .theme-base-07 {
     --theme-base-color: darkslateblue;
@@ -359,7 +350,7 @@
         
         
         <i class="fa-solid fa-file-word fa-fw"></i>
-        4301字
+        4374字
         
         
         <i class="fa-solid fa-clock fa-fw"></i>
@@ -381,202 +372,208 @@
             <p>在有几个备选订阅时，各家不同的分流方案会有出入，可以通过parsers进行统一配置。<br />
 以下配置文件来自<a href="https://github.com/Loyalsoldier/clash-rules/issues/97">Issue~Loyalsoldier/clash-rules</a></p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>parsers: # array
-    # - reg: ^.*$ 匹配所有订阅，或  - url: https://example.com/profile.yaml 指定订阅
-    - reg: ^.*$
-    # 删除服务商提供的策略组和规则
-      code: |
-        module.exports.parse = (raw, { yaml }) =&gt; {
-          const rawObj = yaml.parse(raw)
-          const groups = []
-          const rules = []
-          return yaml.stringify({ ...rawObj, 'proxy-groups': groups, rules })
-        } 
-    # 建立自己的配置
-      yaml:
-        prepend-proxy-groups: # 建立策略组
-          - name: 🌚黑名单(GFW)-DIRECT | 🌕白名单(White)-PROXY
-            type: select
-            proxies:
-              - DIRECT # 黑名单模式，意为「只有命中规则的网络流量，才使用代理」
-              - PROXY # 白名单模式，意为「没有命中规则的网络流量，统统使用代理」
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">parsers</span><span class="pi">:</span> <span class="c1"># array</span>
+  <span class="c1"># - reg: ^.*$ 匹配所有订阅，或  - url: https://example.com/profile.yaml 指定订阅</span>
+  <span class="pi">-</span> <span class="na">reg</span><span class="pi">:</span> <span class="s">^.*$</span>
+    <span class="c1"># 删除服务商提供的策略组和规则</span>
+    <span class="na">code</span><span class="pi">:</span> <span class="pi">|</span>
+      <span class="s">module.exports.parse = (raw, { yaml }) =&gt; {</span>
+        <span class="s">const rawObj = yaml.parse(raw)</span>
+        <span class="s">const groups = []</span>
+        <span class="s">const rules = []</span>
+        <span class="s">return yaml.stringify({ ...rawObj, 'proxy-groups': groups, rules })</span>
+      <span class="s">}</span>
+    <span class="c1"># 建立自己的配置</span>
+    <span class="na">yaml</span><span class="pi">:</span>
+      <span class="na">prepend-proxy-groups</span><span class="pi">:</span> <span class="c1"># 建立策略组</span>
+        <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">🐟漏网之鱼</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">select</span>
+          <span class="na">proxies</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="s">DIRECT</span> <span class="c1"># 黑名单模式，意为「只有命中规则的网络流量，才使用代理」</span>
+            <span class="pi">-</span> <span class="s">PROXY</span> <span class="c1"># 白名单模式，意为「没有命中规则的网络流量，统统使用代理」</span>
 
-          - name: PROXY
-            type:  select
-            proxies:
-              - 🔰 AUTO自动选择节点
-              - 🔰 MAN手动选择节点
-              
-          - name: 🔰 AUTO自动选择节点 
-            type: url-test
-            url: http://www.gstatic.com/generate_204 # 测试地址 非select类型分组必要
-            interval: 300
-            olerance: 50
+        <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">PROXY</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">select</span>
+          <span class="na">proxies</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="s">🤖自动节点</span>
+            <span class="pi">-</span> <span class="s">🎯手动节点</span>
 
-          - name: 🔰 MAN手动选择节点 
-            type: select
+        <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">🤖自动节点</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">url-test</span>
+          <span class="na">url</span><span class="pi">:</span> <span class="s">http://www.gstatic.com/generate_204</span> <span class="c1"># 测试地址 非select类型分组必要</span>
+          <span class="na">interval</span><span class="pi">:</span> <span class="m">300</span>
+          <span class="na">olerance</span><span class="pi">:</span> <span class="m">50</span>
 
-              
-          - name: 🛑 ADB广告拦截-REJECT
-            type: select
-            proxies:
-              - REJECT
-              - DIRECT
-              - PROXY
-              
-            
-    # 策略组示例
-         # - name: 分组名
-           # type: select       # 手动选点   
-                 # url-test     # 自动选择延迟最低的节点
-                 # fallback     # 节点故障时自动切换下一个
-                 # laod-balance # 均衡使用分组内的节点
-           # url: http://www.gstatic.com/generate_204 # 测试地址 非select类型分组必要
-           # interval: 300 # 自动测试间隔时间，单位秒 非select类型分组必要
-           # tolerance: 50 # 允许的偏差，节点之间延迟差小于该值不切换 非必要
-           # proxies:  
-             # - 节点名称或其他分组套娃
-            
-        commands:
-          - proxy-groups.🔰 AUTO自动选择节点.proxies=[]proxyNames # 向指定策略组添加订阅中的节点名，可使用正则过滤
-          - proxy-groups.🔰 MAN手动选择节点.proxies=[]proxyNames # 向指定策略组添加订阅中的节点名，可使用正则过滤       
-          
-          # 一些可能用到的正则过滤节点示例，使分组更细致
-          # []proxyNames|a                         # 包含a
-          # []proxyNames|^(.*)(a|b)+(.*)$          # 包含a或b
-          # []proxyNames|^(?=.*a)(?=.*b).*$        # 包含a和b
-          # []proxyNames|^((?!b).)*a((?!b).)*$     # 包含a且不包含b
-          # []proxyNames|^((?!b|c).)*a((?!b|c).)*$ # 包含a且不包含b或c
-          
-    # 添加规则
+        <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">🎯手动节点</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">select</span>
 
-        prepend-rules: # 规则由上往下遍历，如上面规则已经命中，则不再往下处理
-          - RULE-SET,applications,DIRECT
-          - DOMAIN,clash.razord.top,DIRECT
-          - DOMAIN,lestua.ml,DIRECT
-          - DOMAIN,lestua.gq,DIRECT
-          - DOMAIN,oddisk.gq,DIRECT
-          - DOMAIN,ncmapi.gq,DIRECT
-          - DOMAIN,mail.163.com,DIRECT
-          - DOMAIN,yacd.haishan.me,DIRECT
-          - PROCESS-NAME,steam.exe,DIRECT
-          - PROCESS-NAME,EpicGamesLauncher.exe,DIRECT
-          - RULE-SET,private,DIRECT
-          - RULE-SET,reject,🛑 ADB广告拦截-REJECT
-          - RULE-SET,icloud,DIRECT #
-          - RULE-SET,apple,DIRECT # 这三个为国内可直连地址，如果希望走代理改为PROXY
-          - RULE-SET,google,DIRECT # 
-          - RULE-SET,tld-not-cn,PROXY
-          - RULE-SET,gfw,PROXY
-          - RULE-SET,greatfire,PROXY
-          - RULE-SET,telegramcidr,PROXY
-          - RULE-SET,lancidr,DIRECT
-          - RULE-SET,cncidr,DIRECT
-          - GEOIP,LAN,DIRECT
-          - GEOIP,CN,DIRECT
-          - RULE-SET,direct,DIRECT
-          - RULE-SET,proxy,🌚黑名单(GFW)-DIRECT | 🌕白名单(White)-PROXY
-          - MATCH,🌚黑名单(GFW)-DIRECT | 🌕白名单(White)-PROXY # 规则之外的
+        <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">⛔广告拦截</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">select</span>
+          <span class="na">proxies</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="s">REJECT</span>
+            <span class="pi">-</span> <span class="s">DIRECT</span>
+            <span class="pi">-</span> <span class="s">PROXY</span>
 
-    # 添加规则集
-        mix-rule-providers: 
-          reject:
-            type: http
-            behavior: domain
-            url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
-            path: ./ruleset/reject.yaml
-            interval: 86400
-        
-          icloud:
-            type: http
-            behavior: domain
-            url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
-            path: ./ruleset/icloud.yaml
-            interval: 86400
-        
-          apple:
-            type: http
-            behavior: domain
-            url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
-            path: ./ruleset/apple.yaml
-            interval: 86400
-        
-          google:
-            type: http
-            behavior: domain
-            url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
-            path: ./ruleset/google.yaml
-            interval: 86400
-        
-          proxy:
-            type: http
-            behavior: domain
-            url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
-            path: ./ruleset/proxy.yaml
-            interval: 86400
-        
-          direct:
-            type: http
-            behavior: domain
-            url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
-            path: ./ruleset/direct.yaml
-            interval: 86400
-        
-          private:
-            type: http
-            behavior: domain
-            url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt"
-            path: ./ruleset/private.yaml
-            interval: 86400
-        
-          gfw:
-            type: http
-            behavior: domain
-            url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
-            path: ./ruleset/gfw.yaml
-            interval: 86400
-        
-          greatfire:
-            type: http
-            behavior: domain
-            url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"
-            path: ./ruleset/greatfire.yaml
-            interval: 86400
-        
-          tld-not-cn:
-            type: http
-            behavior: domain
-            url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
-            path: ./ruleset/tld-not-cn.yaml
-            interval: 86400
-        
-          telegramcidr:
-            type: http
-            behavior: ipcidr
-            url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
-            path: ./ruleset/telegramcidr.yaml
-            interval: 86400
-        
-          cncidr:
-            type: http
-            behavior: ipcidr
-            url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
-            path: ./ruleset/cncidr.yaml
-            interval: 86400
-        
-          lancidr:
-            type: http
-            behavior: ipcidr
-            url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
-            path: ./ruleset/lancidr.yaml
-            interval: 86400
-        
-          applications:
-            type: http
-            behavior: classical
-            url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
-            path: ./ruleset/applications.yaml
-            interval: 86400
+      <span class="c1"># 策略组示例</span>
+      <span class="c1"># - name: 分组名</span>
+      <span class="c1"># type: select       # 手动选点</span>
+      <span class="c1"># url-test     # 自动节点延迟最低的节点</span>
+      <span class="c1"># fallback     # 节点故障时自动切换下一个</span>
+      <span class="c1"># laod-balance # 均衡使用分组内的节点</span>
+      <span class="c1"># url: http://www.gstatic.com/generate_204 # 测试地址 非select类型分组必要</span>
+      <span class="c1"># interval: 300 # 自动测试间隔时间，单位秒 非select类型分组必要</span>
+      <span class="c1"># tolerance: 50 # 允许的偏差，节点之间延迟差小于该值不切换 非必要</span>
+      <span class="c1"># proxies:</span>
+      <span class="c1"># - 节点名称或其他分组套娃</span>
+
+      <span class="na">commands</span><span class="pi">:</span>
+        <span class="pi">-</span> <span class="s">proxy-groups.🤖自动节点.proxies=[]proxyNames</span> <span class="c1"># 向指定策略组添加订阅中的节点名，可使用正则过滤</span>
+        <span class="pi">-</span> <span class="s">proxy-groups.🎯手动节点.proxies=[]proxyNames</span> <span class="c1"># 向指定策略组添加订阅中的节点名，可使用正则过滤</span>
+
+        <span class="c1"># 一些可能用到的正则过滤节点示例，使分组更细致</span>
+        <span class="c1"># []proxyNames|a                         # 包含a</span>
+        <span class="c1"># []proxyNames|^(.*)(a|b)+(.*)$          # 包含a或b</span>
+        <span class="c1"># []proxyNames|^(?=.*a)(?=.*b).*$        # 包含a和b</span>
+        <span class="c1"># []proxyNames|^((?!b).)*a((?!b).)*$     # 包含a且不包含b</span>
+        <span class="c1"># []proxyNames|^((?!b|c).)*a((?!b|c).)*$ # 包含a且不包含b或c</span>
+
+      <span class="c1"># 添加规则</span>
+
+      <span class="na">prepend-rules</span><span class="pi">:</span> <span class="c1"># 规则由上往下遍历，如上面规则已经命中，则不再往下处理</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,direct,DIRECT</span> <span class="c1">#直连</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,reject,⛔广告拦截</span> <span class="c1">#广告</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,cncidr,DIRECT</span> <span class="c1">#中国大陆 IP</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,icloud,DIRECT</span> <span class="c1">#icloud</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,apple,DIRECT</span> <span class="c1">#苹果可直连</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,private,DIRECT</span> <span class="c1">#私有网络</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,lancidr,DIRECT</span> <span class="c1">#局域网 IP 及保留 IP 地址</span>
+        <span class="pi">-</span> <span class="s">GEOIP,LAN,DIRECT</span>
+        <span class="pi">-</span> <span class="s">GEOIP,CN,DIRECT</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,selfdomain,DIRECT</span> <span class="c1">#自行配置可直连域名</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,applications,DIRECT</span> <span class="c1">#需要直连的常见软件</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,google,PROXY</span> <span class="c1">#Google可直连</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,gfw,PROXY</span> <span class="c1">#GFWList</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,greatfire,PROXY</span> <span class="c1">#GreatFire</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,telegramcidr,PROXY</span> <span class="c1">#Telegram IP</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,proxy,PROXY</span> <span class="c1">#代理</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,tld-not-cn,🐟漏网之鱼</span> <span class="c1">#非中国大陆使用的顶级域名</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,selfapp,🐟漏网之鱼</span> <span class="c1">#个人配置需调控软件</span>
+        <span class="pi">-</span> <span class="s">MATCH,🐟漏网之鱼</span> <span class="c1"># 规则之外的</span>
+
+      <span class="c1"># 添加规则集</span>
+      <span class="na">mix-rule-providers</span><span class="pi">:</span>
+        <span class="na">reject</span><span class="pi">:</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">http</span>
+          <span class="na">behavior</span><span class="pi">:</span> <span class="s">domain</span>
+          <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"</span>
+          <span class="na">path</span><span class="pi">:</span> <span class="s">./ruleset/reject.yaml</span>
+          <span class="na">interval</span><span class="pi">:</span> <span class="m">86400</span>
+
+        <span class="na">icloud</span><span class="pi">:</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">http</span>
+          <span class="na">behavior</span><span class="pi">:</span> <span class="s">domain</span>
+          <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"</span>
+          <span class="na">path</span><span class="pi">:</span> <span class="s">./ruleset/icloud.yaml</span>
+          <span class="na">interval</span><span class="pi">:</span> <span class="m">86400</span>
+
+        <span class="na">apple</span><span class="pi">:</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">http</span>
+          <span class="na">behavior</span><span class="pi">:</span> <span class="s">domain</span>
+          <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"</span>
+          <span class="na">path</span><span class="pi">:</span> <span class="s">./ruleset/apple.yaml</span>
+          <span class="na">interval</span><span class="pi">:</span> <span class="m">86400</span>
+
+        <span class="na">google</span><span class="pi">:</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">http</span>
+          <span class="na">behavior</span><span class="pi">:</span> <span class="s">domain</span>
+          <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"</span>
+          <span class="na">path</span><span class="pi">:</span> <span class="s">./ruleset/google.yaml</span>
+          <span class="na">interval</span><span class="pi">:</span> <span class="m">86400</span>
+
+        <span class="na">proxy</span><span class="pi">:</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">http</span>
+          <span class="na">behavior</span><span class="pi">:</span> <span class="s">domain</span>
+          <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"</span>
+          <span class="na">path</span><span class="pi">:</span> <span class="s">./ruleset/proxy.yaml</span>
+          <span class="na">interval</span><span class="pi">:</span> <span class="m">86400</span>
+
+        <span class="na">direct</span><span class="pi">:</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">http</span>
+          <span class="na">behavior</span><span class="pi">:</span> <span class="s">domain</span>
+          <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"</span>
+          <span class="na">path</span><span class="pi">:</span> <span class="s">./ruleset/direct.yaml</span>
+          <span class="na">interval</span><span class="pi">:</span> <span class="m">86400</span>
+
+        <span class="na">private</span><span class="pi">:</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">http</span>
+          <span class="na">behavior</span><span class="pi">:</span> <span class="s">domain</span>
+          <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt"</span>
+          <span class="na">path</span><span class="pi">:</span> <span class="s">./ruleset/private.yaml</span>
+          <span class="na">interval</span><span class="pi">:</span> <span class="m">86400</span>
+
+        <span class="na">gfw</span><span class="pi">:</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">http</span>
+          <span class="na">behavior</span><span class="pi">:</span> <span class="s">domain</span>
+          <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"</span>
+          <span class="na">path</span><span class="pi">:</span> <span class="s">./ruleset/gfw.yaml</span>
+          <span class="na">interval</span><span class="pi">:</span> <span class="m">86400</span>
+
+        <span class="na">greatfire</span><span class="pi">:</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">http</span>
+          <span class="na">behavior</span><span class="pi">:</span> <span class="s">domain</span>
+          <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"</span>
+          <span class="na">path</span><span class="pi">:</span> <span class="s">./ruleset/greatfire.yaml</span>
+          <span class="na">interval</span><span class="pi">:</span> <span class="m">86400</span>
+
+        <span class="na">tld-not-cn</span><span class="pi">:</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">http</span>
+          <span class="na">behavior</span><span class="pi">:</span> <span class="s">domain</span>
+          <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"</span>
+          <span class="na">path</span><span class="pi">:</span> <span class="s">./ruleset/tld-not-cn.yaml</span>
+          <span class="na">interval</span><span class="pi">:</span> <span class="m">86400</span>
+
+        <span class="na">telegramcidr</span><span class="pi">:</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">http</span>
+          <span class="na">behavior</span><span class="pi">:</span> <span class="s">ipcidr</span>
+          <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"</span>
+          <span class="na">path</span><span class="pi">:</span> <span class="s">./ruleset/telegramcidr.yaml</span>
+          <span class="na">interval</span><span class="pi">:</span> <span class="m">86400</span>
+
+        <span class="na">cncidr</span><span class="pi">:</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">http</span>
+          <span class="na">behavior</span><span class="pi">:</span> <span class="s">ipcidr</span>
+          <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"</span>
+          <span class="na">path</span><span class="pi">:</span> <span class="s">./ruleset/cncidr.yaml</span>
+          <span class="na">interval</span><span class="pi">:</span> <span class="m">86400</span>
+
+        <span class="na">lancidr</span><span class="pi">:</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">http</span>
+          <span class="na">behavior</span><span class="pi">:</span> <span class="s">ipcidr</span>
+          <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"</span>
+          <span class="na">path</span><span class="pi">:</span> <span class="s">./ruleset/lancidr.yaml</span>
+          <span class="na">interval</span><span class="pi">:</span> <span class="m">86400</span>
+
+        <span class="na">applications</span><span class="pi">:</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">http</span>
+          <span class="na">behavior</span><span class="pi">:</span> <span class="s">classical</span>
+          <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"</span>
+          <span class="na">path</span><span class="pi">:</span> <span class="s">./ruleset/applications.yaml</span>
+          <span class="na">interval</span><span class="pi">:</span> <span class="m">86400</span>
+
+        <span class="na">selfdomain</span><span class="pi">:</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">http</span>
+          <span class="na">behavior</span><span class="pi">:</span> <span class="s">domain</span>
+          <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://cdn.jsdelivr.net/gh/yaleiyale/yahosting@main/self-rules/selfdomain.txt"</span>
+          <span class="na">path</span><span class="pi">:</span> <span class="s">./ruleset/selfdomain.yaml</span>
+          <span class="na">interval</span><span class="pi">:</span> <span class="m">86400</span>
+
+        <span class="na">selfapp</span><span class="pi">:</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">http</span>
+          <span class="na">behavior</span><span class="pi">:</span> <span class="s">classical</span>
+          <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://cdn.jsdelivr.net/gh/yaleiyale/yahosting@main/self-rules/selfapp.txt"</span>
+          <span class="na">path</span><span class="pi">:</span> <span class="s">./ruleset/selfapp.yaml</span>
+          <span class="na">interval</span><span class="pi">:</span> <span class="m">86400</span>
+
 </code></pre></div></div>
 
         </content>
