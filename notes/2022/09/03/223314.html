@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="通过Parsers统一不同服务商的分流方案" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-10-09T22:51:21+08:00","datePublished":"2022-09-03T20:24:58+08:00","description":"在有几个备选订阅时，各家不同的分流方案会有出入，可以通过parsers进行统一配置。 以下配置文件来自Issue~Loyalsoldier/clash-rules","headline":"通过Parsers统一不同服务商的分流方案","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.ml/notes/2022/09/03/223314"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://s1.ax1x.com/2022/10/30/xIMChq.png"},"name":"yaleiyale"},"url":"https://lestua.ml/notes/2022/09/03/223314"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-11-05T12:36:55+08:00","datePublished":"2022-09-03T20:24:58+08:00","description":"在有几个备选订阅时，各家不同的分流方案会有出入，可以通过parsers进行统一配置。 以下配置文件来自Issue~Loyalsoldier/clash-rules","headline":"通过Parsers统一不同服务商的分流方案","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.ml/notes/2022/09/03/223314"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://s1.ax1x.com/2022/10/30/xIMChq.png"},"name":"yaleiyale"},"url":"https://lestua.ml/notes/2022/09/03/223314"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -341,7 +341,7 @@
     <span class="post-date">
         
         <i class="fa-solid fa-calendar-day fa-fw"></i>
-        改于：2022-10-09 22:51:21 Sunday
+        改于：2022-11-05 12:36:55 Saturday
         <br>
         
         
@@ -350,7 +350,7 @@
         
         
         <i class="fa-solid fa-file-word fa-fw"></i>
-        4374字
+        4368字
         
         
         <i class="fa-solid fa-clock fa-fw"></i>
@@ -386,11 +386,17 @@
     <span class="c1"># 建立自己的配置</span>
     <span class="na">yaml</span><span class="pi">:</span>
       <span class="na">prepend-proxy-groups</span><span class="pi">:</span> <span class="c1"># 建立策略组</span>
+        <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">🚀不时之需</span>
+          <span class="na">type</span><span class="pi">:</span> <span class="s">select</span>
+          <span class="na">proxies</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="s">DIRECT</span> <span class="c1"># 直连</span>
+            <span class="pi">-</span> <span class="s">PROXY</span> <span class="c1"># 代理</span>
+
         <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">🐟漏网之鱼</span>
           <span class="na">type</span><span class="pi">:</span> <span class="s">select</span>
           <span class="na">proxies</span><span class="pi">:</span>
-            <span class="pi">-</span> <span class="s">DIRECT</span> <span class="c1"># 黑名单模式，意为「只有命中规则的网络流量，才使用代理」</span>
-            <span class="pi">-</span> <span class="s">PROXY</span> <span class="c1"># 白名单模式，意为「没有命中规则的网络流量，统统使用代理」</span>
+            <span class="pi">-</span> <span class="s">DIRECT</span> <span class="c1"># 直连</span>
+            <span class="pi">-</span> <span class="s">PROXY</span> <span class="c1"># 代理</span>
 
         <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">PROXY</span>
           <span class="na">type</span><span class="pi">:</span> <span class="s">select</span>
@@ -440,24 +446,24 @@
       <span class="c1"># 添加规则</span>
 
       <span class="na">prepend-rules</span><span class="pi">:</span> <span class="c1"># 规则由上往下遍历，如上面规则已经命中，则不再往下处理</span>
-        <span class="pi">-</span> <span class="s">RULE-SET,direct,DIRECT</span> <span class="c1">#直连</span>
         <span class="pi">-</span> <span class="s">RULE-SET,reject,⛔广告拦截</span> <span class="c1">#广告</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,direct,DIRECT</span> <span class="c1">#直连</span>
         <span class="pi">-</span> <span class="s">RULE-SET,cncidr,DIRECT</span> <span class="c1">#中国大陆 IP</span>
-        <span class="pi">-</span> <span class="s">RULE-SET,icloud,DIRECT</span> <span class="c1">#icloud</span>
-        <span class="pi">-</span> <span class="s">RULE-SET,apple,DIRECT</span> <span class="c1">#苹果可直连</span>
         <span class="pi">-</span> <span class="s">RULE-SET,private,DIRECT</span> <span class="c1">#私有网络</span>
         <span class="pi">-</span> <span class="s">RULE-SET,lancidr,DIRECT</span> <span class="c1">#局域网 IP 及保留 IP 地址</span>
         <span class="pi">-</span> <span class="s">GEOIP,LAN,DIRECT</span>
         <span class="pi">-</span> <span class="s">GEOIP,CN,DIRECT</span>
-        <span class="pi">-</span> <span class="s">RULE-SET,selfdomain,DIRECT</span> <span class="c1">#自行配置可直连域名</span>
-        <span class="pi">-</span> <span class="s">RULE-SET,applications,DIRECT</span> <span class="c1">#需要直连的常见软件</span>
-        <span class="pi">-</span> <span class="s">RULE-SET,google,PROXY</span> <span class="c1">#Google可直连</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,selfdomain,🚀不时之需</span> <span class="c1">#自行配置可直连域名</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,tld-not-cn,🚀不时之需</span> <span class="c1">#非中国大陆使用的顶级域名</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,selfapp,🚀不时之需</span> <span class="c1">#个人配置需调控软件</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,applications,🚀不时之需</span> <span class="c1">#需要直连的常见软件</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,google,🚀不时之需</span> <span class="c1">#Google可直连</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,icloud,🚀不时之需</span> <span class="c1">#icloud</span>
+        <span class="pi">-</span> <span class="s">RULE-SET,apple,🚀不时之需</span> <span class="c1">#苹果可直连</span>
         <span class="pi">-</span> <span class="s">RULE-SET,gfw,PROXY</span> <span class="c1">#GFWList</span>
         <span class="pi">-</span> <span class="s">RULE-SET,greatfire,PROXY</span> <span class="c1">#GreatFire</span>
         <span class="pi">-</span> <span class="s">RULE-SET,telegramcidr,PROXY</span> <span class="c1">#Telegram IP</span>
         <span class="pi">-</span> <span class="s">RULE-SET,proxy,PROXY</span> <span class="c1">#代理</span>
-        <span class="pi">-</span> <span class="s">RULE-SET,tld-not-cn,🐟漏网之鱼</span> <span class="c1">#非中国大陆使用的顶级域名</span>
-        <span class="pi">-</span> <span class="s">RULE-SET,selfapp,🐟漏网之鱼</span> <span class="c1">#个人配置需调控软件</span>
         <span class="pi">-</span> <span class="s">MATCH,🐟漏网之鱼</span> <span class="c1"># 规则之外的</span>
 
       <span class="c1"># 添加规则集</span>
