@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Obsidian Emo Uploader" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-11-07T16:32:50+08:00","datePublished":"2022-10-16T17:23:05+08:00","description":"[[Obsidian Emo Uploader#设置相关]] [[Obsidian Emo Uploader#English]]","headline":"Obsidian Emo Uploader","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.ml/notes/2022/10/16/172318"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://s1.ax1x.com/2022/10/30/xIMChq.png"},"name":"yaleiyale"},"url":"https://lestua.ml/notes/2022/10/16/172318"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-11-07T21:53:41+08:00","datePublished":"2022-10-16T17:23:05+08:00","description":"[[Obsidian Emo Uploader#设置相关]] [[Obsidian Emo Uploader#English]]","headline":"Obsidian Emo Uploader","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.ml/notes/2022/10/16/172318"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://s1.ax1x.com/2022/10/30/xIMChq.png"},"name":"yaleiyale"},"url":"https://lestua.ml/notes/2022/10/16/172318"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -184,18 +184,20 @@
   <li>
 <a href="#obsidian-emo-uploader">Obsidian Emo Uploader</a>
     <ol>
+      <li><a href="#%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84">它是如何工作的</a></li>
+      <li><a href="#%E9%85%8D%E7%BD%AE">配置</a></li>
       <li>
 <a href="#%E5%85%B3%E4%BA%8E%E4%B8%8A%E4%BC%A0%E5%88%B0github">关于上传到github</a>
         <ol>
           <li><a href="#%E5%AE%83%E6%98%AF%E4%BB%80%E4%B9%88">它是什么？</a></li>
-          <li><a href="#%E5%AE%83%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84">它是如何工作的</a></li>
-          <li><a href="#%E9%85%8D%E7%BD%AE">配置</a></li>
+          <li><a href="#%E5%85%B3%E4%BA%8Egithub%E4%B8%8Ejsdelivr%E7%9A%84%E7%94%A8%E6%88%B7%E5%8D%8F%E8%AE%AE">关于Github与jsdelivr的用户协议</a></li>
         </ol>
       </li>
       <li><a href="#%E5%85%B3%E4%BA%8E%E5%85%B6%E4%BB%96%E5%B9%B3%E5%8F%B0">关于其他平台</a></li>
       <li><a href="#%E5%A6%82%E4%BD%95%E6%89%A9%E5%B1%95">如何扩展</a></li>
+      <li><a href="#%E6%B3%A8%E6%84%8F">注意</a></li>
       <li>
-<a href="#%E8%AE%BE%E7%BD%AE%E7%9B%B8%E5%85%B3">设置相关</a>
+<a href="#github%E8%AE%BE%E7%BD%AE%E7%9B%B8%E5%85%B3">Github设置相关</a>
         <ol>
           <li><a href="#github%E9%85%8D%E7%BD%AE%E7%BB%99%E9%9D%9E%E6%8A%80%E6%9C%AF%E4%BA%BA%E5%91%98">Github配置（给非技术人员）</a></li>
           <li><a href="#%E6%B3%A8%E6%84%8F%E9%A1%B9">注意项</a></li>
@@ -364,7 +366,7 @@
     <span class="post-date">
         
         <i class="fa-solid fa-calendar-day fa-fw"></i>
-        改于：2022-11-07 16:32:50 Monday
+        改于：2022-11-07 21:53:41 Monday
         <br>
         
         
@@ -373,11 +375,11 @@
         
         
         <i class="fa-solid fa-file-word fa-fw"></i>
-        4590字
+        4863字
         
         
         <i class="fa-solid fa-clock fa-fw"></i>
-        16分
+        17分
         
         
         <br>
@@ -405,36 +407,11 @@
   <li>SM.MS</li>
 </ul>
 
-<p>由于不同平台支持的文件范围不同，在这个插件中对你粘贴的文件类型没有限制。这将导致不支持的类型在没有正确响应的情况下上传失败。幸运的是，在文档中嵌入奇怪文件类型的情况并不多。(不会很多吧？)<br>
-如果您需要将文件作为附件嵌入，请暂时关闭插件。<br>
-一般来说，Github支持任何文件类型，Cloudinary支持图像(png)、视频(mp4)和音频(mp3)等媒体类型文件，SM.MS、ImgURL支持常见的图像类型。试图上传一个平台不支持或者体积过大的文件将会产生一个类似<code class="language-plaintext highlighter-rouge">![](undefined)</code> 的字符串</p>
-
-<h2 id="关于上传到github">关于上传到github</h2>
-
-<p>对于来自代码世界之外的不熟悉的访问者，Github是一个著名的互联网托管服务，用于软件开发和使用Git的版本控制。</p>
-
-<h3 id="它是什么">它是什么？</h3>
-
-<p>这个插件可以让你自动上传粘贴到Obsidian的<strong>文件</strong>，直接进入你的github仓库（而不是存储在本地）。<br>
-当然，<strong>它也可以是一个简单的图片上传器</strong>。它能很好地将图片嵌入到markdown文件中。<br>
-但不仅仅是一个图片上传器，你可以上传<strong>各种类型的文件</strong>，只要github接受它们。<br>
-文件链接是否能在Obsidian中呈现，取决于obsidian本身的支持情况。没关系，即使它们不能被渲染，它们仍然可以作为链接使用。 <img class="emoji" title=":lollipop:" alt=":lollipop:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f36d.png" height="20" width="20"> 只要去掉开头的感叹号就可以了。</p>
-
-<p><img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> 注意，</p>
-
-<ol>
-  <li>github目标仓库必须为public，这意味着上传的所有文件都是公开。github也更应该是为乐于共享者而服务的。请确保对你来说分享你上传的文件是无害的。我个人更期待着有一天你的某次上传就是为了无私共享。<img class="emoji" title=":sunflower:" alt=":sunflower:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f33b.png" height="20" width="20">
-</li>
-  <li>不要上传空文件。在这里是没有意义的，是错误的。</li>
-  <li>建议勾选面板中的随机文件名。重复的文件名会引起错误。随机文件名将大大避免重复的文件名。</li>
-  <li>一般来说，Github足够慷慨。但你需要掌握分寸，不要太滥用Github的服务。放轻松，正常使用，比如在Github pages中使用，当然是可以接受的。但如果你需要大量使用图片，请使用专业的图床服务（现在该项服务已经集成到了本插件中，包括cloudinary服务）。可以尝试使用<a href="https://github.com/jordanhandy/obsidian-cloudinary-uploader">obsidian-cloudinary-uploader</a>。超出正常范围（如在单个资源库中存储超过1GB的文件），滥用Github，上传不良文件，造成不良影响，可能会导致你的Github库甚至账户受到影响。</li>
-</ol>
-
-<h3 id="它是如何工作的">它是如何工作的</h3>
+<h2 id="它是如何工作的">它是如何工作的</h2>
 
 <p><img src="https://fastly.jsdelivr.net/gh/yaleiyale/yahosting@main/obsidian/1667809410000sjue9m.gif" alt=""></p>
 
-<h3 id="配置">配置</h3>
+<h2 id="配置">配置</h2>
 
 <ol>
   <li>禁用obsidian安全模式</li>
@@ -452,15 +429,47 @@
     </ul>
   </li>
   <li>启用该插件</li>
-  <li>配置设置</li>
+  <li>配置设置 <img class="emoji" title=":point_right:" alt=":point_right:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f449.png" height="20" width="20"> <a class="internal-link" href="/notes/2022/10/16/172318#github%E8%AE%BE%E7%BD%AE%E7%9B%B8%E5%85%B3">Obsidian Emo Uploader#Github设置相关</a>
+</li>
   <li>享受便利 <img class="emoji" title=":star2:" alt=":star2:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f31f.png" height="20" width="20">
+</li>
+</ol>
+
+<h2 id="关于上传到github">关于上传到github</h2>
+
+<p>对于来自代码世界之外的不熟悉的访问者，Github是一个著名的互联网托管服务，用于软件开发和使用Git的版本控制。<br>
+如果您需要有关托管图像的更多帮助，请查看<a href="https://github.com/yaleiyale/obsidian-emo-uploader#about-the-other">本插件的其他部分</a>.</p>
+
+<h3 id="它是什么">它是什么？</h3>
+
+<p>这个插件可以让你自动上传粘贴到Obsidian的<strong>文件</strong>，直接进入你的github仓库（而不是存储在本地）。当你想在笔记中提到一个你认为很适合共享的文件时，比如脚本、配置文件或任何东西，这很有用。<br>
+当然，它也可以是一个简单的图片上传器。它能很好地将图片嵌入到markdown文件中。<br>
+但不仅仅是一个图片上传器，你可以上传<strong>各种类型的文件</strong>，只要github接受它们。<br>
+文件链接是否能在Obsidian中呈现，取决于obsidian本身的支持情况。没关系，即使它们不能被渲染，它们仍然可以作为链接使用。 <img class="emoji" title=":lollipop:" alt=":lollipop:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f36d.png" height="20" width="20"> 只要去掉开头的感叹号就可以了。</p>
+
+<h3 id="关于github与jsdelivr的用户协议">关于Github与jsdelivr的用户协议</h3>
+
+<p><a href="https://docs.github.com/cn/site-policy/github-terms/github-terms-of-service">GitHub terms-of-service</a><br>
+<a href="https://www.jsdelivr.com/terms/acceptable-use-policy-jsdelivr-net">jsdelivr Use Policy</a></p>
+
+<p><img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> 注意，</p>
+
+<ol>
+  <li>github目标仓库必须为public，这意味着上传的所有文件都是公开。github也更应该是为乐于共享者而服务的。请确保对你来说分享你上传的文件是无害的。我个人更期待着有一天你的某次上传就是为了无私共享。<img class="emoji" title=":sunflower:" alt=":sunflower:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f33b.png" height="20" width="20">
+</li>
+  <li>不要上传空文件。在这里是没有意义的，是错误的。</li>
+  <li>建议勾选面板中的随机文件名。重复的文件名会引起错误。随机文件名将大大避免重复的文件名。</li>
+  <li>一般来说，Github足够慷慨。但你需要掌握分寸，不要太滥用Github的服务。放轻松，正常使用，比如在Github pages中使用，当然是可以接受的。但如果你需要大量使用图片，请使用专业的图床服务（现在该项服务已经集成到了本插件中）超出正常范围（如在单个资源库中存储超过1GB的文件），滥用Github，上传不良文件，造成不良影响，可能会导致你的Github库甚至账户受到影响。</li>
+  <li>5.我在这里使用到了<a href="https://www.jsdelivr.com/">jsdelivr</a>。它是免费的。就像上面一样，不要滥用它。就像我在视频中所做的一样，在传输大型视频时使用jsdelivr是不好的，我已经删除了它。<em>我的案例是一个小尺寸视频</em> <img class="emoji" title=":smirk_cat:" alt=":smirk_cat:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f63c.png" height="20" width="20">
 </li>
 </ol>
 
 <h2 id="关于其他平台">关于其他平台</h2>
 
-<p><a href="https://smms.app/">SM.MS</a> ，<a href="https://www.imgurl.org/">ImgURL</a>是图床，可以让你上传<strong>图片</strong>到存储账号。对于生活在中国的用户来说，这个网站比Github和Cloudinary更容易访问到。 注册一个帐户，并生成您的令牌。只要把你的参数填入正确的位置上，然后你就可以像上面提到的上传到Github那样使用它了。<br>
-关于Cloudinary，请参考<a href="https://github.com/jordanhandy/obsidian-cloudinary-uploader/blob/main/README.md">obsidian-cloudinar-uploader/README.md</a>，当然本插件也支持Cloudinary。如果你发现Cloudinary已经足够满足你的需求，你可以直接使用它。不过我的脚本体积更小 <img class="emoji" title=":flushed:" alt=":flushed:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f633.png" height="20" width="20"></p>
+<p><a href="https://smms.app/">SM.MS</a> ，<a href="https://www.imgurl.org/">ImgURL</a>是图床，可以让你上传<strong>图片</strong>到存储账号。对于生活在中国的用户来说，这个网站比Github和Cloudinary更容易访问到。 注册一个帐户，并生成您的令牌。只要把你的参数填入正确的位置上，然后你就可以像上面的视频里那样使用它了。<br>
+关于Cloudinary，请参考<a href="https://github.com/jordanhandy/obsidian-cloudinary-uploader/blob/main/README.md">obsidian-cloudinar-uploader/README.md</a>，当然本插件也支持Cloudinary。如果你发现Cloudinary已经足够满足你的需求，你可以直接使用它。不过我的脚本体积更小 <img class="emoji" title=":flushed:" alt=":flushed:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f633.png" height="20" width="20"><br>
+请自行检查服务限制。<br>
+<img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> 图像是平台上是公开可访问的。不要上传违禁文件！</p>
 
 <h2 id="如何扩展">如何扩展</h2>
 
@@ -477,7 +486,13 @@
 
 <p>搞定了！😽</p>
 
-<h2 id="设置相关">设置相关</h2>
+<h2 id="注意">注意</h2>
+
+<p>由于不同平台支持的文件范围不同，在这个插件中对你粘贴的文件类型没有限制。这将导致不支持的类型在没有正确响应的情况下上传失败。幸运的是，在文档中嵌入奇怪文件类型的情况并不多。(不会很多吧？)<br>
+如果您需要将文件作为附件嵌入，请暂时关闭插件。<br>
+一般来说，Github支持任何文件类型，Cloudinary支持图像(png)、视频(mp4)和音频(mp3)等媒体类型文件，SM.MS、ImgURL支持常见的图像类型。试图上传一个平台不支持或者体积过大的文件将会产生一个类似<code class="language-plaintext highlighter-rouge">![](undefined)</code> 的字符串</p>
+
+<h2 id="github设置相关">Github设置相关</h2>
 
 <p>第一次安装启用插件后的设置面板会是这样：</p>
 
@@ -575,6 +590,12 @@ Please save the string in time, it will only be visible once and cannot be retri
                 <div class="backlink-box">
                     <a class="internal-link" href="/notes/2022/08/29/223912">obsidian插件使用存档</a><br>
                     <!-- <div style="font-size: 0.9em">Advanced Tables1 Better footnote2 Dataview3 （高阶玩法，数据库嘛，必然是较大数据集、深度功能需求、复杂系统才凸显价值） Excalidraw4 Footnote Shortcut5 Image Toolkit6 Linter7 Obsidian Charts8 Obsidian Cloudinary Uploader9 Recent Files10 Remember...</div> -->
+                </div>
+                
+                <div class="backlink-box">
+                    <a class="internal-link" href="/notes/2022/08/29/223927">obsidian结合jekyll</a><br>
+                    <!-- <div style="font-size: 0.9em">obsidian采用markdown
+</div> -->
                 </div>
                 
                 <div class="backlink-box">
