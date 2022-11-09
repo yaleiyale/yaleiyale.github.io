@@ -395,7 +395,7 @@ end
 
 <p><strong>对称矩阵</strong>：</p>
 
-<p><img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1658755926/image_note/wxcw4khwhiyplfpgv5gn.png" alt="" title=" 对称矩阵 " /></p>
+<p><img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1658755926/obsidian/wxcw4khwhiyplfpgv5gn.png" alt="" title=" 对称矩阵 " /></p>
 
 <p><strong>策略</strong>：只存储主对角线和下（上）三角区，按行（列）优先原则将各元素存到一维数组中<br />
 <strong>数组大小</strong>：$\frac{n(n+1)}{2}$<br />
@@ -409,13 +409,13 @@ end
 
 <h2 id="三角矩阵的压缩">三角矩阵的压缩</h2>
 
-<p><img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1659600798/image_note/q0t3oapscxsx75ydjbcw.png" alt="" /><br />
+<p><img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1659600798/obsidian/q0t3oapscxsx75ydjbcw.png" alt="" /><br />
 参考<span title="no link." class="invalid-link">  <span class="invalid-link-brackets">[[</span>  矩阵的压缩存储#对称矩阵 1 的压缩  <span class="invalid-link-brackets">]]</span></span>，存储时只需加一位保存常量c<br />
 常数区映射到的一维数组下标k=$\frac{n(n+1)}{2}$</p>
 
 <h2 id="三对角矩阵的压缩">三对角矩阵的压缩</h2>
 
-<p><img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1659601326/image_note/e4spkq2kvrheqlxbdrkr.png" alt="" /><br />
+<p><img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1659601326/obsidian/e4spkq2kvrheqlxbdrkr.png" alt="" /><br />
 又称带状矩阵 当|i-j|&gt;1时，有 a<sub>i</sub>,<sub>j</sub>=0(1≤i,j≤n)<br />
 <strong>策略</strong>：只存储三对角区域的值，按行（列）优先原则将各元素存到一维数组中<br />
 <strong>数组大小</strong>：3n-2</p>
@@ -437,7 +437,7 @@ i≥(k+2)/3，则i = $\lfloor (k+2)/3 \rfloor$</p>
 <ol>
   <li>顺序存储；三元组；保存行号、列号和数值</li>
   <li>十字链表法<br />
-<img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1659604655/image_note/ukfcde69p5zub7700hjo.png" alt="" /></li>
+<img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1659604655/obsidian/ukfcde69p5zub7700hjo.png" alt="" /></li>
 </ol>
 
 <hr />

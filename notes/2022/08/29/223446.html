@@ -377,7 +377,7 @@
 <h1 id="actions修缮完成">Actions修缮完成</h1>
 
 <p>发现在<span title="no link." class="invalid-link">  <span class="invalid-link-brackets">[[</span>  2022-08-15#^code  <span class="invalid-link-brackets">]]</span></span>的版本中的缓存效果并没有起效过，在搜集资料后将<code class="language-plaintext highlighter-rouge">cache@v3</code>，改为了<code class="language-plaintext highlighter-rouge">ruby/setup-ruby@v1</code>。在使用该action时，需注意云部署环境与<strong>GemFile</strong>的匹配，建议在相同环境下生成<strong>GemFile</strong>及<strong>GemFile.lock</strong>，确定<strong>Ruby</strong>版本，以进行参数设定。后发现在<code class="language-plaintext highlighter-rouge">jekyll-action@v2</code>中仍有冗余部署操作如安装<strong>bundle</strong>、插件。遂硬着头皮看<code class="language-plaintext highlighter-rouge">jekyll-action@v2</code>源码，在<a href="https://github.com/helaili/jekyll-action/blob/master/entrypoint.sh">jekyll-action/entrypoint.sh at master · helaili/jekyll-action · GitHub</a>中发现一句<code class="language-plaintext highlighter-rouge">bundle exec ${BUNDLE_ARGS} jekyll build</code>觉得是必要，仅要且可行操作。遂试之。一看，<strong>Complete</strong>，可行。最终顺利为我的actions提速。<br />
-<img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1660987147/image_note/wmpeolsfgpftrtron0x6.png" alt="" /><strong>满意</strong></p>
+<img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1660987147/obsidian/wmpeolsfgpftrtron0x6.png" alt="" /><strong>满意</strong></p>
 
 <p>用于发布基于Jekyll的博客的Github actions，<strong>最终版本</strong></p>
 

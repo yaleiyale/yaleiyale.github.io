@@ -382,8 +382,8 @@
 <h1 id="白嫖-cdn-路上的小惊喜">白嫖 CDN 路上的小惊喜</h1>
 
 <p>!<span title="no link." class="invalid-link">  <span class="invalid-link-brackets">[[</span>  2022-08-06#^cdn  <span class="invalid-link-brackets">]]</span></span>所提到的 jsdelivr 加速服务，在中国大陆受到了限制，辗转尝试了另一些服务提供商，情况都是一样的。本来尝试着是否要做一个新域名借助 CloudFlare 的 CDN 服务进行加速。已经在<a href="https://github.com/yaleiyale/kanbanniang_collection">GitHub - yaleiyale/web_kanbanniang_collection</a>建好 pages 了，就在想验证静态资源访问是否正常时，发现该 pages 的主域名默认是<code class="language-plaintext highlighter-rouge">lestua.ml</code>。看来在对个人 pages 进行自定义域名后，以后的项目 pages 会参照个人 pages 的域名配置设定默认主域名。CloudFlare 的 CDN 服务是伴随 DNS 的，这样只要域名一致就可以得到 CDN 加速。如此情况下，以后再新建的 repo，如果需要作为静态资源托管，只要开启 pages，确认 repo 的 pages 域名跟随个人 pages 的域名，就可以得到 CloudFlare 为该域名提供的 CDN 加速。虽然各个 repo 共用了一个域名的 CDN 资源配额，但是在访问量不大的情况下，提高方便程度利大于弊。<br />
-后以直接访问项目 pages 下的静态资源网址的写法，<img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1660202689/image_note/gvzhyuiqjewgr7qbhard.png" alt="" />进行 build 后发布站点。登录站点，查验浏览器网络请求信息，验证了<br />
-<img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1660203416/image_note/f4y5bvzrihihejsmxr5l.png" alt="" /></p>
+后以直接访问项目 pages 下的静态资源网址的写法，<img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1660202689/obsidian/gvzhyuiqjewgr7qbhard.png" alt="" />进行 build 后发布站点。登录站点，查验浏览器网络请求信息，验证了<br />
+<img src="https://res.cloudinary.com/dbbz8b3ce/image/upload/v1660203416/obsidian/f4y5bvzrihihejsmxr5l.png" alt="" /></p>
 
 <p>资源确实经过了 CloudFlare 的 CDN 加速。虽然速度较缓<del>巨慢</del>，但最起码已经可以进行直接访问了。绝对是<strong>重大进步!</strong></p>
 
