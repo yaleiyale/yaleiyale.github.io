@@ -12,8 +12,8 @@
 <meta property="og:title" content="Mermaid书写范例实例" />
 <meta name="author" content="yaleiyale" />
 <meta property="og:locale" content="zh" />
-<meta name="description" content="依赖 mermaid 支持，遵循语法进行书写可实现渲染后得到流图" />
-<meta property="og:description" content="依赖 mermaid 支持，遵循语法进行书写可实现渲染后得到流图" />
+<meta name="description" content="依赖 mermaid 支持，遵循语法进行书写可实现渲染出图" />
+<meta property="og:description" content="依赖 mermaid 支持，遵循语法进行书写可实现渲染出图" />
 <link rel="canonical" href="https://lestua.ml/notes/2022/08/29/223909" />
 <meta property="og:url" content="https://lestua.ml/notes/2022/08/29/223909" />
 <meta property="og:site_name" content="时砂凝几页" />
@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Mermaid书写范例实例" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-10-09T22:51:58+08:00","datePublished":"2022-07-30T20:46:10+08:00","description":"依赖 mermaid 支持，遵循语法进行书写可实现渲染后得到流图","headline":"Mermaid书写范例实例","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.ml/notes/2022/08/29/223909"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://s1.ax1x.com/2022/10/30/xIMChq.png"},"name":"yaleiyale"},"url":"https://lestua.ml/notes/2022/08/29/223909"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yaleiyale"},"dateModified":"2022-11-10T14:55:22+08:00","datePublished":"2022-07-30T20:46:10+08:00","description":"依赖 mermaid 支持，遵循语法进行书写可实现渲染出图","headline":"Mermaid书写范例实例","mainEntityOfPage":{"@type":"WebPage","@id":"https://lestua.ml/notes/2022/08/29/223909"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://s1.ax1x.com/2022/10/30/xIMChq.png"},"name":"yaleiyale"},"url":"https://lestua.ml/notes/2022/08/29/223909"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -190,28 +190,31 @@
       
       
       <ol id="toc">
-  <li><a href="#%E4%B8%BB%E8%A6%81%E6%A6%82%E5%BF%B5">主要概念</a></li>
-  <li><a href="#%E8%BF%9E%E7%BA%BF">连线</a>
+  <li><a href="#%E6%B5%81%E7%A8%8B%E5%9B%BE">流程图</a>
     <ol>
-      <li><a href="#%E7%BA%BF%E7%A7%8D%E7%B1%BB">线种类</a></li>
-      <li><a href="#%E9%A2%9D%E5%A4%96%E7%9A%84%E7%AE%AD%E5%A4%B4%E7%B1%BB%E5%9E%8B">额外的箭头类型</a></li>
-      <li><a href="#%E5%A4%9A%E5%90%91%E7%AE%AD%E5%A4%B4">多向箭头</a></li>
-      <li><a href="#%E8%BF%9E%E7%BA%BF%E6%96%87%E6%9C%AC">连线文本</a>
+      <li><a href="#%E8%BF%9E%E7%BA%BF">连线</a>
         <ol>
-          <li><a href="#%E5%B5%8C%E5%85%A5%E5%BC%8F">嵌入式</a></li>
-          <li><a href="#%E5%A4%96%E9%83%A8%E5%BC%8F">外部式：</a></li>
+          <li><a href="#%E7%BA%BF%E7%A7%8D%E7%B1%BB">线种类</a></li>
+          <li><a href="#%E7%AE%AD%E5%A4%B4%E7%B1%BB%E5%9E%8B">箭头类型</a></li>
+          <li><a href="#%E5%A4%9A%E5%90%91%E7%AE%AD%E5%A4%B4">多向箭头</a></li>
+          <li><a href="#%E8%BF%9E%E7%BA%BF%E6%96%87%E6%9C%AC">连线文本</a>
+            <ol>
+              <li><a href="#%E5%B5%8C%E5%85%A5%E5%BC%8F">嵌入式</a></li>
+              <li><a href="#%E5%A4%96%E9%83%A8%E5%BC%8F">外部式</a></li>
+            </ol>
+          </li>
+          <li><a href="#%E8%BF%9E%E7%BA%BF%E5%BD%A2%E5%BC%8F">连线形式</a></li>
+          <li><a href="#%E7%BA%BF%E6%9D%A1%E9%95%BF%E5%BA%A6">线条长度</a></li>
+          <li><a href="#%E8%8A%82%E7%82%B9%E9%97%B4%E7%9A%84%E5%A4%9A%E6%9D%A1%E8%BF%9E%E7%BA%BF">节点间的多条连线</a></li>
         </ol>
       </li>
-      <li><a href="#%E8%BF%9E%E7%BA%BF%E5%BD%A2%E5%BC%8F">连线形式</a></li>
-      <li><a href="#%E7%BA%BF%E6%9D%A1%E9%95%BF%E5%BA%A6">线条长度</a></li>
-      <li><a href="#%E8%8A%82%E7%82%B9%E9%97%B4%E7%9A%84%E5%A4%9A%E6%9D%A1%E8%BF%9E%E7%BA%BF">节点间的多条连线</a></li>
-    </ol>
-  </li>
-  <li><a href="#%E8%8A%82%E7%82%B9">节点</a>
-    <ol>
-      <li><a href="#%E8%8A%82%E7%82%B9%E7%9A%84%E5%AE%B9%E5%99%A8-%E5%90%8D">节点的容器 (名)</a></li>
-      <li><a href="#%E8%8A%82%E7%82%B9%E5%BD%A2%E7%8A%B6">节点形状</a></li>
-      <li><a href="#%E4%BC%9A%E6%8A%A5%E9%94%99%E7%9A%84%E6%96%87%E6%9C%AC">会报错的文本</a></li>
+      <li><a href="#%E8%8A%82%E7%82%B9">节点</a>
+        <ol>
+          <li><a href="#%E8%8A%82%E7%82%B9%E7%9A%84%E5%AE%B9%E5%99%A8-%E5%90%8D">节点的容器 (名)</a></li>
+          <li><a href="#%E8%8A%82%E7%82%B9%E5%BD%A2%E7%8A%B6">节点形状</a></li>
+          <li><a href="#%E4%BC%9A%E6%8A%A5%E9%94%99%E7%9A%84%E6%96%87%E6%9C%AC">会报错的文本</a></li>
+        </ol>
+      </li>
       <li><a href="#%E5%AD%90%E5%9B%BE">子图</a>
         <ol>
           <li><a href="#%E5%AD%90%E5%9B%BE%E5%88%9B%E5%BB%BA">子图创建</a></li>
@@ -220,6 +223,7 @@
       </li>
     </ol>
   </li>
+  <li><a href="#%E6%97%B6%E5%BA%8F%E5%9B%BE">时序图</a></li>
 </ol>
       
       
@@ -372,7 +376,7 @@
     <span class="post-date">
         
         <i class="fa-solid fa-calendar-day fa-fw"></i>
-        改于：2022-10-09 22:51:58 Sunday
+        改于：2022-11-10 14:55:22 Thursday
         <br>
         
         
@@ -381,7 +385,7 @@
         
         
         <i class="fa-solid fa-file-word fa-fw"></i>
-        5232字
+        5222字
         
         
         <i class="fa-solid fa-clock fa-fw"></i>
@@ -400,18 +404,13 @@
     </span>
     <div id="notes-entry-container">
         <content>
-            <p>依赖 mermaid 支持，<strong>遵循语法进行书写可实现渲染后得到流图</strong></p>
+            <p>依赖 mermaid 支持，<strong>遵循语法进行书写可实现渲染出图</strong></p>
 
-<h1 id="主要概念">主要概念</h1>
-
-<p>使用 <strong>关键字</strong>，声明图的类型</p>
-
-<p>使用 <strong>方向</strong>，声明图的走向</p>
+<h1 id="流程图">流程图</h1>
 
 <ul>
   <li>关键字
     <ul>
-      <li>graph</li>
       <li>flowchart</li>
     </ul>
   </li>
@@ -428,33 +427,34 @@
 <p>Mermaid 语句的结束，有两种方式:<strong>在结尾加分号</strong>；<strong>换行</strong></p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```mermaid
-graph LR
+flowchart LR
 	a--&gt;b
 	c--&gt;d
 ```
 </code></pre></div></div>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="language-mermaid">flowchart LR
 	a--&gt;b
 	c--&gt;d
 </code></pre>
 
-<h1 id="连线">连线</h1>
+<h2 id="连线">连线</h2>
 
-<h2 id="线种类">线种类</h2>
+<h3 id="线种类">线种类</h3>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```mermaid
-graph LR
+flowchart LR
 	A---实线; %% AB之间，以一条实线连接
 	A-.-虚线; %% AB之间，以一条虚线连接
 	A===粗实线; %% AB之间，以一条粗实线连接
 	A--&gt;箭头实线; %% AB之间，以一条箭头实线连接
 	A-.-&gt;箭头虚线; %% AB之间，以一条箭头虚线连接
 	A==&gt;箭头粗实线; %% AB之间，以一条箭头粗实线连接
+	A~~~不可见 %%可用于节点定位
 ```
 </code></pre></div></div>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="language-mermaid">flowchart LR
 	A---实线; %% AB之间，以一条实线连接
 	A-.-虚线; %% AB之间，以一条虚线连接
 	A===粗实线; %% AB之间，以一条粗实线连接
@@ -464,22 +464,19 @@ graph LR
 </code></pre>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```mermaid
-graph RL
+flowchart RL
 	反向实线箭头--&gt;A; %% 这是一条从B到A的反向实线箭头
 ```
 </code></pre></div></div>
 
-<pre><code class="language-mermaid">graph RL
+<pre><code class="language-mermaid">flowchart RL
 	反向实线箭头--&gt;A; %% 这是一条从B到A的反向实线箭头
 </code></pre>
 
-<h2 id="额外的箭头类型">额外的箭头类型</h2>
-
-<p>需使用 flowchart 关键字</p>
+<h3 id="箭头类型">箭头类型</h3>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```mermaid
 flowchart LR 
-%% 使用flowchart关键字
 	A --o 实线o;  %% 实线o
 	A --x 实线x;  %% 实线x
 	A -.-o 虚线o; %% 虚线o
@@ -499,7 +496,7 @@ flowchart LR
 	A ==x 粗实线x;  %% 粗实线x
 </code></pre>
 
-<h2 id="多向箭头">多向箭头</h2>
+<h3 id="多向箭头">多向箭头</h3>
 
 <p>有三种: 使用首尾相同的 o 或 x，或者一对 &lt; &gt;; 不能使用 o–x 这样首尾不同的</p>
 
@@ -535,58 +532,51 @@ flowchart LR
 	R x==x S; %% 多向粗实线x
 </code></pre>
 
-<h2 id="连线文本">连线文本</h2>
+<h3 id="连线文本">连线文本</h3>
 
-<h3 id="嵌入式">嵌入式</h3>
+<h4 id="嵌入式">嵌入式</h4>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```mermaid
-graph LR
+flowchart LR
 	A--嵌入式:实线间的文本--&gt;B; %% AB之间以实线连接，且有一段连线文本
 	A-.嵌入式:虚线间的文本.-&gt;B; %% AB之间以虚线连接，且有一段连线文本
 	A==嵌入式:粗实线间的文本==&gt;B; %% AB之间以粗实线连接，且有一段连线文本
 ```
 </code></pre></div></div>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="language-mermaid">flowchart LR
 	A--嵌入式:实线间的文本--&gt;B; %% AB之间以实线连接，且有一段连线文本
 	A-.嵌入式:虚线间的文本.-&gt;B; %% AB之间以虚线连接，且有一段连线文本
 	A==嵌入式:粗实线间的文本==&gt;B; %% AB之间以粗实线连接，且有一段连线文本
 </code></pre>
 
-<h3 id="外部式">外部式：</h3>
+<h4 id="外部式">外部式</h4>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```mermaid
-graph LR
+flowchart LR
 	A--&gt;|实线间文本|B;
-	
 	A-.-&gt;|虚线间文本|B;
-	
 	A==&gt;|粗实线间文本|B;
 ```
 </code></pre></div></div>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="language-mermaid">flowchart LR
 	A--&gt;|实线间文本|B;
-	
 	A-.-&gt;|虚线间文本|B;
-	
 	A==&gt;|粗实线间文本|B;
 </code></pre>
 
-<h2 id="连线形式">连线形式</h2>
+<h3 id="连线形式">连线形式</h3>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```mermaid
-graph LR
+flowchart LR
 	A--&gt;B--&gt;C--&gt;D--&gt;直向连线;
 
    a--&gt;b &amp; c--&gt;d &amp; e--&gt;多重连线; 
 ```
-```md
-多重连线中的&amp;表示与关系，如a--&gt;b &amp; c--&gt;d，表示a连接到b与c，b与c连接到d
-```
 </code></pre></div></div>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="language-mermaid">flowchart LR
 	A--&gt;B--&gt;C--&gt;D--&gt;直向连线;
 
    a--&gt;b &amp; c--&gt;d &amp; e--&gt;多重连线; 
@@ -597,14 +587,12 @@ graph LR
 多重连线中的&amp;表示与关系，如a–&gt;b &amp; c–&gt;d，表示a连接到b与c，b与c连接到d</p>
 </blockquote>
 
-<h2 id="线条长度">线条长度</h2>
+<h3 id="线条长度">线条长度</h3>
 
 <p>线条可以增加长度，默认为<strong>1 级</strong>，可加至<strong>3 级</strong></p>
 
-<p>graph 线条</p>
-
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```mermaid
-graph LR
+flowchart LR
 	%% 实线
 	a1---a2----a3-----a4;
 
@@ -625,7 +613,7 @@ graph LR
 ```
 </code></pre></div></div>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="language-mermaid">flowchart LR
 	%% 实线
 	a1---a2----a3-----a4;
 
@@ -644,8 +632,6 @@ graph LR
 	%% 箭头粗实线
 	f1==&gt;f2===&gt;f3====&gt;f4;
 </code></pre>
-
-<p>flowchart 线条</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```mermaid
 flowchart LR
@@ -683,28 +669,28 @@ flowchart LR
 	i1 x==x i2 x===x i3 x====x i4; %% 多向粗实线x
 </code></pre>
 
-<h2 id="节点间的多条连线">节点间的多条连线</h2>
+<h3 id="节点间的多条连线">节点间的多条连线</h3>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```mermaid
-graph TB
+flowchart TB
 	得出答案A--&gt;确定么?--&gt;|确定|好吧;
 	好吧--&gt;再想一想--&gt;|不对劲|确定么?----&gt;|恍然大悟|修正为答案B;
 ```
 </code></pre></div></div>
 
-<pre><code class="language-mermaid">graph TB
+<pre><code class="language-mermaid">flowchart TB
 	得出答案A--&gt;确定么?--&gt;|确定|好吧;
 	好吧--&gt;再想一想--&gt;|不对劲|确定么?----&gt;|恍然大悟|修正为答案B;
 </code></pre>
 
-<h1 id="节点">节点</h1>
+<h2 id="节点">节点</h2>
 
-<h2 id="节点的容器-名">节点的容器 (名)</h2>
+<h3 id="节点的容器-名">节点的容器 (名)</h3>
 
 <p>不使用容器，复杂的文本如英文词组中的空格会报错。</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```mermaid
-graph BT
+flowchart BT
 	id1[我]--&gt;id2[父亲]
 	id1--&gt;id3[母亲]
 	
@@ -716,7 +702,7 @@ graph BT
 ```
 </code></pre></div></div>
 
-<pre><code class="language-mermaid">graph BT
+<pre><code class="language-mermaid">flowchart BT
 	id1[我]--&gt;id2[父亲]
 	id1--&gt;id3[母亲]
 	
@@ -727,23 +713,23 @@ graph BT
 	id3--爸爸--&gt;id7[外公]
 </code></pre>
 
-<h2 id="节点形状">节点形状</h2>
+<h3 id="节点形状">节点形状</h3>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```mermaid
-graph LR
+flowchart LR
 	id1[矩形]--&gt;id2((圆形))--&gt;id3{菱形}--&gt;id4(圆角矩形)
 	id5([跑道形])--&gt;id6[/平行四边形/]--&gt;id7[\反向平行四边形\]--&gt;id8[/梯形\]
 	id9[\倒立梯形/]--&gt;id10&gt;燕尾型]--&gt;id11[(圆柱形)]
 ```
 </code></pre></div></div>
 
-<pre><code class="language-mermaid">graph LR
+<pre><code class="language-mermaid">flowchart LR
 	id1[矩形]--&gt;id2((圆形))--&gt;id3{菱形}--&gt;id4(圆角矩形)
 	id5([跑道形])--&gt;id6[/平行四边形/]--&gt;id7[\反向平行四边形\]--&gt;id8[/梯形\]
 	id9[\倒立梯形/]--&gt;id10&gt;燕尾型]--&gt;id11[(圆柱形)]
 </code></pre>
 
-<h2 id="会报错的文本">会报错的文本</h2>
+<h3 id="会报错的文本">会报错的文本</h3>
 
 <p>容器命名时 end 会报错，文本中不会</p>
 
@@ -756,8 +742,6 @@ graph LR
 <h2 id="子图">子图</h2>
 
 <h3 id="子图创建">子图创建</h3>
-
-<p>子图相关，推荐使用 flowchart关键字，graph 在部分子图中会报错</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```mermaid
 flowchart TB
@@ -856,6 +840,13 @@ flowchart LR
   %% 主图
   A--&gt;子图--&gt;B
   子图1--&gt;子图2
+</code></pre>
+
+<h1 id="时序图">时序图</h1>
+
+<pre><code class="language-mermaid">sequenceDiagram
+    Alice-&gt;&gt;John: Hello John, how are you?
+    John--&gt;&gt;Alice: Great!
 </code></pre>
 
         </content>
@@ -1159,7 +1150,7 @@ flowchart LR
 
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css"
+  href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@master/static/pio.min.css"
 />
 <style>
   .pio-container{
@@ -1179,7 +1170,7 @@ flowchart LR
 </style>
 <script
   async="async"
-  src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js,gh/Dreamer-Paul/Pio@2.4/static/pio.min.js"
+  src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@master/static/l2d.min.js,gh/Dreamer-Paul/Pio@master/static/pio.min.js"
   onload='
   fetch("https://v1.hitokoto.cn")
   .then(response=>response.json())
