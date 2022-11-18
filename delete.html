@@ -1,0 +1,33 @@
+<html>
+
+<body style="text-align: center;">
+    <h1>You can try not to enter Client-ID first<br>enter it after failure</h1>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <p>Deletehash<input type="text" id="hash"> </input></p>
+    <p>Client-ID<input type="text" id="id" value=""> </input></p>
+    <button onclick="deleteImage()" type="button">delete</button>
+    <script>
+        function deleteImage() {
+            let hash = document.getElementById('hash').value;
+            let id = document.getElementById('id').value;
+            let auth = 'Client-ID '
+            if (id != "")
+                auth += id
+            else auth += '4547d4aee97ce8f'
+            axios({
+                method: 'delete',
+                url: 'https://api.imgur.com/3/image/' + hash,
+                headers: {
+                    Authorization: auth
+                },
+            }).then((res) => {
+                console.log(res);
+                alert("done");
+            }).catch((err)=>{
+                alert("failed");
+            })
+        }
+    </script>
+</body>
+
+</html>
