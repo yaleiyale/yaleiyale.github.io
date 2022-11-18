@@ -1,0 +1,188 @@
+/* 全局字体 */
+@font-face {
+    font-family: 'MiSans';
+    src: url('https://cdn.jsdelivr.net/gh/yaleiyale/jekyll-theme-ObJekyll/assets/MiSans.ttf');
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    overflow-x: hidden;
+    color: #515151;
+    /* 字粗细 */
+    font-weight: normal;
+    /* 字符左右间距 */
+    letter-spacing: .025rem;
+}
+
+html,
+span,
+input,
+code {
+    font-family: 'MiSans';
+}
+
+@media only screen and (min-width: 540px) {
+    html {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    html {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* 内容区域 */
+@media only screen and (min-width: 540px) {
+    .content {
+        margin-left: 18vw;
+        max-width: 62vw;
+        line-height: 1.25;
+        box-sizing: border-box;
+        margin-bottom: 4em;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .content {
+        margin-left: 6vw;
+        max-width: 86vw;
+        line-height: 1.25;
+        box-sizing: border-box;
+        margin-bottom: 4em;
+    }
+}
+
+/* 自定义滚动条，仅对Chrome系浏览器生效 */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: Gray;
+}
+
+/* 图片 */
+img {
+    display: block;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* 视频 */
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: scale-down;
+}
+
+/* 防止文本过长 */
+pre {
+    max-height: 66.6vh;
+    padding: 0 1rem;
+    overflow: hidden hidden;
+    white-space: pre;
+    word-wrap: break-word;
+    word-break: break-all;
+    position: relative;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+pre:hover {
+    overflow: auto auto;
+}
+
+p,
+em,
+strong {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+
+
+/* 链接样式修正 */
+
+a,
+a:hover {
+    color: inherit;
+    border-bottom: 1px solid var(--theme-base-color);
+}
+
+/* 选中字体颜色 */
+
+::selection {
+    color: White;
+    background: Black;
+}
+
+/* 表格样式美化 */
+
+table thead,
+tr {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgba(14, 180, 246, 0.267);
+}
+
+table {
+    table-layout: fixed;
+    word-wrap: break-word;
+    border: 0px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(14, 194, 244, 0.27);
+    border-collapse: collapse;
+}
+
+/* Padding */
+#table td,
+#table th {
+    padding: 0px;
+    border: 0px;
+    padding: 5px 10px;
+    color: rgba(9, 243, 255, 0.151);
+}
+
+/* Alternating background colors */
+table tr:nth-child(even) {
+    background: rgba(16, 210, 236, 0.167)
+}
+
+table tr:nth-child(odd) {
+    background: #FFF
+}
+
+table tbody {
+    display: block;
+    overflow: scroll;
+}
+
+/* 标注 */
+blockquote {
+    color: #7a7a7a;
+    border-left: .25rem solid #e5e5e5;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 30em) {
+    blockquote {
+        padding-right: 5rem;
+        padding-left: 1.25rem;
+    }
+}
