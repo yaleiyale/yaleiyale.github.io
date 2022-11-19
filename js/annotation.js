@@ -36,14 +36,14 @@ for (var i = 0; i < blockCount; i++) {
     for (var key in tags) {
         if (blockNow.innerHTML.indexOf(key) != -1) {
             blockNow.innerHTML = blockNow.innerHTML.replace(key, "");
-            blockNow.childNodes[1].innerHTML = tags[key] + blockNow.childNodes[1].innerHTML;
+            blockNow.childNodes[0].innerHTML = tags[key] + blockNow.childNodes[0].innerHTML;
             blocklist[i].innerHTML = blockNow.innerHTML;
             find = true;
             break;
         }
     }
     if (!find) {
-        blockNow.childNodes[1].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[1].innerHTML;
+        blockNow.childNodes[0].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.childNodes[0].innerHTML;
         blocklist[i].innerHTML = blockNow.innerHTML;
     }
 }
