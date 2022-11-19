@@ -1,9 +1,4 @@
 /* 全局字体 */
-@font-face {
-    font-family: 'MiSans';
-    src: url('https://cdn.jsdelivr.net/gh/yaleiyale/jekyll-theme-ObJekyll/assets/MiSans.ttf');
-}
-
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
