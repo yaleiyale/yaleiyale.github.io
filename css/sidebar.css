@@ -16,14 +16,14 @@
     box-shadow: -.25rem 0 .5rem rgba(0, 0, 0, .1);
 }
 
-@media only screen and (min-width: 540px) {
+@media only screen and (min-width: 1220px) {
     .sidebar {
         right: -18vw;
         width: 18vw;
     }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 1220px) {
     .sidebar {
         right: -12rem;
         width: 12rem;
@@ -33,13 +33,13 @@
 /* 导航 */
 .sidebar-nav a {
     display: block;
-    line-height: 2rem;
+    line-height: 1.8rem;
     color: rgba(255, 255, 255, 0.727);
     transition: .3s;
     text-decoration: none;
 }
 
-@media only screen and (min-width: 540px) {
+@media only screen and (min-width: 1220px) {
     .sidebar-nav a {
         padding-left: 6vw;
     }
@@ -51,7 +51,7 @@
     }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 1220px) {
     .sidebar-nav a {
         padding-left: 4rem;
     }
@@ -101,7 +101,7 @@
     right: 0;
 }
 
-@media only screen and (min-width: 540px) {
+@media only screen and (min-width: 1220px) {
     .sidebar-toggle {
         top: 1vw;
         right: 1vw;
@@ -113,7 +113,7 @@
     }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 1220px) {
     .sidebar-toggle {
         top: .8rem;
         right: 1rem;
