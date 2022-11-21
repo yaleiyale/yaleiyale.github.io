@@ -1,0 +1,14 @@
+.tag-cloud {
+    white-space: normal;
+    word-wrap: normal;
+    word-break: keep-all;
+}
+
+.tag-url {
+    text-decoration: none;
+}
+
+#statistics-container {
+    display: grid;
+    grid-template-areas: 'div side'
+}
