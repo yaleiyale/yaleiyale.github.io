@@ -17,13 +17,13 @@ code {
     font-family: 'MiSans',KaTeX_Main;
 }
 
-@media only screen and (min-width: 1220px) {
+@media only screen and (min-width: 540px) {
     html {
         font-size: 1.2rem;
     }
 }
 
-@media only screen and (max-width: 1220px) {
+@media only screen and (max-width: 540px) {
     html {
         font-size: 1.1rem;
     }
@@ -31,7 +31,7 @@ code {
 
 
 /* 内容区域 */
-@media only screen and (min-width: 1220px) {
+@media only screen and (min-width: 540px) {
     .content {
         margin-left: 18vw;
         max-width: 62vw;
@@ -41,7 +41,7 @@ code {
     }
 }
 
-@media only screen and (max-width: 1220px) {
+@media only screen and (max-width: 540px) {
     .content {
         margin-left: 6vw;
         max-width: 86vw;
