@@ -1,0 +1,21 @@
+side .backlink-container {
+    font-size: 0.9em;
+    position: fixed;
+    left: 2vw;
+    top: 5rem;
+    height: 42vh;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.backlink-box {
+    background: rgba(0, 0, 0, 0.03);
+    padding: 1em;
+    border-radius: 4px;
+    width: 12vw;
+}
+
+content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+}
