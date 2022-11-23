@@ -4,10 +4,6 @@
     word-break: keep-all;
 }
 
-.cloud-url {
-    text-decoration: none;
-}
-
 #statistics-container {
     display: grid;
     grid-template-areas: 'div side'
