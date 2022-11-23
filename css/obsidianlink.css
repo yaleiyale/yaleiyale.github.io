@@ -1,4 +1,4 @@
-side .backlink-container {
+side.backlink-container {
     font-size: 0.9em;
     position: fixed;
     left: 2vw;
@@ -6,6 +6,12 @@ side .backlink-container {
     height: 42vh;
     overflow: hidden;
     overflow-y: auto;
+}
+
+@media only screen and (max-width: 540px) {
+    side.backlink-container {
+        display: none;
+    }
 }
 
 .backlink-box {
