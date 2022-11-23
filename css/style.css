@@ -169,15 +169,10 @@ table tbody {
 blockquote {
     color: #7a7a7a;
     border-left: .25rem solid #e5e5e5;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
 }
 
 blockquote p:last-child {
     margin-bottom: 0;
-}
-
-@media (min-width: 30em) {
-    blockquote {
-        padding-right: 5rem;
-        padding-left: 1.25rem;
-    }
 }
