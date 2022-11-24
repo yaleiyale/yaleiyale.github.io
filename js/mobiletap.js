@@ -1,5 +1,5 @@
 !function (e) {
-    var flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    let flag = /Android|iPhone|iPad|iPod|BlackBerry|webOS|Windows Phone|SymbianOS|IEMobile|Opera Mini/i.test(navigator.userAgent);
     if (flag) {
         var c = e.querySelector(".sidebar-toggle"),
             r = e.querySelector(".sidebar"),
