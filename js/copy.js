@@ -1,5 +1,4 @@
 (function () {
-
     function flashCopyMessage(el, msg) {
         el.textContent = msg;
         setTimeout(function () {

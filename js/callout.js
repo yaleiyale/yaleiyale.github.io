@@ -46,4 +46,4 @@
             blocklist[i].innerHTML = '<i class="fa-solid fa-quote-left"></i><br>' + blockNow.innerHTML;
         }
     }
-}())
+})()
