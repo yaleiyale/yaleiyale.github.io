@@ -14,7 +14,7 @@ html,
 span,
 input,
 code {
-    font-family: 'MiSans',KaTeX_Main;
+    font-family: 'MiSans', KaTeX_Main;
 }
 
 @media only screen and (min-width: 540px) {
@@ -110,7 +110,7 @@ strong {
 a,
 a:hover {
     color: inherit;
-    border-bottom: 1px solid var(--theme-base-color);
+    border-bottom: 1px;
 }
 
 /* 选中字体颜色 */
