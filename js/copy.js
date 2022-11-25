@@ -20,7 +20,7 @@
     function addCopyButton(containerEl) {
         var copyBtn = document.createElement("button");
         copyBtn.className = "highlight-copy-btn";
-        copyBtn.textContent = "Copy";
+        copyBtn.textContent = "复制😏";
 
         var codeEl = containerEl.firstElementChild;
         copyBtn.addEventListener('click', function () {
