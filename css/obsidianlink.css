@@ -4,10 +4,12 @@ side.backlink-container {
     left: 2vw;
     top: 5rem;
     height: 42vh;
-    overflow: hidden;
+    overflow: hidden; 
+    width:14vw
+}
+side.backlink-container:hover {
     overflow-y: auto;
 }
-
 @media only screen and (max-width: 540px) {
     side.backlink-container {
         display: none;
@@ -18,7 +20,7 @@ side.backlink-container {
     background: rgba(0, 0, 0, 0.03);
     padding: 1em;
     border-radius: 4px;
-    width: 12vw;
+    width: 10vw;
 }
 
 content a.internal-link {
