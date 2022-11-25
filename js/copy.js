@@ -2,18 +2,18 @@
     function flashCopyMessage(el, msg) {
         el.textContent = msg;
         setTimeout(function () {
-            el.textContent = "Copy";
+            el.textContent = "复制😏";
         }, 1000);
     }
 
     function toClip(el, text) {
         navigator.clipboard.writeText(text)
             .then(() => {
-                flashCopyMessage(el, 'Copied😉')
+                flashCopyMessage(el, '成功😉')
             })
             .catch(err => {
                 console.log('copy went wrong', err);
-                flashCopyMessage(el, 'Failed😱')
+                flashCopyMessage(el, '失败😱')
             });
     }
 
