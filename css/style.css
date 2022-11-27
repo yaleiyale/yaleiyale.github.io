@@ -10,11 +10,20 @@ html {
     letter-spacing: .025rem;
 }
 
+textarea,
+button,
 html,
 span,
 input,
 code {
-    font-family: 'MiSans', KaTeX_Main;
+    /* font-family: 'MiSans', KaTeX_Main; */
+    font-family: "LXGW WenKai", sans-serif, KaTeX_Main;
+    /* Lite version */
+    font-family: "LXGW WenKai Lite", sans-serif, KaTeX_Main;
+    /* TC version */
+    font-family: "LXGW WenKai TC", sans-serif, KaTeX_Main;
+    /* Screen version */
+    font-family: "LXGW WenKai Screen", sans-serif, KaTeX_Main;
 }
 
 @media only screen and (min-width: 540px) {
