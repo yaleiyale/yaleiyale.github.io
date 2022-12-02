@@ -1,47 +1,47 @@
 <!doctype html><html lang=zh><head><title>Mermaid书写范例实例</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=referrer content="no-referrer"><meta http-equiv=content-security-policy content="upgrade-insecure-requests"><link rel=apple-touch-icon-precomposed href=https://s1.ax1x.com/2022/10/30/xIMChq.png><link rel=icon href=https://s1.ax1x.com/2022/10/30/xIMChq.png><link rel=stylesheet href=https://cdn.staticfile.org/font-awesome/6.2.1/css/all.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css><link rel=stylesheet href=/css/sidebar.css><link rel=stylesheet href=/css/style.css><script type=text/javascript src=https://cdn.jsdelivr.net/gh/yaleiyale/atlas_blog_theme_js@0.1/change-cdn.js></script>
 <script type=text/javascript src=https://cdn.jsdelivr.net/gh/yaleiyale/atlas_blog_theme_js@0.1/anti-qqwechat.js></script>
 <script type=text/javascript>(function(e,t,n,s,o,i,a){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)},i=t.createElement(s),i.async=1,i.src="https://www.clarity.ms/tag/"+o,a=t.getElementsByTagName(s)[0],a.parentNode.insertBefore(i,a)})(window,document,"clarity","script","eouy1uodv0")</script></head><body><div class=content><h1 class=note-title>Mermaid书写范例实例</h1><link rel=stylesheet href=/css/obsidianlink.css><i class="fa-solid fa-calendar-plus fa-fw"></i>2022-07-30 08:46 Saturday<i class="fa-solid fa-file-word fa-fw"></i>2974<i class="fa-solid fa-clock fa-fw"></i>6min<br><i class="fab fa-creative-commons-by fa-fw"></i>
-<a href=https://creativecommons.org/licenses/by/4.0/deed.zh rel=license>CC BY 4.0（除特别声明和转载）</a><br><br><article class=toc-content><content><p>依赖 mermaid 支持，<strong>遵循语法进行书写可实现渲染出图</strong></p><h1 id=流程图>流程图</h1><ul><li>关键字<ul><li>flowchart</li></ul></li><li>方向<ul><li>TB(top to bottom)</li><li>BT(bottom to top)</li><li>LR(left to right)</li><li>RL(right to left)</li></ul></li></ul><p>Mermaid 语句的结束，有两种方式:<strong>在结尾加分号</strong>；<strong>换行</strong></p><pre tabindex=0><code>```mermaid
-flowchart LR
+<a href=https://creativecommons.org/licenses/by/4.0/deed.zh rel=license>CC BY 4.0（除特别声明和转载）</a><br><br><article class=toc-content><content><p>依赖 mermaid 支持，<strong>遵循语法进行书写可实现渲染出图</strong></p><h1 id=流程图>流程图</h1><ul><li>关键字<ul><li>flowchart</li></ul></li><li>方向<ul><li>TB(top to bottom)</li><li>BT(bottom to top)</li><li>LR(left to right)</li><li>RL(right to left)</li></ul></li></ul><p>Mermaid 语句的结束，有两种方式:<strong>在结尾加分号</strong>；<strong>换行</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=display:flex><span><span style=color:#e6db74>```mermaid
+</span></span></span><span style=display:flex><span><span style=color:#e6db74></span>flowchart LR
+</span></span><span style=display:flex><span>	a--&gt;b
+</span></span><span style=display:flex><span>	c--&gt;d
+</span></span><span style=display:flex><span><span style=color:#e6db74>```</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR
 	a--&gt;b
 	c--&gt;d
-```
-</code></pre><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR
-	a--&gt;b
-	c--&gt;d
-</code></pre><h2 id=连线>连线</h2><h3 id=线种类>线种类</h3><pre tabindex=0><code>```mermaid
-flowchart LR
+</code></pre><h2 id=连线>连线</h2><h3 id=线种类>线种类</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=display:flex><span><span style=color:#e6db74>```mermaid
+</span></span></span><span style=display:flex><span><span style=color:#e6db74></span>flowchart LR
+</span></span><span style=display:flex><span>	A---实线; %% AB之间，以一条实线连接
+</span></span><span style=display:flex><span>	A-.-虚线; %% AB之间，以一条虚线连接
+</span></span><span style=display:flex><span>	A===粗实线; %% AB之间，以一条粗实线连接
+</span></span><span style=display:flex><span>	A--&gt;箭头实线; %% AB之间，以一条箭头实线连接
+</span></span><span style=display:flex><span>	A-.-&gt;箭头虚线; %% AB之间，以一条箭头虚线连接
+</span></span><span style=display:flex><span>	A==&gt;箭头粗实线; %% AB之间，以一条箭头粗实线连接
+</span></span><span style=display:flex><span>	A~~~不可见 %%可用于节点定位
+</span></span><span style=display:flex><span><span style=color:#e6db74>```</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR
 	A---实线; %% AB之间，以一条实线连接
 	A-.-虚线; %% AB之间，以一条虚线连接
 	A===粗实线; %% AB之间，以一条粗实线连接
 	A--&gt;箭头实线; %% AB之间，以一条箭头实线连接
 	A-.-&gt;箭头虚线; %% AB之间，以一条箭头虚线连接
 	A==&gt;箭头粗实线; %% AB之间，以一条箭头粗实线连接
-	A~~~不可见 %%可用于节点定位
-```
-</code></pre><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR
-	A---实线; %% AB之间，以一条实线连接
-	A-.-虚线; %% AB之间，以一条虚线连接
-	A===粗实线; %% AB之间，以一条粗实线连接
-	A--&gt;箭头实线; %% AB之间，以一条箭头实线连接
-	A-.-&gt;箭头虚线; %% AB之间，以一条箭头虚线连接
-	A==&gt;箭头粗实线; %% AB之间，以一条箭头粗实线连接
-</code></pre><pre tabindex=0><code>```mermaid
-flowchart RL
+</code></pre><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=display:flex><span><span style=color:#e6db74>```mermaid
+</span></span></span><span style=display:flex><span><span style=color:#e6db74></span>flowchart RL
+</span></span><span style=display:flex><span>	反向实线箭头--&gt;A; %% 这是一条从B到A的反向实线箭头
+</span></span><span style=display:flex><span><span style=color:#e6db74>```</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart RL
 	反向实线箭头--&gt;A; %% 这是一条从B到A的反向实线箭头
-```
-</code></pre><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart RL
-	反向实线箭头--&gt;A; %% 这是一条从B到A的反向实线箭头
-</code></pre><h3 id=箭头类型>箭头类型</h3><pre tabindex=0><code>```mermaid
-flowchart LR 
-	A --o 实线o;  %% 实线o
-	A --x 实线x;  %% 实线x
-	A -.-o 虚线o; %% 虚线o
-	A -.-x 虚线x; %% 虚线x
-	A ==o 粗实线o;  %% 粗实线o
-	A ==x 粗实线x;  %% 粗实线x
-```
-</code></pre><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR 
+</code></pre><h3 id=箭头类型>箭头类型</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=display:flex><span><span style=color:#e6db74>```mermaid
+</span></span></span><span style=display:flex><span><span style=color:#e6db74></span>flowchart LR 
+</span></span><span style=display:flex><span>	A --o 实线o;  %% 实线o
+</span></span><span style=display:flex><span>	A --x 实线x;  %% 实线x
+</span></span><span style=display:flex><span>	A -.-o 虚线o; %% 虚线o
+</span></span><span style=display:flex><span>	A -.-x 虚线x; %% 虚线x
+</span></span><span style=display:flex><span>	A ==o 粗实线o;  %% 粗实线o
+</span></span><span style=display:flex><span>	A ==x 粗实线x;  %% 粗实线x
+</span></span><span style=display:flex><span><span style=color:#e6db74>```</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR 
 %% 使用flowchart关键字
 	A --o 实线o;  %% 实线o
 	A --x 实线x;  %% 实线x
@@ -49,8 +49,22 @@ flowchart LR
 	A -.-x 虚线x; %% 虚线x
 	A ==o 粗实线o;  %% 粗实线o
 	A ==x 粗实线x;  %% 粗实线x
-</code></pre><h3 id=多向箭头>多向箭头</h3><p>有三种: 使用首尾相同的 o 或 x，或者一对 &lt; >; 不能使用 o&ndash;x 这样首尾不同的</p><pre tabindex=0><code>```mermaid
-flowchart LR 
+</code></pre><h3 id=多向箭头>多向箭头</h3><p>有三种: 使用首尾相同的 o 或 x，或者一对 &lt; >; 不能使用 o&ndash;x 这样首尾不同的</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=display:flex><span><span style=color:#e6db74>```mermaid
+</span></span></span><span style=display:flex><span><span style=color:#e6db74></span>flowchart LR 
+</span></span><span style=display:flex><span>	%% 实线
+</span></span><span style=display:flex><span>	A o--o B; %% 多向实线o
+</span></span><span style=display:flex><span>	C &lt;--&gt; D; %% 多向实线箭头
+</span></span><span style=display:flex><span>	E x--x F; %% 多向实线x
+</span></span><span style=display:flex><span>	%% 虚线
+</span></span><span style=display:flex><span>	G o-.-o H; %% 多向虚线o
+</span></span><span style=display:flex><span>	I &lt;-.-&gt; J; %% 多向虚线箭头
+</span></span><span style=display:flex><span>	K x-.-x L; %% 多向虚线x
+</span></span><span style=display:flex><span>	%% 粗实线
+</span></span><span style=display:flex><span>	M o==o N; %% 多向粗实线o
+</span></span><span style=display:flex><span>	O &lt;==&gt; P; %% 多向粗实线箭头
+</span></span><span style=display:flex><span>	R x==x S; %% 多向粗实线x
+</span></span><span style=display:flex><span><span style=color:#e6db74>```</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR 
 	%% 实线
 	A o--o B; %% 多向实线o
 	C &lt;--&gt; D; %% 多向实线箭头
@@ -63,52 +77,57 @@ flowchart LR
 	M o==o N; %% 多向粗实线o
 	O &lt;==&gt; P; %% 多向粗实线箭头
 	R x==x S; %% 多向粗实线x
-```
-</code></pre><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR 
-	%% 实线
-	A o--o B; %% 多向实线o
-	C &lt;--&gt; D; %% 多向实线箭头
-	E x--x F; %% 多向实线x
-	%% 虚线
-	G o-.-o H; %% 多向虚线o
-	I &lt;-.-&gt; J; %% 多向虚线箭头
-	K x-.-x L; %% 多向虚线x
-	%% 粗实线
-	M o==o N; %% 多向粗实线o
-	O &lt;==&gt; P; %% 多向粗实线箭头
-	R x==x S; %% 多向粗实线x
-</code></pre><h3 id=连线文本>连线文本</h3><h4 id=嵌入式>嵌入式</h4><pre tabindex=0><code>```mermaid
-flowchart LR
+</code></pre><h3 id=连线文本>连线文本</h3><h4 id=嵌入式>嵌入式</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=display:flex><span><span style=color:#e6db74>```mermaid
+</span></span></span><span style=display:flex><span><span style=color:#e6db74></span>flowchart LR
+</span></span><span style=display:flex><span>	A--嵌入式:实线间的文本--&gt;B; %% AB之间以实线连接，且有一段连线文本
+</span></span><span style=display:flex><span>	A-.嵌入式:虚线间的文本.-&gt;B; %% AB之间以虚线连接，且有一段连线文本
+</span></span><span style=display:flex><span>	A==嵌入式:粗实线间的文本==&gt;B; %% AB之间以粗实线连接，且有一段连线文本
+</span></span><span style=display:flex><span><span style=color:#e6db74>```</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR
 	A--嵌入式:实线间的文本--&gt;B; %% AB之间以实线连接，且有一段连线文本
 	A-.嵌入式:虚线间的文本.-&gt;B; %% AB之间以虚线连接，且有一段连线文本
 	A==嵌入式:粗实线间的文本==&gt;B; %% AB之间以粗实线连接，且有一段连线文本
-```
-</code></pre><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR
-	A--嵌入式:实线间的文本--&gt;B; %% AB之间以实线连接，且有一段连线文本
-	A-.嵌入式:虚线间的文本.-&gt;B; %% AB之间以虚线连接，且有一段连线文本
-	A==嵌入式:粗实线间的文本==&gt;B; %% AB之间以粗实线连接，且有一段连线文本
-</code></pre><h4 id=外部式>外部式</h4><pre tabindex=0><code>```mermaid
-flowchart LR
+</code></pre><h4 id=外部式>外部式</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=display:flex><span><span style=color:#e6db74>```mermaid
+</span></span></span><span style=display:flex><span><span style=color:#e6db74></span>flowchart LR
+</span></span><span style=display:flex><span>	A--&gt;|实线间文本|B;
+</span></span><span style=display:flex><span>	A-.-&gt;|虚线间文本|B;
+</span></span><span style=display:flex><span>	A==&gt;|粗实线间文本|B;
+</span></span><span style=display:flex><span><span style=color:#e6db74>```</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR
 	A--&gt;|实线间文本|B;
 	A-.-&gt;|虚线间文本|B;
 	A==&gt;|粗实线间文本|B;
-```
-</code></pre><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR
-	A--&gt;|实线间文本|B;
-	A-.-&gt;|虚线间文本|B;
-	A==&gt;|粗实线间文本|B;
-</code></pre><h3 id=连线形式>连线形式</h3><pre tabindex=0><code>```mermaid
-flowchart LR
+</code></pre><h3 id=连线形式>连线形式</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=display:flex><span><span style=color:#e6db74>```mermaid
+</span></span></span><span style=display:flex><span><span style=color:#e6db74></span>flowchart LR
+</span></span><span style=display:flex><span>	A--&gt;B--&gt;C--&gt;D--&gt;直向连线;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>   a--&gt;b &amp; c--&gt;d &amp; e--&gt;多重连线; 
+</span></span><span style=display:flex><span><span style=color:#e6db74>```</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR
 	A--&gt;B--&gt;C--&gt;D--&gt;直向连线;
 
    a--&gt;b &amp; c--&gt;d &amp; e--&gt;多重连线; 
-```
-</code></pre><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR
-	A--&gt;B--&gt;C--&gt;D--&gt;直向连线;
-
-   a--&gt;b &amp; c--&gt;d &amp; e--&gt;多重连线; 
-</code></pre><blockquote><p>[!note]<br>多重连线中的&表示与关系，如a&ndash;>b & c&ndash;>d，表示a连接到b与c，b与c连接到d</p></blockquote><h3 id=线条长度>线条长度</h3><p>线条可以增加长度，默认为<strong>1 级</strong>，可加至<strong>3 级</strong></p><pre tabindex=0><code>```mermaid
-flowchart LR
+</code></pre><blockquote><p>[!note]<br>多重连线中的&表示与关系，如a&ndash;>b & c&ndash;>d，表示a连接到b与c，b与c连接到d</p></blockquote><h3 id=线条长度>线条长度</h3><p>线条可以增加长度，默认为<strong>1 级</strong>，可加至<strong>3 级</strong></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=display:flex><span><span style=color:#e6db74>```mermaid
+</span></span></span><span style=display:flex><span><span style=color:#e6db74></span>flowchart LR
+</span></span><span style=display:flex><span>	%% 实线
+</span></span><span style=display:flex><span>	a1---a2----a3-----a4;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	%% 虚线
+</span></span><span style=display:flex><span>	b1-.-b2-..-b3-...-b4;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	%% 粗实线
+</span></span><span style=display:flex><span>	c1===c2====c3=====c4;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	%% 箭头实线
+</span></span><span style=display:flex><span>	d1--&gt;d2---&gt;d3----&gt;d4;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	%% 箭头虚线 
+</span></span><span style=display:flex><span>	e1-.-&gt;e2-..-&gt;e3-...-&gt;e4;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>	%% 箭头粗实线
+</span></span><span style=display:flex><span>	f1==&gt;f2===&gt;f3====&gt;f4;
+</span></span><span style=display:flex><span><span style=color:#e6db74>```</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR
 	%% 实线
 	a1---a2----a3-----a4;
 
@@ -126,27 +145,24 @@ flowchart LR
 
 	%% 箭头粗实线
 	f1==&gt;f2===&gt;f3====&gt;f4;
-```
-</code></pre><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR
-	%% 实线
-	a1---a2----a3-----a4;
-
-	%% 虚线
-	b1-.-b2-..-b3-...-b4;
-
-	%% 粗实线
-	c1===c2====c3=====c4;
-
-	%% 箭头实线
-	d1--&gt;d2---&gt;d3----&gt;d4;
-
-	%% 箭头虚线 
-	e1-.-&gt;e2-..-&gt;e3-...-&gt;e4;
-
-	%% 箭头粗实线
-	f1==&gt;f2===&gt;f3====&gt;f4;
-</code></pre><pre tabindex=0><code>```mermaid
-flowchart LR
+</code></pre><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=display:flex><span><span style=color:#e6db74>```mermaid
+</span></span></span><span style=display:flex><span><span style=color:#e6db74></span>flowchart LR
+</span></span><span style=display:flex><span>	%% 实线
+</span></span><span style=display:flex><span>	a1 o--o a2 o---o a3 o----o a4; %% 多向实线o
+</span></span><span style=display:flex><span>	b1 &lt;--&gt; b2 &lt;---&gt; b3 &lt;----&gt; b4; %% 多向实线箭头
+</span></span><span style=display:flex><span>	c1 x--x c2 x---x c3 x----x c4; %% 多向实线x
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	%% 虚线
+</span></span><span style=display:flex><span>	d1 o-.-o d2 o-..-o d3 o-...-o d4; %% 多向虚线o
+</span></span><span style=display:flex><span>	e1 &lt;-.-&gt; e2 &lt;-..-&gt; e3 &lt;-...-&gt; e4; %% 多向虚线箭头
+</span></span><span style=display:flex><span>	f1 x-.-x f2  x-..-x f3 x-...-x f4; %% 多向虚线x
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	%% 粗实线
+</span></span><span style=display:flex><span>	g1 o==o g2 o===o g3 o====o g4; %% 多向粗实线o
+</span></span><span style=display:flex><span>	h1 &lt;==&gt; h2 &lt;===&gt; h3 &lt;====&gt; h4; %% 多向粗实线
+</span></span><span style=display:flex><span>	i1 x==x i2 x===x i3 x====x i4; %% 多向粗实线x
+</span></span><span style=display:flex><span><span style=color:#e6db74>```</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR
 	%% 实线
 	a1 o--o a2 o---o a3 o----o a4; %% 多向实线o
 	b1 &lt;--&gt; b2 &lt;---&gt; b3 &lt;----&gt; b4; %% 多向实线箭头
@@ -161,32 +177,26 @@ flowchart LR
 	g1 o==o g2 o===o g3 o====o g4; %% 多向粗实线o
 	h1 &lt;==&gt; h2 &lt;===&gt; h3 &lt;====&gt; h4; %% 多向粗实线
 	i1 x==x i2 x===x i3 x====x i4; %% 多向粗实线x
-```
-</code></pre><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR
-	%% 实线
-	a1 o--o a2 o---o a3 o----o a4; %% 多向实线o
-	b1 &lt;--&gt; b2 &lt;---&gt; b3 &lt;----&gt; b4; %% 多向实线箭头
-	c1 x--x c2 x---x c3 x----x c4; %% 多向实线x
-	
-	%% 虚线
-	d1 o-.-o d2 o-..-o d3 o-...-o d4; %% 多向虚线o
-	e1 &lt;-.-&gt; e2 &lt;-..-&gt; e3 &lt;-...-&gt; e4; %% 多向虚线箭头
-	f1 x-.-x f2  x-..-x f3 x-...-x f4; %% 多向虚线x
-	
-	%% 粗实线
-	g1 o==o g2 o===o g3 o====o g4; %% 多向粗实线o
-	h1 &lt;==&gt; h2 &lt;===&gt; h3 &lt;====&gt; h4; %% 多向粗实线
-	i1 x==x i2 x===x i3 x====x i4; %% 多向粗实线x
-</code></pre><h3 id=节点间的多条连线>节点间的多条连线</h3><pre tabindex=0><code>```mermaid
-flowchart TB
+</code></pre><h3 id=节点间的多条连线>节点间的多条连线</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=display:flex><span><span style=color:#e6db74>```mermaid
+</span></span></span><span style=display:flex><span><span style=color:#e6db74></span>flowchart TB
+</span></span><span style=display:flex><span>	得出答案A--&gt;确定么?--&gt;|确定|好吧;
+</span></span><span style=display:flex><span>	好吧--&gt;再想一想--&gt;|不对劲|确定么?----&gt;|恍然大悟|修正为答案B;
+</span></span><span style=display:flex><span><span style=color:#e6db74>```</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart TB
 	得出答案A--&gt;确定么?--&gt;|确定|好吧;
 	好吧--&gt;再想一想--&gt;|不对劲|确定么?----&gt;|恍然大悟|修正为答案B;
-```
-</code></pre><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart TB
-	得出答案A--&gt;确定么?--&gt;|确定|好吧;
-	好吧--&gt;再想一想--&gt;|不对劲|确定么?----&gt;|恍然大悟|修正为答案B;
-</code></pre><h2 id=节点>节点</h2><h3 id=节点的容器-名>节点的容器 (名)</h3><p>不使用容器，复杂的文本如英文词组中的空格会报错。</p><pre tabindex=0><code>```mermaid
-flowchart BT
+</code></pre><h2 id=节点>节点</h2><h3 id=节点的容器-名>节点的容器 (名)</h3><p>不使用容器，复杂的文本如英文词组中的空格会报错。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=display:flex><span><span style=color:#e6db74>```mermaid
+</span></span></span><span style=display:flex><span><span style=color:#e6db74></span>flowchart BT
+</span></span><span style=display:flex><span>	id1[我]--&gt;id2[父亲]
+</span></span><span style=display:flex><span>	id1--&gt;id3[母亲]
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	id2--妈妈--&gt;id4[奶奶]
+</span></span><span style=display:flex><span>	id2--爸爸--&gt;id5[爷爷]
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	id3--妈妈--&gt;id6[外婆]
+</span></span><span style=display:flex><span>	id3--爸爸--&gt;id7[外公]
+</span></span><span style=display:flex><span><span style=color:#e6db74>```</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart BT
 	id1[我]--&gt;id2[父亲]
 	id1--&gt;id3[母亲]
 	
@@ -195,28 +205,41 @@ flowchart BT
 	
 	id3--妈妈--&gt;id6[外婆]
 	id3--爸爸--&gt;id7[外公]
-```
-</code></pre><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart BT
-	id1[我]--&gt;id2[父亲]
-	id1--&gt;id3[母亲]
-	
-	id2--妈妈--&gt;id4[奶奶]
-	id2--爸爸--&gt;id5[爷爷]
-	
-	id3--妈妈--&gt;id6[外婆]
-	id3--爸爸--&gt;id7[外公]
-</code></pre><h3 id=节点形状>节点形状</h3><pre tabindex=0><code>```mermaid
-flowchart LR
+</code></pre><h3 id=节点形状>节点形状</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=display:flex><span><span style=color:#e6db74>```mermaid
+</span></span></span><span style=display:flex><span><span style=color:#e6db74></span>flowchart LR
+</span></span><span style=display:flex><span>	id1[矩形]--&gt;id2((圆形))--&gt;id3{菱形}--&gt;id4(圆角矩形)
+</span></span><span style=display:flex><span>	id5([跑道形])--&gt;id6[/平行四边形/]--&gt;id7[\反向平行四边形\]--&gt;id8[/梯形\]
+</span></span><span style=display:flex><span>	id9[\倒立梯形/]--&gt;id10&gt;燕尾型]--&gt;id11[(圆柱形)]
+</span></span><span style=display:flex><span><span style=color:#e6db74>```</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR
 	id1[矩形]--&gt;id2((圆形))--&gt;id3{菱形}--&gt;id4(圆角矩形)
 	id5([跑道形])--&gt;id6[/平行四边形/]--&gt;id7[\反向平行四边形\]--&gt;id8[/梯形\]
 	id9[\倒立梯形/]--&gt;id10&gt;燕尾型]--&gt;id11[(圆柱形)]
-```
-</code></pre><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR
-	id1[矩形]--&gt;id2((圆形))--&gt;id3{菱形}--&gt;id4(圆角矩形)
-	id5([跑道形])--&gt;id6[/平行四边形/]--&gt;id7[\反向平行四边形\]--&gt;id8[/梯形\]
-	id9[\倒立梯形/]--&gt;id10&gt;燕尾型]--&gt;id11[(圆柱形)]
-</code></pre><h3 id=会报错的文本>会报错的文本</h3><p>容器命名时 end 会报错，文本中不会</p><p>在文本内容输入 <code>[ ] { } ( )</code>，会报错；<code>> \ /</code> 可以用，不会报错；一些生僻的汉字、部首，也会报错</p><p>那么，要怎样才能 在文本内容中 显示这些会报错的字符呢？可以使用，双引号 <code>" "</code></p><p>使用 双引号 " " 包裹，可以让破坏语法的字符，合法地进入节点，不会报错</p><h2 id=子图>子图</h2><h3 id=子图创建>子图创建</h3><pre tabindex=0><code>```mermaid
-flowchart TB
+</code></pre><h3 id=会报错的文本>会报错的文本</h3><p>容器命名时 end 会报错，文本中不会</p><p>在文本内容输入 <code>[ ] { } ( )</code>，会报错；<code>> \ /</code> 可以用，不会报错；一些生僻的汉字、部首，也会报错</p><p>那么，要怎样才能 在文本内容中 显示这些会报错的字符呢？可以使用，双引号 <code>" "</code></p><p>使用 双引号 " " 包裹，可以让破坏语法的字符，合法地进入节点，不会报错</p><h2 id=子图>子图</h2><h3 id=子图创建>子图创建</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=display:flex><span><span style=color:#e6db74>```mermaid
+</span></span></span><span style=display:flex><span><span style=color:#e6db74></span>flowchart TB
+</span></span><span style=display:flex><span>    subgraph sub1[one 子图1]
+</span></span><span style=display:flex><span>    a1--&gt;a2;
+</span></span><span style=display:flex><span>    end;
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>    subgraph sub2[two 子图2]
+</span></span><span style=display:flex><span>    b1--&gt;b2;
+</span></span><span style=display:flex><span>    end;
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>    subgraph sub3[three 子图3]
+</span></span><span style=display:flex><span>    c1--&gt;c2;
+</span></span><span style=display:flex><span>    end;
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	%% 节点与节点的连接
+</span></span><span style=display:flex><span>	c1--&gt;a2;
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	%% 子图与子图的连接
+</span></span><span style=display:flex><span>    sub1--&gt;sub2;
+</span></span><span style=display:flex><span>    sub3--&gt;sub2;
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	%% 子图与节点的连接
+</span></span><span style=display:flex><span>    sub2--&gt;c2;
+</span></span><span style=display:flex><span><span style=color:#e6db74>```</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart TB
     subgraph sub1[one 子图1]
     a1--&gt;a2;
     end;
@@ -238,50 +261,27 @@ flowchart TB
 	
 	%% 子图与节点的连接
     sub2--&gt;c2;
-```
-</code></pre><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart TB
-    subgraph sub1[one 子图1]
-    a1--&gt;a2;
-    end;
-	
-    subgraph sub2[two 子图2]
-    b1--&gt;b2;
-    end;
-	
-    subgraph sub3[three 子图3]
-    c1--&gt;c2;
-    end;
-	
-	%% 节点与节点的连接
-	c1--&gt;a2;
-	
-	%% 子图与子图的连接
-    sub1--&gt;sub2;
-    sub3--&gt;sub2;
-	
-	%% 子图与节点的连接
-    sub2--&gt;c2;
-</code></pre><blockquote><p>[!warning]<br>子图容器必须用中括号 [ ]，其他不行，容器名 [子图名文本]</p></blockquote><h3 id=子图嵌套>子图嵌套</h3><pre tabindex=0><code>```mermaid
-flowchart LR
-	subgraph 子图
-	%% 声明子图
-	direction TB  %% 子图方向
-		subgraph 子图1
-        direction RL %% 子图1方向
-        i1--&gt;f1
-		end
-		
-    	subgraph 子图2
-        direction BT %% 子图2方向
-        i2--&gt;f2
-		end
-	end
-  
-  %% 主图
-  A--&gt;子图--&gt;B
-  子图1--&gt;子图2
-```
-</code></pre><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR
+</code></pre><blockquote><p>[!warning]<br>子图容器必须用中括号 [ ]，其他不行，容器名 [子图名文本]</p></blockquote><h3 id=子图嵌套>子图嵌套</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=display:flex><span><span style=color:#e6db74>```mermaid
+</span></span></span><span style=display:flex><span><span style=color:#e6db74></span>flowchart LR
+</span></span><span style=display:flex><span>	subgraph 子图
+</span></span><span style=display:flex><span>	%% 声明子图
+</span></span><span style=display:flex><span>	direction TB  %% 子图方向
+</span></span><span style=display:flex><span>		subgraph 子图1
+</span></span><span style=display:flex><span>        direction RL %% 子图1方向
+</span></span><span style=display:flex><span>        i1--&gt;f1
+</span></span><span style=display:flex><span>		end
+</span></span><span style=display:flex><span>		
+</span></span><span style=display:flex><span>    	subgraph 子图2
+</span></span><span style=display:flex><span>        direction BT %% 子图2方向
+</span></span><span style=display:flex><span>        i2--&gt;f2
+</span></span><span style=display:flex><span>		end
+</span></span><span style=display:flex><span>	end
+</span></span><span style=display:flex><span>  
+</span></span><span style=display:flex><span>  %% 主图
+</span></span><span style=display:flex><span>  A--&gt;子图--&gt;B
+</span></span><span style=display:flex><span>  子图1--&gt;子图2
+</span></span><span style=display:flex><span><span style=color:#e6db74>```</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-mermaid data-lang=mermaid>flowchart LR
 	subgraph 子图
 	%% 声明子图
 	direction TB  %% 子图方向
