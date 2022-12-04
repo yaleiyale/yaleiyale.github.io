@@ -23,7 +23,11 @@ side.backlink-container:hover {
     width: 10vw;
 }
 
-content a.internal-link {
+content a.obsidian-link {
     border-color: #8b88e6;
     background-color: #efefff;
+}
+
+.obsidian-link{
+    text-decoration: none;
 }
