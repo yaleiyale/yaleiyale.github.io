@@ -169,8 +169,7 @@ table tbody {
 
 /* 标注 */
 blockquote {
-    color: #7a7a7a;
-    border-left: .25rem solid #e5e5e5;
+    border-left: .25rem solid #e1e1e1;
     padding-right: 1.25rem;
     padding-left: 1.25rem;
 }
