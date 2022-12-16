@@ -109,10 +109,13 @@ strong {
 
 /* 链接样式修正 */
 
-a,
-a:hover {
+a {
     color: inherit;
     border-bottom: 1px;
+}
+
+a:hover {
+    color: rgb(47, 97, 228);
 }
 
 /* 选中字体颜色 */
