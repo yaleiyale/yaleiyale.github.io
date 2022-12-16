@@ -25,10 +25,7 @@ side.backlink-container:hover {
     width: 10vw;
 }
 
-content a.obsidian-link {
-    color: rgb(47, 147, 228);
-}
-
 .obsidian-link {
+    color: rgb(47, 147, 228);
     text-decoration: none;
 }
