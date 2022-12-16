@@ -4,12 +4,14 @@ side.backlink-container {
     left: 2vw;
     top: 5rem;
     height: 42vh;
-    overflow: hidden; 
-    width:14vw
+    overflow: hidden;
+    width: 14vw
 }
+
 side.backlink-container:hover {
     overflow-y: auto;
 }
+
 @media only screen and (max-width: 540px) {
     side.backlink-container {
         display: none;
@@ -24,10 +26,9 @@ side.backlink-container:hover {
 }
 
 content a.obsidian-link {
-    border-color: #8b88e6;
-    background-color: #efefff;
+    color: rgb(47, 147, 228);
 }
 
-.obsidian-link{
+.obsidian-link {
     text-decoration: none;
 }
