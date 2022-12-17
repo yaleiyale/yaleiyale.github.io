@@ -115,7 +115,7 @@ a {
 }
 
 a:hover {
-    color: rgb(47, 97, 228);
+    font-weight: bold;
 }
 
 /* 选中字体颜色 */
