@@ -115,7 +115,7 @@ a {
 }
 
 a:hover {
-    font-weight: bold;
+    font-weight: 800;
 }
 
 /* 选中字体颜色 */
