@@ -22,7 +22,7 @@
 </span></span><span style=display:flex><span>          <span style=color:#f92672>path</span>: <span style=color:#ae81ff>vendor/bundle</span>
 </span></span><span style=display:flex><span>          <span style=color:#f92672>key</span>: <span style=color:#ae81ff>${{ runner.os }}-gems-${{ hashFiles(&#39;**/Gemfile&#39;) }}</span>
 </span></span><span style=display:flex><span>          <span style=color:#f92672>restore-keys</span>: |<span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>            </span>            <span style=color:#ae81ff>${{ runner.os }}-gems-</span>
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>            ${{ runner.os }}-gems-</span>            
 </span></span><span style=display:flex><span>      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Build</span>
 </span></span><span style=display:flex><span>        <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>helaili/jekyll-action@v2</span>
 </span></span><span style=display:flex><span>        <span style=color:#f92672>with</span>:
