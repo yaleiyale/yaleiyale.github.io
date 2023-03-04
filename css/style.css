@@ -177,6 +177,7 @@ blockquote {
     padding-right: 1.25rem;
     padding-left: 1.25rem;
     background:cornsilk;
+    padding-bottom: 0.5rem;
 }
 
 blockquote p:last-child {
