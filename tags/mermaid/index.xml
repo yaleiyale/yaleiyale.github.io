@@ -1,1 +1,71 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>mermaid on 时砂凝几页</title><link>http://lestua.eu.org/tags/mermaid/</link><description>Recent content in mermaid on 时砂凝几页</description><generator>Hugo -- gohugo.io</generator><language>zh</language><copyright> 2021-{year} yaleiyale</copyright><lastBuildDate>Sat, 30 Jul 2022 20:46:15 +0800</lastBuildDate><atom:link href="http://lestua.eu.org/tags/mermaid/index.xml" rel="self" type="application/rss+xml"/><item><title>Mermaid书写范例实例</title><link>http://lestua.eu.org/notes/2022/08/29/223909/</link><pubDate>Sat, 30 Jul 2022 20:46:15 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/08/29/223909/</guid><description>依赖 mermaid 支持，遵循语法进行书写可实现渲染出图 流程图 关键字 flowchart 方向 TB(top to bottom) BT(bottom to top) LR(left to right) RL(right to left) Mermaid 语句的结束，有两种方式:在结尾加分号；换行 ```mermaid flowchart LR a--&amp;gt;b c--&amp;gt;d ```</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mermaid on 时砂凝几页</title><link>http://lestua.eu.org/tags/mermaid/</link><description>Recent content in Mermaid on 时砂凝几页</description><generator>Hugo</generator><language>zh</language><copyright> 2021-{year} yaleiyale</copyright><lastBuildDate>Fri, 16 Dec 2022 20:44:43 +0800</lastBuildDate><atom:link href="http://lestua.eu.org/tags/mermaid/index.xml" rel="self" type="application/rss+xml"/><item><title>Mermaid书写范例实例</title><link>http://lestua.eu.org/notes/2022/08/29/223909/</link><pubDate>Sat, 30 Jul 2022 20:46:15 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/08/29/223909/</guid><description>&lt;p>依赖 mermaid 支持，&lt;strong>遵循语法进行书写可实现渲染出图&lt;/strong>&lt;/p>
+&lt;h1 id="流程图">流程图&lt;/h1>
+&lt;ul>
+&lt;li>关键字
+&lt;ul>
+&lt;li>flowchart&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>方向
+&lt;ul>
+&lt;li>TB(top to bottom)&lt;/li>
+&lt;li>BT(bottom to top)&lt;/li>
+&lt;li>LR(left to right)&lt;/li>
+&lt;li>RL(right to left)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Mermaid 语句的结束，有两种方式:&lt;strong>在结尾加分号&lt;/strong>；&lt;strong>换行&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">```mermaid
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">&lt;/span>flowchart LR
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	a--&amp;gt;b
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	c--&amp;gt;d
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">```&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">flowchart LR
+	a--&amp;gt;b
+	c--&amp;gt;d
+&lt;/code>&lt;/pre>&lt;h2 id="连线">连线&lt;/h2>
+&lt;h3 id="线种类">线种类&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">```mermaid
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">&lt;/span>flowchart LR
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A---实线; %% AB之间，以一条实线连接
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A-.-虚线; %% AB之间，以一条虚线连接
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A===粗实线; %% AB之间，以一条粗实线连接
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A--&amp;gt;箭头实线; %% AB之间，以一条箭头实线连接
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A-.-&amp;gt;箭头虚线; %% AB之间，以一条箭头虚线连接
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A==&amp;gt;箭头粗实线; %% AB之间，以一条箭头粗实线连接
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A~~~不可见 %%可用于节点定位
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">```&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">flowchart LR
+	A---实线; %% AB之间，以一条实线连接
+	A-.-虚线; %% AB之间，以一条虚线连接
+	A===粗实线; %% AB之间，以一条粗实线连接
+	A--&amp;gt;箭头实线; %% AB之间，以一条箭头实线连接
+	A-.-&amp;gt;箭头虚线; %% AB之间，以一条箭头虚线连接
+	A==&amp;gt;箭头粗实线; %% AB之间，以一条箭头粗实线连接
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">```mermaid
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">&lt;/span>flowchart RL
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	反向实线箭头--&amp;gt;A; %% 这是一条从B到A的反向实线箭头
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">```&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">flowchart RL
+	反向实线箭头--&amp;gt;A; %% 这是一条从B到A的反向实线箭头
+&lt;/code>&lt;/pre>&lt;h3 id="箭头类型">箭头类型&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">```mermaid
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">&lt;/span>flowchart LR 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A --o 实线o; %% 实线o
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A --x 实线x; %% 实线x
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A -.-o 虚线o; %% 虚线o
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A -.-x 虚线x; %% 虚线x
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A ==o 粗实线o; %% 粗实线o
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A ==x 粗实线x; %% 粗实线x
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">```&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">flowchart LR 
+%% 使用flowchart关键字
+	A --o 实线o; %% 实线o
+	A --x 实线x; %% 实线x
+	A -.-o 虚线o; %% 虚线o
+	A -.-x 虚线x; %% 虚线x
+	A ==o 粗实线o; %% 粗实线o
+	A ==x 粗实线x; %% 粗实线x
+&lt;/code>&lt;/pre>&lt;h3 id="多向箭头">多向箭头&lt;/h3>
+&lt;p>有三种: 使用首尾相同的 o 或 x，或者一对 &amp;lt; &amp;gt;; 不能使用 o&amp;ndash;x 这样首尾不同的&lt;/p></description></item></channel></rss>

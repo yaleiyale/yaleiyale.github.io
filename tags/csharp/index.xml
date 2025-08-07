@@ -1,1 +1,251 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>csharp on 时砂凝几页</title><link>http://lestua.eu.org/tags/csharp/</link><description>Recent content in csharp on 时砂凝几页</description><generator>Hugo -- gohugo.io</generator><language>zh</language><copyright> 2021-{year} yaleiyale</copyright><lastBuildDate>Tue, 07 Mar 2023 17:38:29 +0800</lastBuildDate><atom:link href="http://lestua.eu.org/tags/csharp/index.xml" rel="self" type="application/rss+xml"/><item><title>csharp之array类的常用方法</title><link>http://lestua.eu.org/notes/2023/03/07/173831/</link><pubDate>Tue, 07 Mar 2023 17:38:29 +0800</pubDate><guid>http://lestua.eu.org/notes/2023/03/07/173831/</guid><description>方法 描述 Clear 根据元素的类型，设置数组中某个范围的元素为零、为 false 或者为 null。 Copy(Array, Array, Int32) 从数组的第一个元素开始复制某个范围的元素到另一个数组的第一</description></item><item><title>csharp之Array类的常用属性</title><link>http://lestua.eu.org/notes/2023/03/07/173806/</link><pubDate>Tue, 07 Mar 2023 17:38:04 +0800</pubDate><guid>http://lestua.eu.org/notes/2023/03/07/173806/</guid><description>常用属性 描述 IsFixedSize 获取一个值，该值指示数组是否带有固定大小。 IsReadOnly 获取一个值，该值指示数组是否只读。 Length 获取一个 32 位整数，该值表示所有维度的数组中的元</description></item><item><title>csharp之string类的一些最常用的方法</title><link>http://lestua.eu.org/notes/2023/03/07/173401/</link><pubDate>Tue, 07 Mar 2023 17:30:46 +0800</pubDate><guid>http://lestua.eu.org/notes/2023/03/07/173401/</guid><description>方法 描述 public static int Compare( string strA, string strB ) 比较两个指定的 string 对象，并返回一个表示它们在排列顺序中相对位置的整数。该方法区分大小写。 public static int Compare( string strA, string strB, bool ignoreCase ) 比较两</description></item><item><title>csharp条陈</title><link>http://lestua.eu.org/notes/2023/03/04/230456/</link><pubDate>Sat, 04 Mar 2023 22:36:22 +0800</pubDate><guid>http://lestua.eu.org/notes/2023/03/04/230456/</guid><description>装箱拆箱 当一个值类型转换为对象类型时，则被称为 装箱；另一方面，当一个对象类型转换为值类型时，则被称为 拆箱。 动态类型 可以存储任何类型的值在动态</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Csharp on 时砂凝几页</title><link>http://lestua.eu.org/tags/csharp/</link><description>Recent content in Csharp on 时砂凝几页</description><generator>Hugo</generator><language>zh</language><copyright> 2021-{year} yaleiyale</copyright><lastBuildDate>Fri, 17 Mar 2023 17:45:24 +0800</lastBuildDate><atom:link href="http://lestua.eu.org/tags/csharp/index.xml" rel="self" type="application/rss+xml"/><item><title>csharp之array类的常用方法</title><link>http://lestua.eu.org/notes/2023/03/07/173831/</link><pubDate>Tue, 07 Mar 2023 17:38:29 +0800</pubDate><guid>http://lestua.eu.org/notes/2023/03/07/173831/</guid><description>&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>方法&lt;/th>
+ &lt;th>描述&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Clear&lt;/strong>&lt;/td>
+ &lt;td>根据元素的类型，设置数组中某个范围的元素为零、为 false 或者为 null。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Copy(Array, Array, Int32)&lt;/strong>&lt;/td>
+ &lt;td>从数组的第一个元素开始复制某个范围的元素到另一个数组的第一个元素位置。长度由一个 32 位整数指定。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>CopyTo(Array, Int32)&lt;/strong>&lt;/td>
+ &lt;td>从当前的一维数组中复制所有的元素到一个指定的一维数组的指定索引位置。索引由一个 32 位整数指定。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>GetLength&lt;/strong>&lt;/td>
+ &lt;td>获取一个 32 位整数，该值表示指定维度的数组中的元素总数。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>GetLongLength&lt;/strong>&lt;/td>
+ &lt;td>获取一个 64 位整数，该值表示指定维度的数组中的元素总数。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>GetLowerBound&lt;/strong>&lt;/td>
+ &lt;td>获取数组中指定维度的下界。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>GetType&lt;/strong>&lt;/td>
+ &lt;td>获取当前实例的类型。从对象（Object）继承。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>GetUpperBound&lt;/strong>&lt;/td>
+ &lt;td>获取数组中指定维度的上界。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>GetValue(Int32)&lt;/strong>&lt;/td>
+ &lt;td>获取一维数组中指定位置的值。索引由一个 32 位整数指定。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>IndexOf(Array, Object)&lt;/strong>&lt;/td>
+ &lt;td>搜索指定的对象，返回整个一维数组中第一次出现的索引。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Reverse(Array)&lt;/strong>&lt;/td>
+ &lt;td>逆转整个一维数组中元素的顺序。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>SetValue(Object, Int32)&lt;/strong>&lt;/td>
+ &lt;td>给一维数组中指定位置的元素设置值。索引由一个 32 位整数指定。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Sort(Array)&lt;/strong>&lt;/td>
+ &lt;td>使用数组的每个元素的 IComparable 实现来排序整个一维数组中的元素。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>ToString&lt;/strong>&lt;/td>
+ &lt;td>返回一个表示当前对象的字符串。从对象（Object）继承。&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>csharp之Array类的常用属性</title><link>http://lestua.eu.org/notes/2023/03/07/173806/</link><pubDate>Tue, 07 Mar 2023 17:38:04 +0800</pubDate><guid>http://lestua.eu.org/notes/2023/03/07/173806/</guid><description>&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>常用属性&lt;/th>
+ &lt;th>描述&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>IsFixedSize&lt;/strong>&lt;/td>
+ &lt;td>获取一个值，该值指示数组是否带有固定大小。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>IsReadOnly&lt;/strong>&lt;/td>
+ &lt;td>获取一个值，该值指示数组是否只读。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Length&lt;/strong>&lt;/td>
+ &lt;td>获取一个 32 位整数，该值表示所有维度的数组中的元素总数。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>LongLength&lt;/strong>&lt;/td>
+ &lt;td>获取一个 64 位整数，该值表示所有维度的数组中的元素总数。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Rank&lt;/strong>&lt;/td>
+ &lt;td>获取数组的秩（维度）。&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>csharp之string类的一些最常用的方法</title><link>http://lestua.eu.org/notes/2023/03/07/173401/</link><pubDate>Tue, 07 Mar 2023 17:30:46 +0800</pubDate><guid>http://lestua.eu.org/notes/2023/03/07/173401/</guid><description>&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>方法&lt;/th>
+ &lt;th>描述&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>public static int Compare( string strA, string strB )&lt;/strong>&lt;/td>
+ &lt;td>比较两个指定的 string 对象，并返回一个表示它们在排列顺序中相对位置的整数。该方法区分大小写。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public static int Compare( string strA, string strB, bool ignoreCase )&lt;/strong>&lt;/td>
+ &lt;td>比较两个指定的 string 对象，并返回一个表示它们在排列顺序中相对位置的整数。但是，如果布尔参数为真时，该方法不区分大小写。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public static string Concat( string str0, string str1 )&lt;/strong>&lt;/td>
+ &lt;td>连接两个 string 对象。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public static string Concat( string str0, string str1, string str2 )&lt;/strong>&lt;/td>
+ &lt;td>连接三个 string 对象。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public static string Concat( string str0, string str1, string str2, string str3 )&lt;/strong>&lt;/td>
+ &lt;td>连接四个 string 对象。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public bool Contains( string value )&lt;/strong>&lt;/td>
+ &lt;td>返回一个表示指定 string 对象是否出现在字符串中的值。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public static string Copy( string str )&lt;/strong>&lt;/td>
+ &lt;td>创建一个与指定字符串具有相同值的新的 String 对象。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public void CopyTo( int sourceIndex, char[] destination, int destinationIndex, int count )&lt;/strong>&lt;/td>
+ &lt;td>从 string 对象的指定位置开始复制指定数量的字符到 Unicode 字符数组中的指定位置。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public bool EndsWith( string value )&lt;/strong>&lt;/td>
+ &lt;td>判断 string 对象的结尾是否匹配指定的字符串。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public bool Equals( string value )&lt;/strong>&lt;/td>
+ &lt;td>判断当前的 string 对象是否与指定的 string 对象具有相同的值。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public static bool Equals( string a, string b )&lt;/strong>&lt;/td>
+ &lt;td>判断两个指定的 string 对象是否具有相同的值。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public static string Format( string format, Object arg0 )&lt;/strong>&lt;/td>
+ &lt;td>把指定字符串中一个或多个格式项替换为指定对象的字符串表示形式。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public int IndexOf( char value )&lt;/strong>&lt;/td>
+ &lt;td>返回指定 Unicode 字符在当前字符串中第一次出现的索引，索引从 0 开始。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public int IndexOf( string value )&lt;/strong>&lt;/td>
+ &lt;td>返回指定字符串在该实例中第一次出现的索引，索引从 0 开始。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public int IndexOf( char value, int startIndex )&lt;/strong>&lt;/td>
+ &lt;td>返回指定 Unicode 字符从该字符串中指定字符位置开始搜索第一次出现的索引，索引从 0 开始。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public int IndexOf( string value, int startIndex )&lt;/strong>&lt;/td>
+ &lt;td>返回指定字符串从该实例中指定字符位置开始搜索第一次出现的索引，索引从 0 开始。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public int IndexOfAny( char[] anyOf )&lt;/strong>&lt;/td>
+ &lt;td>返回某一个指定的 Unicode 字符数组中任意字符在该实例中第一次出现的索引，索引从 0 开始。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public int IndexOfAny( char[] anyOf, int startIndex )&lt;/strong>&lt;/td>
+ &lt;td>返回某一个指定的 Unicode 字符数组中任意字符从该实例中指定字符位置开始搜索第一次出现的索引，索引从 0 开始。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public string Insert( int startIndex, string value )&lt;/strong>&lt;/td>
+ &lt;td>返回一个新的字符串，其中，指定的字符串被插入在当前 string 对象的指定索引位置。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public static bool IsNullOrEmpty( string value )&lt;/strong>&lt;/td>
+ &lt;td>指示指定的字符串是否为 null 或者是否为一个空的字符串。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public static string Join( string separator, string[] value )&lt;/strong>&lt;/td>
+ &lt;td>连接一个字符串数组中的所有元素，使用指定的分隔符分隔每个元素。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public static string Join( string separator, string[] value, int startIndex, int count )&lt;/strong>&lt;/td>
+ &lt;td>连接一个字符串数组中的指定位置开始的指定元素，使用指定的分隔符分隔每个元素。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public int LastIndexOf( char value )&lt;/strong>&lt;/td>
+ &lt;td>返回指定 Unicode 字符在当前 string 对象中最后一次出现的索引位置，索引从 0 开始。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public int LastIndexOf( string value )&lt;/strong>&lt;/td>
+ &lt;td>返回指定字符串在当前 string 对象中最后一次出现的索引位置，索引从 0 开始。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public string Remove( int startIndex )&lt;/strong>&lt;/td>
+ &lt;td>移除当前实例中的所有字符，从指定位置开始，一直到最后一个位置为止，并返回字符串。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public string Remove( int startIndex, int count )&lt;/strong>&lt;/td>
+ &lt;td>从当前字符串的指定位置开始移除指定数量的字符，并返回字符串。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public string Replace( char oldChar, char newChar )&lt;/strong>&lt;/td>
+ &lt;td>把当前 string 对象中，所有指定的 Unicode 字符替换为另一个指定的 Unicode 字符，并返回新的字符串。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public string Replace( string oldValue, string newValue )&lt;/strong>&lt;/td>
+ &lt;td>把当前 string 对象中，所有指定的字符串替换为另一个指定的字符串，并返回新的字符串。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public string[] Split( params char[] separator )&lt;/strong>&lt;/td>
+ &lt;td>返回一个字符串数组，包含当前的 string 对象中的子字符串，子字符串是使用指定的 Unicode 字符数组中的元素进行分隔的。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public string[] Split( char[] separator, int count )&lt;/strong>&lt;/td>
+ &lt;td>返回一个字符串数组，包含当前的 string 对象中的子字符串，子字符串是使用指定的 Unicode 字符数组中的元素进行分隔的。int 参数指定要返回的子字符串的最大数目。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public bool StartsWith( string value )&lt;/strong>&lt;/td>
+ &lt;td>判断字符串实例的开头是否匹配指定的字符串。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public char[] ToCharArray()&lt;/strong>&lt;/td>
+ &lt;td>返回一个带有当前 string 对象中所有字符的 Unicode 字符数组。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public char[] ToCharArray( int startIndex, int length )&lt;/strong>&lt;/td>
+ &lt;td>返回一个带有当前 string 对象中所有字符的 Unicode 字符数组，从指定的索引开始，直到指定的长度为止。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public string ToLower()&lt;/strong>&lt;/td>
+ &lt;td>把字符串转换为小写并返回。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public string ToUpper()&lt;/strong>&lt;/td>
+ &lt;td>把字符串转换为大写并返回。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>public string Trim()&lt;/strong>&lt;/td>
+ &lt;td>移除当前 String 对象中的所有前导空白字符和后置空白字符。&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>csharp条陈</title><link>http://lestua.eu.org/notes/2023/03/04/230456/</link><pubDate>Sat, 04 Mar 2023 22:36:22 +0800</pubDate><guid>http://lestua.eu.org/notes/2023/03/04/230456/</guid><description>&lt;h1 id="装箱拆箱">装箱拆箱&lt;/h1>
+&lt;p>当一个值类型转换为对象类型时，则被称为 &lt;strong>装箱&lt;/strong>；另一方面，当一个对象类型转换为值类型时，则被称为 &lt;strong>拆箱&lt;/strong>。&lt;/p>
+&lt;h1 id="动态类型">动态类型&lt;/h1>
+&lt;p>可以存储任何类型的值在动态数据类型变量中。&lt;code>dynamic count = 20;&lt;/code>&lt;/p></description></item></channel></rss>

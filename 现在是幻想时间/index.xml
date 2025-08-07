@@ -1,1 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>现在是幻想时间 on 时砂凝几页</title><link>http://lestua.eu.org/%E7%8E%B0%E5%9C%A8%E6%98%AF%E5%B9%BB%E6%83%B3%E6%97%B6%E9%97%B4/</link><description>Recent content in 现在是幻想时间 on 时砂凝几页</description><generator>Hugo -- gohugo.io</generator><language>zh</language><copyright> 2021-{year} yaleiyale</copyright><lastBuildDate>Tue, 30 May 2023 22:55:03 +0800</lastBuildDate><atom:link href="http://lestua.eu.org/%E7%8E%B0%E5%9C%A8%E6%98%AF%E5%B9%BB%E6%83%B3%E6%97%B6%E9%97%B4/index.xml" rel="self" type="application/rss+xml"/><item><title>工作效率的开发需要</title><link>http://lestua.eu.org/notes/2023/05/30/225535/</link><pubDate>Tue, 30 May 2023 22:55:03 +0800</pubDate><guid>http://lestua.eu.org/notes/2023/05/30/225535/</guid><description>时间相机，可逐帧播放视频 MAUI技术 从excel文件中提取数据，生成可导入文件 python 数据处理相关包</description></item><item><title>钛铻</title><link>http://lestua.eu.org/notes/2023/02/13/153114/</link><pubDate>Mon, 13 Feb 2023 15:30:36 +0800</pubDate><guid>http://lestua.eu.org/notes/2023/02/13/153114/</guid><description>以MAUI构建跨平台音乐播放器 探索版 动工 中文应用名称：钛铻 英文字母应用名称：taiwu 名称来由：ting（听的汉语拼音）的拆分，分为 ti 与 ng 。</description></item><item><title>啼鸣</title><link>http://lestua.eu.org/notes/2022/10/26/161447/</link><pubDate>Wed, 26 Oct 2022 16:13:15 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/10/26/161447/</guid><description>Due to 对于 演技差却很红的演员 唱歌烂却很红的歌手 水平低却很红的网红 还有更多的 令人生厌的 甚至纯粹无业也风光的 偶像 明星 哪怕群众，如果它 长久地 不以个人</description></item><item><title>咋瓦鲁多os</title><link>http://lestua.eu.org/notes/2022/08/29/223404/</link><pubDate>Fri, 15 Jul 2022 22:08:17 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/08/29/223404/</guid><description>产品设计 ![[Drawing 2022-07-15 21.28.23.excalidraw]] 形式 应用形式：小小世界 操作系统/UI：咋瓦鲁多 特性 抹去 客户端app阵列 的交互方案，提供供更专注1、清晰2、科学3、去中心化4的</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>现在是幻想时间 on 时砂凝几页</title><link>http://lestua.eu.org/%E7%8E%B0%E5%9C%A8%E6%98%AF%E5%B9%BB%E6%83%B3%E6%97%B6%E9%97%B4/</link><description>Recent content in 现在是幻想时间 on 时砂凝几页</description><generator>Hugo</generator><language>zh</language><copyright> 2021-{year} yaleiyale</copyright><lastBuildDate>Tue, 30 May 2023 22:58:47 +0800</lastBuildDate><atom:link href="http://lestua.eu.org/%E7%8E%B0%E5%9C%A8%E6%98%AF%E5%B9%BB%E6%83%B3%E6%97%B6%E9%97%B4/index.xml" rel="self" type="application/rss+xml"/><item><title>工作效率的开发需要</title><link>http://lestua.eu.org/notes/2023/05/30/225535/</link><pubDate>Tue, 30 May 2023 22:55:03 +0800</pubDate><guid>http://lestua.eu.org/notes/2023/05/30/225535/</guid><description>&lt;ol>
+&lt;li>时间相机，可逐帧播放视频
+&lt;ul>
+&lt;li>MAUI技术&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>从excel文件中提取数据，生成可导入文件
+&lt;ul>
+&lt;li>python 数据处理相关包&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol></description></item><item><title>咋瓦鲁多os</title><link>http://lestua.eu.org/notes/2022/08/29/223404/</link><pubDate>Fri, 15 Jul 2022 22:08:17 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/08/29/223404/</guid><description>&lt;h1 id="产品设计">产品设计&lt;/h1>
+&lt;p>![[Drawing 2022-07-15 21.28.23.excalidraw]]&lt;/p>
+&lt;h1 id="形式">形式&lt;/h1>
+&lt;p>应用形式：小小世界&lt;/p>
+&lt;p>操作系统/UI：咋瓦鲁多&lt;/p>
+&lt;h1 id="特性">特性&lt;/h1>
+&lt;ul>
+&lt;li>抹去 客户端app阵列 的交互方案，提供供更专注&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>、清晰&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>、科学&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>、去中心化&lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup>的布局&lt;/li>
+&lt;li>服务提供进行仿真化，减去应用使用学习过程，和谐的体验（可更好的加入和谐的推广行为，如店铺内海报植入）&lt;/li>
+&lt;li>用户形象映入系统，全局展示人流以反应热度，可进行流量贩卖&lt;/li>
+&lt;li>类似游戏引擎的去支撑开发，如全局设定上：有魔法驱动的城镇，反映为掌上场景（使用设备的用户扮演着城镇中的人物去寻找满足自己需求的店面）&lt;/li>
+&lt;/ul>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>沉浸&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p></description></item></channel></rss>

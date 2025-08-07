@@ -1,1 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>git on 时砂凝几页</title><link>http://lestua.eu.org/tags/git/</link><description>Recent content in git on 时砂凝几页</description><generator>Hugo -- gohugo.io</generator><language>zh</language><copyright> 2021-{year} yaleiyale</copyright><lastBuildDate>Sat, 20 Aug 2022 21:31:19 +0800</lastBuildDate><atom:link href="http://lestua.eu.org/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>彻底清除git所有历史提交记录使其为“新”库</title><link>http://lestua.eu.org/notes/2022/08/29/223258/</link><pubDate>Sat, 20 Aug 2022 21:31:19 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/08/29/223258/</guid><description>chcp 65001 @echo off set /p gd=输入要清除历史提交信息的仓库目录的绝对路径: echo 待处理的路径：%gd% set /p gm=输入提交说明： pushd set /p gb=输入要清除的分支:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git on 时砂凝几页</title><link>http://lestua.eu.org/tags/git/</link><description>Recent content in Git on 时砂凝几页</description><generator>Hugo</generator><language>zh</language><copyright> 2021-{year} yaleiyale</copyright><lastBuildDate>Mon, 21 Nov 2022 22:02:02 +0800</lastBuildDate><atom:link href="http://lestua.eu.org/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>彻底清除git所有历史提交记录使其为“新”库</title><link>http://lestua.eu.org/notes/2022/08/29/223258/</link><pubDate>Sat, 20 Aug 2022 21:31:19 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/08/29/223258/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>chcp &lt;span style="color:#ae81ff">65001&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@echo off
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>set /p gd&lt;span style="color:#f92672">=&lt;/span>输入要清除历史提交信息的仓库目录的绝对路径:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo 待处理的路径：%gd%
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>set /p gm&lt;span style="color:#f92672">=&lt;/span>输入提交说明：
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pushd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>set /p gb&lt;span style="color:#f92672">=&lt;/span>输入要清除的分支:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pushd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd /d %gd%
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git checkout --orphan latest_branch
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git add -A
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git commit -am &lt;span style="color:#e6db74">&amp;#34;%gm%&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git branch -D %gb%
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git branch -m %gb%
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git push -f origin %gb%
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git pull
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#34;已清除全部的历史记录!&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#34;查看新仓库信息：&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git log --pretty&lt;span style="color:#f92672">=&lt;/span>oneline
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git branch -a
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git tag
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git ls-remote --tags
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pause
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>popd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>exit
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>windows下以bat格式运行&lt;br>
+摘自&lt;a href="https://blog.csdn.net/jhsword/article/details/107543884">彻底清除git所有历史提交记录使其为“新”库_RiskAI的博客-CSDN博客_git 清除历史&lt;/a>&lt;/p></description></item></channel></rss>

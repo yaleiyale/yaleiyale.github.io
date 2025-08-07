@@ -1,1 +1,358 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>教程 on 时砂凝几页</title><link>http://lestua.eu.org/tags/%E6%95%99%E7%A8%8B/</link><description>Recent content in 教程 on 时砂凝几页</description><generator>Hugo -- gohugo.io</generator><language>zh</language><copyright> 2021-{year} yaleiyale</copyright><lastBuildDate>Wed, 03 Aug 2022 22:45:08 +0800</lastBuildDate><atom:link href="http://lestua.eu.org/tags/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>LaTeX公式书写范例</title><link>http://lestua.eu.org/notes/2022/08/29/223905/</link><pubDate>Wed, 03 Aug 2022 22:45:08 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/08/29/223905/</guid><description>行内公式与行间公式 $l = x+y$ $$l = x+ y$$ $l = x+y$ $$l = x+ y$$ 成组 $x^{y_z}$ $x^y_z$ $x^{y_z}$ $x^y_z$ [!tip] 单独显示大括号 {}，需要加反斜线$\{…\}$ 常用字符 希腊字母 | | 希腊字母 | | |:----------:|:----------:|:-------------:|</description></item><item><title>Mermaid书写范例实例</title><link>http://lestua.eu.org/notes/2022/08/29/223909/</link><pubDate>Sat, 30 Jul 2022 20:46:15 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/08/29/223909/</guid><description>依赖 mermaid 支持，遵循语法进行书写可实现渲染出图 流程图 关键字 flowchart 方向 TB(top to bottom) BT(bottom to top) LR(left to right) RL(right to left) Mermaid 语句的结束，有两种方式:在结尾加分号；换行 ```mermaid flowchart LR a--&amp;gt;b c--&amp;gt;d ```</description></item><item><title>obsidian中的markdown书写范例实例</title><link>http://lestua.eu.org/notes/2022/08/29/223916/</link><pubDate>Sat, 30 Jul 2022 20:46:11 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/08/29/223916/</guid><description>枚举 obsidian 中支持的基本&amp;amp;&amp;amp;一点点拓展 markdown 通用语法，以及一些obsidian特性关键机制。 特性在obsidian外的展现极可能不正常</description></item><item><title>主动型插件使用</title><link>http://lestua.eu.org/notes/2022/08/29/223901/</link><pubDate>Sat, 30 Jul 2022 20:46:11 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/08/29/223901/</guid><description>[!tip] 命令面板的快捷键为Ctrl+P 快捷插入脚注 配置Footnotes Shortcut中的快捷键，如本库中应该是使用~~ shift+F6~~ alt+F以快速添加脚</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>教程 on 时砂凝几页</title><link>http://lestua.eu.org/tags/%E6%95%99%E7%A8%8B/</link><description>Recent content in 教程 on 时砂凝几页</description><generator>Hugo</generator><language>zh</language><copyright> 2021-{year} yaleiyale</copyright><lastBuildDate>Mon, 14 Aug 2023 23:57:51 +0800</lastBuildDate><atom:link href="http://lestua.eu.org/tags/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>LaTeX公式书写范例</title><link>http://lestua.eu.org/notes/2022/08/29/223905/</link><pubDate>Wed, 03 Aug 2022 22:45:08 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/08/29/223905/</guid><description>&lt;h1 id="行内公式与行间公式">行内公式与行间公式&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>$l = x+y$ 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$$l = x+ y$$
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>$l = x+y$&lt;br>
+$$l = x+ y$$&lt;/p>
+&lt;h1 id="成组">成组&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>$x^{y_z}$ $x^y_z$
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>$x^{y_z}$ $x^y_z$&lt;/p>
+&lt;blockquote>
+&lt;p>[!tip]&lt;br>
+单独显示大括号 {}，需要加反斜线&lt;code>$\{…\}$&lt;/code>&lt;/p>&lt;/blockquote>
+&lt;h1 id="常用字符">常用字符&lt;/h1>
+&lt;h2 id="希腊字母">希腊字母&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>| | 希腊字母 | |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>|:----------:|:----------:|:-------------:|
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| 小写 | 大写 | 斜体 |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\alpha$ | $A$ | |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\beta$ | $B$ | |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\gamma$ | $\Gamma$ | $\varGamma$ |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\delta$ | $\Delta$ | $\varDelta$ |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\epsilon$ | $E$ | |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\zeta$ | $Z$ | |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\eta$ | $H$ | |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\theta$ | $\Theta$ | $\varTheta$ |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\iota$ | $I$ | |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\kappa$ | $K$ | |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\lambda$ | $\Lambda$ | $\varLambda$ |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\mu$ | $M$ | |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\nu$ | $N$ | |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\xi$ | $\Xi$ | $\varXi$ |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\pi$ | $\Pi$ | $\varPi$ |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\rho$ | $O$ | |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\sigma$ | $\Sigma$ | $\varSigma$ |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\tau$ | $T$ | |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\upsilon$ | $\Upsilon$ | $\varUpsilon$ |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\phi$ | $\Phi$ | $\varPhi$ |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\chi$ | $X$ | |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\psi$ | $\Psi$ | $\varPsi$ |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $\omega$ | $\Omega$ | $\varOmega$ |
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">希腊字母&lt;/th>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">小写&lt;/td>
+ &lt;td style="text-align: center">大写&lt;/td>
+ &lt;td style="text-align: center">斜体&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\alpha$&lt;/td>
+ &lt;td style="text-align: center">$A$&lt;/td>
+ &lt;td style="text-align: center">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\beta$&lt;/td>
+ &lt;td style="text-align: center">$B$&lt;/td>
+ &lt;td style="text-align: center">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\gamma$&lt;/td>
+ &lt;td style="text-align: center">$\Gamma$&lt;/td>
+ &lt;td style="text-align: center">$\varGamma$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\delta$&lt;/td>
+ &lt;td style="text-align: center">$\Delta$&lt;/td>
+ &lt;td style="text-align: center">$\varDelta$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\epsilon$&lt;/td>
+ &lt;td style="text-align: center">$E$&lt;/td>
+ &lt;td style="text-align: center">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\zeta$&lt;/td>
+ &lt;td style="text-align: center">$Z$&lt;/td>
+ &lt;td style="text-align: center">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\eta$&lt;/td>
+ &lt;td style="text-align: center">$H$&lt;/td>
+ &lt;td style="text-align: center">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\theta$&lt;/td>
+ &lt;td style="text-align: center">$\Theta$&lt;/td>
+ &lt;td style="text-align: center">$\varTheta$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\iota$&lt;/td>
+ &lt;td style="text-align: center">$I$&lt;/td>
+ &lt;td style="text-align: center">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\kappa$&lt;/td>
+ &lt;td style="text-align: center">$K$&lt;/td>
+ &lt;td style="text-align: center">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\lambda$&lt;/td>
+ &lt;td style="text-align: center">$\Lambda$&lt;/td>
+ &lt;td style="text-align: center">$\varLambda$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\mu$&lt;/td>
+ &lt;td style="text-align: center">$M$&lt;/td>
+ &lt;td style="text-align: center">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\nu$&lt;/td>
+ &lt;td style="text-align: center">$N$&lt;/td>
+ &lt;td style="text-align: center">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\xi$&lt;/td>
+ &lt;td style="text-align: center">$\Xi$&lt;/td>
+ &lt;td style="text-align: center">$\varXi$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\pi$&lt;/td>
+ &lt;td style="text-align: center">$\Pi$&lt;/td>
+ &lt;td style="text-align: center">$\varPi$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\rho$&lt;/td>
+ &lt;td style="text-align: center">$O$&lt;/td>
+ &lt;td style="text-align: center">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\sigma$&lt;/td>
+ &lt;td style="text-align: center">$\Sigma$&lt;/td>
+ &lt;td style="text-align: center">$\varSigma$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\tau$&lt;/td>
+ &lt;td style="text-align: center">$T$&lt;/td>
+ &lt;td style="text-align: center">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\upsilon$&lt;/td>
+ &lt;td style="text-align: center">$\Upsilon$&lt;/td>
+ &lt;td style="text-align: center">$\varUpsilon$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\phi$&lt;/td>
+ &lt;td style="text-align: center">$\Phi$&lt;/td>
+ &lt;td style="text-align: center">$\varPhi$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\chi$&lt;/td>
+ &lt;td style="text-align: center">$X$&lt;/td>
+ &lt;td style="text-align: center">&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\psi$&lt;/td>
+ &lt;td style="text-align: center">$\Psi$&lt;/td>
+ &lt;td style="text-align: center">$\varPsi$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\omega$&lt;/td>
+ &lt;td style="text-align: center">$\Omega$&lt;/td>
+ &lt;td style="text-align: center">$\varOmega$&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="数学符号">数学符号&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>| | 数学符号 | | |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>|:-----------------:|:-------------:|:---------------:|:------------------------------------------:|
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $x+y$ | $x-y$ | $x\times y$ | $x\cdot y$ |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $x \ast y(x * y)$ | $x \div y$ | $x \pm y$ | $x \mp y$ |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $x=y$ | $x\neq y$ | $x \leq y$ | $x \geq y$ |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $x \approx y$ | $x \equiv y$ | $x \bigodot y$ | $x \bigotimes y$ |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $x \in y$ | $x \subset y$ | $x \subseteq y$ | $x \supset y$ |
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>| $x \supseteq y$ | $\varnothing$ | $x \cup y$ $x \cap y$ | $\lfloor x \rfloor$ $\lceil y \rceil$ |
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">数学符号&lt;/th>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">$x+y$&lt;/td>
+ &lt;td style="text-align: center">$x-y$&lt;/td>
+ &lt;td style="text-align: center">$x\times y$&lt;/td>
+ &lt;td style="text-align: center">$x\cdot y$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$x \ast y(x * y)$&lt;/td>
+ &lt;td style="text-align: center">$x \div y$&lt;/td>
+ &lt;td style="text-align: center">$x \pm y$&lt;/td>
+ &lt;td style="text-align: center">$x \mp y$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$x=y$&lt;/td>
+ &lt;td style="text-align: center">$x\neq y$&lt;/td>
+ &lt;td style="text-align: center">$x \leq y$&lt;/td>
+ &lt;td style="text-align: center">$x \geq y$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$x \approx y$&lt;/td>
+ &lt;td style="text-align: center">$x \equiv y$&lt;/td>
+ &lt;td style="text-align: center">$x \bigodot y$&lt;/td>
+ &lt;td style="text-align: center">$x \bigotimes y$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$x \in y$&lt;/td>
+ &lt;td style="text-align: center">$x \subset y$&lt;/td>
+ &lt;td style="text-align: center">$x \subseteq y$&lt;/td>
+ &lt;td style="text-align: center">$x \supset y$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$x \supseteq y$&lt;/td>
+ &lt;td style="text-align: center">$\varnothing$&lt;/td>
+ &lt;td style="text-align: center">$x \cup y$ $x \cap y$&lt;/td>
+ &lt;td style="text-align: center">$\lfloor x \rfloor$ $\lceil y \rceil$&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="常用形式">常用形式&lt;/h2>
+&lt;pre tabindex="0">&lt;code>
+| | | 常用形式 | |
+|:-------------:|:---------------------:|:---------------------------------:|:---------------------------------------------------:|
+| $C_n^2$ | $\vec a$ | $\overrightarrow a$ | $\hat a$ |
+| $\overline a$ | $\underline a$ | $\overbrace{a+b}^{2.0}$ | $\underbrace{a+b}_{2.0}$ |
+| $\uparrow$ | $\Uparrow$ | $\downarrow$ | $\Downarrow$ |
+| $\leftarrow$ | $\Leftarrow$ | $\rightarrow$ | $\Rightarrow$ |
+| $a\ b$(空格) | $a\quad b$ (四个空格) | $1,2,\ldots,n$ (底端对齐的省略号) | $x_1^2 + x_2^2 + \cdots + x_n^2$ (中线对齐的省略号) |
+&lt;/code>&lt;/pre>&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;th style="text-align: center">常用形式&lt;/th>
+ &lt;th style="text-align: center">&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: center">$C_n^2$&lt;/td>
+ &lt;td style="text-align: center">$\vec a$&lt;/td>
+ &lt;td style="text-align: center">$\overrightarrow a$&lt;/td>
+ &lt;td style="text-align: center">$\hat a$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\overline a$&lt;/td>
+ &lt;td style="text-align: center">$\underline a$&lt;/td>
+ &lt;td style="text-align: center">$\overbrace{a+b}^{2.0}$&lt;/td>
+ &lt;td style="text-align: center">$\underbrace{a+b}_{2.0}$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\uparrow$&lt;/td>
+ &lt;td style="text-align: center">$\Uparrow$&lt;/td>
+ &lt;td style="text-align: center">$\downarrow$&lt;/td>
+ &lt;td style="text-align: center">$\Downarrow$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$\leftarrow$&lt;/td>
+ &lt;td style="text-align: center">$\Leftarrow$&lt;/td>
+ &lt;td style="text-align: center">$\rightarrow$&lt;/td>
+ &lt;td style="text-align: center">$\Rightarrow$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: center">$a\ b$(空格)&lt;/td>
+ &lt;td style="text-align: center">$a\quad b$ (四个空格)&lt;/td>
+ &lt;td style="text-align: center">$1,2,\ldots,n$ (底端对齐的省略号)&lt;/td>
+ &lt;td style="text-align: center">$x_1^2 + x_2^2 + \cdots + x_n^2$ (中线对齐的省略号)&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="括号">括号&lt;/h2>
+&lt;pre tabindex="0">&lt;code> $(…)$ $[…]$ $\{…\}$ $\langle…\rangle$ $\vert…\vert$ $\Vert…\Vert$
+&lt;/code>&lt;/pre>&lt;p>$(…)$ $[…]$ ${…}$ $\langle…\rangle$ $\vert…\vert$ $\Vert…\Vert$&lt;/p></description></item><item><title>Mermaid书写范例实例</title><link>http://lestua.eu.org/notes/2022/08/29/223909/</link><pubDate>Sat, 30 Jul 2022 20:46:15 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/08/29/223909/</guid><description>&lt;p>依赖 mermaid 支持，&lt;strong>遵循语法进行书写可实现渲染出图&lt;/strong>&lt;/p>
+&lt;h1 id="流程图">流程图&lt;/h1>
+&lt;ul>
+&lt;li>关键字
+&lt;ul>
+&lt;li>flowchart&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>方向
+&lt;ul>
+&lt;li>TB(top to bottom)&lt;/li>
+&lt;li>BT(bottom to top)&lt;/li>
+&lt;li>LR(left to right)&lt;/li>
+&lt;li>RL(right to left)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Mermaid 语句的结束，有两种方式:&lt;strong>在结尾加分号&lt;/strong>；&lt;strong>换行&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">```mermaid
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">&lt;/span>flowchart LR
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	a--&amp;gt;b
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	c--&amp;gt;d
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">```&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">flowchart LR
+	a--&amp;gt;b
+	c--&amp;gt;d
+&lt;/code>&lt;/pre>&lt;h2 id="连线">连线&lt;/h2>
+&lt;h3 id="线种类">线种类&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">```mermaid
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">&lt;/span>flowchart LR
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A---实线; %% AB之间，以一条实线连接
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A-.-虚线; %% AB之间，以一条虚线连接
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A===粗实线; %% AB之间，以一条粗实线连接
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A--&amp;gt;箭头实线; %% AB之间，以一条箭头实线连接
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A-.-&amp;gt;箭头虚线; %% AB之间，以一条箭头虚线连接
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A==&amp;gt;箭头粗实线; %% AB之间，以一条箭头粗实线连接
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A~~~不可见 %%可用于节点定位
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">```&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">flowchart LR
+	A---实线; %% AB之间，以一条实线连接
+	A-.-虚线; %% AB之间，以一条虚线连接
+	A===粗实线; %% AB之间，以一条粗实线连接
+	A--&amp;gt;箭头实线; %% AB之间，以一条箭头实线连接
+	A-.-&amp;gt;箭头虚线; %% AB之间，以一条箭头虚线连接
+	A==&amp;gt;箭头粗实线; %% AB之间，以一条箭头粗实线连接
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">```mermaid
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">&lt;/span>flowchart RL
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	反向实线箭头--&amp;gt;A; %% 这是一条从B到A的反向实线箭头
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">```&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">flowchart RL
+	反向实线箭头--&amp;gt;A; %% 这是一条从B到A的反向实线箭头
+&lt;/code>&lt;/pre>&lt;h3 id="箭头类型">箭头类型&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">```mermaid
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">&lt;/span>flowchart LR 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A --o 实线o; %% 实线o
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A --x 实线x; %% 实线x
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A -.-o 虚线o; %% 虚线o
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A -.-x 虚线x; %% 虚线x
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A ==o 粗实线o; %% 粗实线o
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>	A ==x 粗实线x; %% 粗实线x
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">```&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">flowchart LR 
+%% 使用flowchart关键字
+	A --o 实线o; %% 实线o
+	A --x 实线x; %% 实线x
+	A -.-o 虚线o; %% 虚线o
+	A -.-x 虚线x; %% 虚线x
+	A ==o 粗实线o; %% 粗实线o
+	A ==x 粗实线x; %% 粗实线x
+&lt;/code>&lt;/pre>&lt;h3 id="多向箭头">多向箭头&lt;/h3>
+&lt;p>有三种: 使用首尾相同的 o 或 x，或者一对 &amp;lt; &amp;gt;; 不能使用 o&amp;ndash;x 这样首尾不同的&lt;/p></description></item><item><title>obsidian中的markdown书写范例实例</title><link>http://lestua.eu.org/notes/2022/08/29/223916/</link><pubDate>Sat, 30 Jul 2022 20:46:11 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/08/29/223916/</guid><description>&lt;p>枚举 &lt;em>obsidian&lt;/em> 中支持的基本&amp;amp;&amp;amp;一点点拓展 &lt;em>markdown&lt;/em> 通用语法，以及一些obsidian特性关键机制。&lt;br>
+特性在&lt;em>obsidian&lt;/em>外的展现极可能不正常，将额外给出截图供参考。&lt;/p></description></item><item><title>主动型插件使用</title><link>http://lestua.eu.org/notes/2022/08/29/223901/</link><pubDate>Sat, 30 Jul 2022 20:46:11 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/08/29/223901/</guid><description>&lt;blockquote>
+&lt;p>[!tip]&lt;br>
+命令面板的快捷键为&lt;code>Ctrl+P&lt;/code>&lt;/p>&lt;/blockquote>
+&lt;h1 id="快捷插入脚注">快捷插入脚注&lt;/h1>
+&lt;p>配置Footnotes Shortcut中的快捷键，如本库中应该是使用~~&lt;code> shift+F6&lt;/code>~~ &lt;code>alt+F&lt;/code>以快速添加脚注&lt;/p>
+&lt;h1 id="linter">Linter&lt;/h1>
+&lt;p>操作对象上右键使用linter，或者在开启的情况下使用&lt;code>Ctrl+s&lt;/code>以在保存时进行格式化&lt;/p></description></item></channel></rss>

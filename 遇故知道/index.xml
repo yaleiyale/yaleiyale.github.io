@@ -1,1 +1,158 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>遇故知道 on 时砂凝几页</title><link>http://lestua.eu.org/%E9%81%87%E6%95%85%E7%9F%A5%E9%81%93/</link><description>Recent content in 遇故知道 on 时砂凝几页</description><generator>Hugo -- gohugo.io</generator><language>zh</language><copyright> 2021-{year} yaleiyale</copyright><lastBuildDate>Thu, 16 Mar 2023 14:55:59 +0800</lastBuildDate><atom:link href="http://lestua.eu.org/%E9%81%87%E6%95%85%E7%9F%A5%E9%81%93/index.xml" rel="self" type="application/rss+xml"/><item><title>驾考麻瓜书</title><link>http://lestua.eu.org/notes/2023/03/16/145615/</link><pubDate>Thu, 16 Mar 2023 14:55:59 +0800</pubDate><guid>http://lestua.eu.org/notes/2023/03/16/145615/</guid><description>扣分 12分 酒驾 造成轻伤以上或死亡后逃逸不构成犯罪 伪造冒用车牌人证 超载100%以上 高速路超速50%以上 高速路倒车逆行掉头 替人受罚 9分 高速路违法</description></item><item><title>adb无线调试配对码连接</title><link>http://lestua.eu.org/notes/2023/02/11/122415/</link><pubDate>Sat, 11 Feb 2023 12:23:46 +0800</pubDate><guid>http://lestua.eu.org/notes/2023/02/11/122415/</guid><description>以前一直没整明白怎么连不上，这次才发现原来以前光配对没连接😒 事先工作 准备adb工具。安卓的平台工具（Platform tools）内存有adb</description></item><item><title>vscode虚拟环境管理</title><link>http://lestua.eu.org/notes/2022/10/26/153127/</link><pubDate>Wed, 26 Oct 2022 15:31:06 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/10/26/153127/</guid><description>pycharm提供了极为便捷的python环境管理功能，visual studio也有提供python环境管理功能，可惜我的交互感受并不很好。</description></item><item><title>VLC播放器皮肤不支持中文，不用Skin Editor也可以换字体</title><link>http://lestua.eu.org/notes/2022/10/14/221833/</link><pubDate>Fri, 14 Oct 2022 22:17:39 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/10/14/221833/</guid><description>没皮肤的vlc丑爆了！ 老实说社区里的新皮肤也好少，也导致我之前一直在使用着微软家并没有用心做完的媒体播放器。 最近又心痒痒了，查查皮肤，终于发</description></item><item><title>waline评论不显示</title><link>http://lestua.eu.org/notes/2022/10/13/214924/</link><pubDate>Thu, 13 Oct 2022 21:48:33 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/10/13/214924/</guid><description>waline评论系统优点多多，免费、易上手、支持匿名、反应等现代化特性。 但是 还是踩到了一个不显示的问题。在发表评论后，评论区一直在转圈圈，无</description></item><item><title>WSA预览版配置安装</title><link>http://lestua.eu.org/notes/2022/09/28/223345/</link><pubDate>Wed, 28 Sep 2022 15:04:14 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/09/28/223345/</guid><description>Previous 截至当前22/9/28，WSA仍然在测试阶段。因为个人原因，并不信任国内大部分应用服务提供商的win版应用。自然，不使用的同时也带来了不便</description></item><item><title>个人小站想远离秋秋和微信的内置浏览器</title><link>http://lestua.eu.org/notes/2022/09/24/223303/</link><pubDate>Sat, 24 Sep 2022 22:48:14 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/09/24/223303/</guid><description>在网页文件适当位置插入以下脚本 &amp;lt;script&amp;gt; if (is_weixn_qq()) { window.location.href = &amp;#34;https://c.pc.qq.com/middle.html?pfurl=&amp;#34; + window.location.href; } function is_weixn_qq() { var ua = navigator.userAgent; var isWeixin = !!/MicroMessenger/i.test(ua); var isQQ = !!/QQ\//i.test(ua); if (isWeixin || isQQ) { return true; } return false; } &amp;lt;/script&amp;gt; 会阻止在QQ，微信中直接展示原网页文</description></item><item><title>Disco Diffusion浅用</title><link>http://lestua.eu.org/notes/2022/09/08/223318/</link><pubDate>Thu, 08 Sep 2022 09:48:21 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/09/08/223318/</guid><description>Disco Diffusion1，取首字母缩写，dd。 AI作画，开源colab文档，google可提供在线算力。免费方案单次最长执行12小时。执行中可</description></item><item><title>windows下使用everything进行文件传递</title><link>http://lestua.eu.org/notes/2022/09/04/223341/</link><pubDate>Sun, 04 Sep 2022 22:52:34 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/09/04/223341/</guid><description>在everything中依次点击工具$\Rightarrow$选项$\Rightarrow$http服务器， 设置好后即可使用ip+port的</description></item><item><title>通过Parsers统一不同服务商的分流方案</title><link>http://lestua.eu.org/notes/2022/09/03/223314/</link><pubDate>Sat, 03 Sep 2022 20:24:58 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/09/03/223314/</guid><description>[!info] 更新 版本 0.20.10 开始支持从远端获取 可用parsers parsers: - reg: ^.*$ remote: url: https://cdn.jsdelivr.net/gh/yaleiyale/yahosting@main/self-rules/parser.js cache: true # 默认为false，指示是否对重复下载此预处理代码使用缓存 原方案： 在有几个</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>遇故知道 on 时砂凝几页</title><link>http://lestua.eu.org/%E9%81%87%E6%95%85%E7%9F%A5%E9%81%93/</link><description>Recent content in 遇故知道 on 时砂凝几页</description><generator>Hugo</generator><language>zh</language><copyright> 2021-{year} yaleiyale</copyright><lastBuildDate>Mon, 27 Mar 2023 15:44:08 +0800</lastBuildDate><atom:link href="http://lestua.eu.org/%E9%81%87%E6%95%85%E7%9F%A5%E9%81%93/index.xml" rel="self" type="application/rss+xml"/><item><title>驾考麻瓜书</title><link>http://lestua.eu.org/notes/2023/03/16/145615/</link><pubDate>Thu, 16 Mar 2023 14:55:59 +0800</pubDate><guid>http://lestua.eu.org/notes/2023/03/16/145615/</guid><description>&lt;h1 id="扣分">扣分&lt;/h1>
+&lt;ol>
+&lt;li>12分
+&lt;ol>
+&lt;li>酒驾&lt;/li>
+&lt;li>造成轻伤以上或死亡后逃逸不构成犯罪&lt;/li>
+&lt;li>伪造冒用车牌人证&lt;/li>
+&lt;li>&lt;em>超载&lt;/em>100%以上&lt;/li>
+&lt;li>高速路&lt;em>超速&lt;/em>50%以上&lt;/li>
+&lt;li>高速路倒车逆行掉头&lt;/li>
+&lt;li>替人受罚&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>9分
+&lt;ol>
+&lt;li>高速路违法停车&lt;/li>
+&lt;li>不挂，挡牌照&lt;/li>
+&lt;li>准驾不符&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>6分
+&lt;ol>
+&lt;li>&lt;em>超载&lt;/em>50%-100%&lt;/li>
+&lt;li>&lt;em>高&lt;/em>速路&lt;em>超速&lt;/em>20%-50%或&lt;em>低&lt;/em>速路&lt;em>超速&lt;/em>50%以上&lt;/li>
+&lt;li>&lt;em>超重&lt;/em>50%以上&lt;/li>
+&lt;li>闯红灯&lt;/li>
+&lt;li>被扣照期间驾车&lt;/li>
+&lt;li>&lt;em>轻伤财伤&lt;/em>后逃逸不构成犯罪&lt;/li>
+&lt;li>占用应急车道&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>3分
+&lt;ol>
+&lt;li>&lt;em>超载&lt;/em>20%以上50%一下&lt;/li>
+&lt;li>&lt;em>低&lt;/em>速路&lt;em>超速&lt;/em>20%-50%&lt;/li>
+&lt;li>高速路不按规定车道行驶&lt;/li>
+&lt;li>不按规定超车、让行 或 低速路逆行&lt;/li>
+&lt;li>堵车时借道超车 或 占用对面车道、穿插等候车辆的话&lt;/li>
+&lt;li>打电话&lt;/li>
+&lt;li>不礼让行人 避让校车&lt;/li>
+&lt;li>&lt;em>超重&lt;/em>30%-50%，或违反规定载客&lt;/li>
+&lt;li>&lt;em>不上&lt;/em>牌照&lt;/li>
+&lt;li>故障停车后，不按规定使用灯光和警告标志&lt;/li>
+&lt;li>高速路低速行驶&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>1分
+&lt;ol>
+&lt;li>不按规定会车 或 &lt;em>高速路以外&lt;/em>不按规定&lt;em>倒车，调头&lt;/em>&lt;/li>
+&lt;li>不按规定使用灯光&lt;/li>
+&lt;li>违反禁止标志、标线&lt;/li>
+&lt;li>载货尺寸超规格&lt;/li>
+&lt;li>&lt;em>超重&lt;/em>小于30%&lt;/li>
+&lt;li>未按规定定期进行安全技术检查&lt;/li>
+&lt;li>&lt;em>载货&lt;/em>汽车&lt;em>改车&lt;/em>&lt;/li>
+&lt;li>驾驶人未系安全带&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;h1 id="其他">其他&lt;/h1>
+&lt;ul>
+&lt;li>驾驶证有效期记&lt;em>6/10/长&lt;/em>，表示机动车驾驶证有效期分为六年/十年/长期&lt;/li>
+&lt;li>科目二&lt;em>80&lt;/em>分合格，一三四&lt;em>90&lt;/em>分合格&lt;/li>
+&lt;li>假一吊二撤三毒三醉五逃终生&lt;/li>
+&lt;li>&lt;em>实习期&lt;/em>罚款&lt;em>二十&lt;/em>&lt;/li>
+&lt;li>换证90变化30&lt;/li>
+&lt;li>有效期满，户籍迁出要接受审验&lt;/li>
+&lt;li>&lt;em>兵役&lt;/em> &lt;em>出国&lt;/em> 换证延期 最长不超过&lt;em>三年&lt;/em>&lt;/li>
+&lt;li>人核发 车等级&lt;/li>
+&lt;li>一转二反三连续&lt;/li>
+&lt;li>&lt;em>报废&lt;/em>提前两个月&lt;/li>
+&lt;li>&lt;em>补发&lt;/em>15 &lt;em>登记&lt;/em>30&lt;/li>
+&lt;li>外国司机&lt;em>入境&lt;/em>停留超过&lt;em>三个月&lt;/em>，可申请&lt;em>一年&lt;/em>的零食驾驶许可，&lt;em>短期&lt;/em>停留可申请&lt;em>三个月&lt;/em>&lt;/li>
+&lt;li>残疾&lt;em>6个月&lt;/em>&lt;/li>
+&lt;li>用旧证 罚款20-200&lt;/li>
+&lt;li>身体条件证明6个月有效&lt;/li>
+&lt;li>代替参加教育两万，代替处罚五万&lt;/li>
+&lt;li>没中心线城市30公路40，有分道城市50公路70&lt;/li>
+&lt;li>掉头转弯下陡坡限速30&lt;/li>
+&lt;li>限速一般选30&lt;/li>
+&lt;li>能见度50米 限速 高速20（普通30）&lt;/li>
+&lt;li>能见度200米 限速60 车距100&lt;/li>
+&lt;li>能见度100米 限速40 车距50&lt;/li>
+&lt;li>前车左转弯、掉头、超车时，不得超车&lt;/li>
+&lt;li>右转让左转 转弯让直行&lt;/li>
+&lt;li>停车 站点30米 路段50米&lt;/li>
+&lt;li>三车道限速 120-110 110-90 90-60 两车道限速 120-100 100-60&lt;/li>
+&lt;li>车距 速度超100 100米 不超100 50米&lt;/li>
+&lt;li>警告标志放置 高速150米外 普通车道50-100米&lt;/li>
+&lt;li>中间小蛮腰是窄桥&lt;/li>
+&lt;li>栅栏 有人看守 火车头无人看守&lt;/li>
+&lt;li>两边虚线中间双箭头 潮汐车道&lt;/li>
+&lt;li>无红线高速公路起点 有红线高速公路终点&lt;/li>
+&lt;li>车道岛 虚线紧急 实线错车 虚实港湾&lt;/li>
+&lt;li>路缘石黄色虚线 禁止长时停车 黄色实线 禁止停车&lt;/li>
+&lt;/ul></description></item><item><title>adb无线调试配对码连接</title><link>http://lestua.eu.org/notes/2023/02/11/122415/</link><pubDate>Sat, 11 Feb 2023 12:23:46 +0800</pubDate><guid>http://lestua.eu.org/notes/2023/02/11/122415/</guid><description>&lt;p>以前一直没整明白怎么连不上，这次才发现原来以前光配对没连接😒&lt;/p>
+&lt;h1 id="事先工作">事先工作&lt;/h1>
+&lt;ol>
+&lt;li>准备adb工具。安卓的平台工具（Platform tools）内存有adb工具，可先将平台工具文件夹加入系统的环境变量，方便adb在开发中的使用。vs默认配置情况下路径为&lt;code>C:\Program Files (x86)\Android\android-sdk\platform-tools&lt;/code>。&lt;/li>
+&lt;li>开启安卓设备的开发模式。MIUI为例，在&lt;em>设置/我的设备/全部参数&lt;/em>下，7次连击MIUI版本，即可在&lt;em>设置/更多设置&lt;/em>中开启开发者选项入口。开启开发者模式，在其下再开启&lt;strong>usb调试&lt;/strong>，&lt;strong>无线调试&lt;/strong>，&lt;strong>usb安装&lt;/strong>。&lt;/li>
+&lt;/ol>
+&lt;h1 id="adb使用">Adb使用&lt;/h1>
+&lt;ol>
+&lt;li>确保adb已经可以使用。&lt;/li>
+&lt;li>在安卓设备的无线调试中点击&lt;strong>使用配对码配对设备&lt;/strong>&lt;img src="https://i.imgur.com/72OgoiO.png" alt="Imgur">&lt;/li>
+&lt;li>在终端中使用adb配对。以上图为例的配对成功：&lt;br>
+&lt;img src="https://i.imgur.com/jLXCVly.png" alt="Imgur">&lt;/li>
+&lt;li>连接。配对并不是连接😒。在&lt;strong>无线调试中&lt;/strong>的&lt;strong>IP地址和端口&lt;/strong>，是连接需要使用的参数，配对时使用的参数是一次性的，请勿使用。连接成功：&lt;img src="https://i.imgur.com/nynOnqz.png" alt="Imgur">&lt;/li>
+&lt;li>你的安卓设备应该已经与vs建立了连接，开始无线调试吧。一经配对，安卓设备保存记录后，下次连接可不再配对，直接进行连接。&lt;/li>
+&lt;/ol></description></item><item><title>vscode虚拟环境管理</title><link>http://lestua.eu.org/notes/2022/10/26/153127/</link><pubDate>Wed, 26 Oct 2022 15:31:06 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/10/26/153127/</guid><description>&lt;p>pycharm提供了极为便捷的python环境管理功能，visual studio也有提供python环境管理功能，可惜我的交互感受并不很好。&lt;br>
+需要并找到，要使用一个需要python来执行的小工具，如果pycharm在手边，那固然很好，很轻松可以上手使用。没有pycharm的时候，也可以很简单的创建一个虚拟环境。&lt;br>
+使用&lt;code>python -m venv .venv&lt;/code> 即可在当前目录复制出一个虚拟环境。&lt;br>
+如果有依赖文件可用，则可以使用&lt;code>pip install -r requirements.txt&lt;/code>。&lt;/p></description></item><item><title>VLC播放器皮肤不支持中文，不用Skin Editor也可以换字体</title><link>http://lestua.eu.org/notes/2022/10/14/221833/</link><pubDate>Fri, 14 Oct 2022 22:17:39 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/10/14/221833/</guid><description>&lt;p>没皮肤的vlc丑爆了！&lt;br>
+老实说社区里的新皮肤也好少，也导致我之前一直在使用着微软家并没有用心做完的媒体播放器。&lt;br>
+最近又心痒痒了，查查皮肤，终于发现个顺眼的&lt;a href="https://github.com/PapirusDevelopmentTeam/materia-vlc">materia-vlc&lt;/a>，立马屁颠屁颠的开始使用VLC。&lt;br>
+一如既往的，播放列表并不支持中文显示，需要替换字体，自己动一小手，更加丰衣足食。&lt;br>
+一般的，VLC skin的开发工作肯定是需要使用VLC提供的官方工具&lt;a href="https://www.videolan.org/vlc/skineditor.html">Skin Editor - VideoLAN&lt;/a>，但是我这只是替换一下字体嘛，有更省事&lt;del>优雅，发懒&lt;/del>的有效途径可以办到。&lt;/p></description></item><item><title>waline评论不显示</title><link>http://lestua.eu.org/notes/2022/10/13/214924/</link><pubDate>Thu, 13 Oct 2022 21:48:33 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/10/13/214924/</guid><description>&lt;p>&lt;a href="https://www.google.com/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=2ahUKEwjHsYOAr936AhWQad4KHZKBDL4QFnoECAgQAQ&amp;amp;url=https%3A%2F%2Fwaline.js.org%2F&amp;amp;usg=AOvVaw1VzvNcVCxhYoUOLPdi1-dr">waline&lt;/a>评论系统优点多多，免费、易上手、支持匿名、反应等现代化特性。&lt;/p>
+&lt;h1 id="但是">但是&lt;/h1>
+&lt;p>还是踩到了一个不显示的问题。在发表评论后，评论区一直在转圈圈，无法显示评论。可复现且排除了网络问题。搜集&lt;a href="https://github.com/walinejs/waline/discussions/1123">资料&lt;/a>后，问题触发点一致，定位到问题是站点配置的katex公式渲染干扰了评论的显示。&lt;/p>
+&lt;p>我原先的&lt;code>renderMathInElement&lt;/code>的首个参数为&lt;code>document.body&lt;/code>，公式渲染脚本会影响到body内的所有元素，这其中包含到了waline评论区。要解决问题需要让&lt;code>renderMathInElement&lt;/code>不会覆盖到waline评论区的范围，可以修改&lt;code>renderMathInElement&lt;/code>的参数，或调整超文本标记语言文档的布局。&lt;/p></description></item><item><title>WSA预览版配置安装</title><link>http://lestua.eu.org/notes/2022/09/28/223345/</link><pubDate>Wed, 28 Sep 2022 15:04:14 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/09/28/223345/</guid><description>&lt;h1 id="previous">Previous&lt;/h1>
+&lt;p>截至当前22/9/28，WSA仍然在测试阶段。因为个人原因，并不信任国内大部分应用服务提供商的win版应用。自然，不使用的同时也带来了不便（主要指腾讯QQ的缺失）。想有一个折衷方案，决定尝试一下WSA。&lt;/p></description></item><item><title>个人小站想远离秋秋和微信的内置浏览器</title><link>http://lestua.eu.org/notes/2022/09/24/223303/</link><pubDate>Sat, 24 Sep 2022 22:48:14 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/09/24/223303/</guid><description>&lt;p>在网页文件适当位置插入以下脚本&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">script&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> (&lt;span style="color:#a6e22e">is_weixn_qq&lt;/span>()) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> window.&lt;span style="color:#a6e22e">location&lt;/span>.&lt;span style="color:#a6e22e">href&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;https://c.pc.qq.com/middle.html?pfurl=&amp;#34;&lt;/span> &lt;span style="color:#f92672">+&lt;/span> window.&lt;span style="color:#a6e22e">location&lt;/span>.&lt;span style="color:#a6e22e">href&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">function&lt;/span> &lt;span style="color:#a6e22e">is_weixn_qq&lt;/span>() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">ua&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#a6e22e">navigator&lt;/span>.&lt;span style="color:#a6e22e">userAgent&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">isWeixin&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">!!&lt;/span>&lt;span style="color:#e6db74">/MicroMessenger/i&lt;/span>.&lt;span style="color:#a6e22e">test&lt;/span>(&lt;span style="color:#a6e22e">ua&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">isQQ&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">!!&lt;/span>&lt;span style="color:#e6db74">/QQ\//i&lt;/span>.&lt;span style="color:#a6e22e">test&lt;/span>(&lt;span style="color:#a6e22e">ua&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> (&lt;span style="color:#a6e22e">isWeixin&lt;/span> &lt;span style="color:#f92672">||&lt;/span> &lt;span style="color:#a6e22e">isQQ&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">true&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">false&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;/&lt;span style="color:#f92672">script&lt;/span>&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>会阻止在QQ，微信中直接展示原网页文本，提示在复制到外部浏览器中打开网页。&lt;/p></description></item><item><title>Disco Diffusion浅用</title><link>http://lestua.eu.org/notes/2022/09/08/223318/</link><pubDate>Thu, 08 Sep 2022 09:48:21 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/09/08/223318/</guid><description>&lt;p>Disco Diffusion&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>，取首字母缩写，dd。&lt;br>
+AI作画，开源colab文档，google可提供在线算力。免费方案单次最长执行12小时。执行中可能进行活动检测（您还在该计算机前吗）。&lt;br>
+复制&lt;a href="https://colab.research.google.com/github/alembics/disco-diffusion/blob/main/Disco_Diffusion.ipynb">Disco Diffusion v5.61&lt;/a>&lt;br>
+&lt;img src="https://i.imgur.com/8DvRaKi.png" alt="Imgur">
+自己的google drive中已经出现了相同的交互文档，调参即可用。&lt;br>
+&lt;img src="https://i.imgur.com/js7jhZv.png" alt="Imgur">&lt;/p></description></item><item><title>windows下使用everything进行文件传递</title><link>http://lestua.eu.org/notes/2022/09/04/223341/</link><pubDate>Sun, 04 Sep 2022 22:52:34 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/09/04/223341/</guid><description>&lt;p>在&lt;a href="https://www.voidtools.com/zh-cn/">everything&lt;/a>中依次点击工具$\Rightarrow$选项$\Rightarrow$http服务器，&lt;br>
+&lt;img src="https://i.imgur.com/wJbppBg.png" alt="Imgur">&lt;/p>
+&lt;p>设置好后即可使用ip+port的地址进行访问了。&lt;br>
+&lt;img src="https://i.imgur.com/OkRPfqz.png" alt="Imgur">&lt;/p>
+&lt;p>在局域网中，足以满足其他设备需要下载windows计算机中的文件时的需求。通过内网穿透或许还可以进一步做到远程下载❓大抵可行，留待日后考证。&lt;/p></description></item><item><title>通过Parsers统一不同服务商的分流方案</title><link>http://lestua.eu.org/notes/2022/09/03/223314/</link><pubDate>Sat, 03 Sep 2022 20:24:58 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/09/03/223314/</guid><description>&lt;blockquote>
+&lt;p>[!info] 更新&lt;br>
+版本 0.20.10 开始支持从远端获取&lt;/p>&lt;/blockquote>
+&lt;p>可用parsers&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">parsers&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>  - &lt;span style="color:#f92672">reg&lt;/span>: &lt;span style="color:#ae81ff">^.*$&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>    &lt;span style="color:#f92672">remote&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>      &lt;span style="color:#f92672">url&lt;/span>: &lt;span style="color:#ae81ff">https://cdn.jsdelivr.net/gh/yaleiyale/yahosting@main/self-rules/parser.js&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>      &lt;span style="color:#f92672">cache&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span> &lt;span style="color:#75715e"># 默认为false，指示是否对重复下载此预处理代码使用缓存&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;p>原方案：&lt;br>
+在有几个备选订阅时，各家不同的分流方案会有出入，可以通过parsers进行统一配置。&lt;br>
+以下配置文件修改自&lt;a href="https://github.com/Loyalsoldier/clash-rules/issues/97">Issue~Loyalsoldier/clash-rules&lt;/a>&lt;/p></description></item></channel></rss>

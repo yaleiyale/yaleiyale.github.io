@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>一些有用的bat脚本 on 时砂凝几页</title><link>http://lestua.eu.org/%E9%81%87%E6%95%85%E7%9F%A5%E9%81%93/%E4%B8%80%E4%BA%9B%E6%9C%89%E7%94%A8%E7%9A%84bat%E8%84%9A%E6%9C%AC/</link><description>Recent content in 一些有用的bat脚本 on 时砂凝几页</description><generator>Hugo -- gohugo.io</generator><language>zh</language><copyright> 2021-{year} yaleiyale</copyright><lastBuildDate>Tue, 25 Oct 2022 20:40:44 +0800</lastBuildDate><atom:link href="http://lestua.eu.org/%E9%81%87%E6%95%85%E7%9F%A5%E9%81%93/%E4%B8%80%E4%BA%9B%E6%9C%89%E7%94%A8%E7%9A%84bat%E8%84%9A%E6%9C%AC/index.xml" rel="self" type="application/rss+xml"/><item><title>清理windows图标缓存以处理快捷方式图标丢失</title><link>http://lestua.eu.org/notes/2022/10/25/204113/</link><pubDate>Tue, 25 Oct 2022 20:40:44 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/10/25/204113/</guid><description>@echo off taskkill /f /im explorer.exe CD /d %userprofile%\AppData\Local DEL IconCache.db /a start explorer.exe cho 执行完成 很容易看懂，第四行删除了图标缓存，第五行重启资源管理器，理论上刷新后桌面快捷方式丢失的图标会恢复，但不</description></item><item><title>彻底清除git所有历史提交记录使其为“新”库</title><link>http://lestua.eu.org/notes/2022/08/29/223258/</link><pubDate>Sat, 20 Aug 2022 21:31:19 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/08/29/223258/</guid><description>chcp 65001 @echo off set /p gd=输入要清除历史提交信息的仓库目录的绝对路径: echo 待处理的路径：%gd% set /p gm=输入提交说明： pushd set /p gb=输入要清除的分支:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>一些有用的bat脚本 on 时砂凝几页</title><link>http://lestua.eu.org/%E9%81%87%E6%95%85%E7%9F%A5%E9%81%93/%E4%B8%80%E4%BA%9B%E6%9C%89%E7%94%A8%E7%9A%84bat%E8%84%9A%E6%9C%AC/</link><description>Recent content in 一些有用的bat脚本 on 时砂凝几页</description><generator>Hugo</generator><language>zh</language><copyright> 2021-{year} yaleiyale</copyright><lastBuildDate>Sun, 26 Feb 2023 14:09:22 +0800</lastBuildDate><atom:link href="http://lestua.eu.org/%E9%81%87%E6%95%85%E7%9F%A5%E9%81%93/%E4%B8%80%E4%BA%9B%E6%9C%89%E7%94%A8%E7%9A%84bat%E8%84%9A%E6%9C%AC/index.xml" rel="self" type="application/rss+xml"/><item><title>清理windows图标缓存以处理快捷方式图标丢失</title><link>http://lestua.eu.org/notes/2022/10/25/204113/</link><pubDate>Tue, 25 Oct 2022 20:40:44 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/10/25/204113/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>@echo off
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>taskkill /f /im explorer.exe
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>CD /d %userprofile%&lt;span style="color:#ae81ff">\A&lt;/span>ppData&lt;span style="color:#ae81ff">\L&lt;/span>ocal
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>DEL IconCache.db /a
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>start explorer.exe
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cho 执行完成
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>很容易看懂，第四行删除了图标缓存，第五行重启资源管理器，理论上刷新后桌面快捷方式丢失的图标会恢复，但不排除ico资源丢失的真实情况。&lt;/p></description></item><item><title>彻底清除git所有历史提交记录使其为“新”库</title><link>http://lestua.eu.org/notes/2022/08/29/223258/</link><pubDate>Sat, 20 Aug 2022 21:31:19 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/08/29/223258/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>chcp &lt;span style="color:#ae81ff">65001&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>@echo off
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>set /p gd&lt;span style="color:#f92672">=&lt;/span>输入要清除历史提交信息的仓库目录的绝对路径:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo 待处理的路径：%gd%
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>set /p gm&lt;span style="color:#f92672">=&lt;/span>输入提交说明：
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pushd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>set /p gb&lt;span style="color:#f92672">=&lt;/span>输入要清除的分支:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pushd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd /d %gd%
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git checkout --orphan latest_branch
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git add -A
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git commit -am &lt;span style="color:#e6db74">&amp;#34;%gm%&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git branch -D %gb%
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git branch -m %gb%
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git push -f origin %gb%
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git pull
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#34;已清除全部的历史记录!&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#34;查看新仓库信息：&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git log --pretty&lt;span style="color:#f92672">=&lt;/span>oneline
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git branch -a
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git tag
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git ls-remote --tags
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pause
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>popd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>exit
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>windows下以bat格式运行&lt;br>
+摘自&lt;a href="https://blog.csdn.net/jhsword/article/details/107543884">彻底清除git所有历史提交记录使其为“新”库_RiskAI的博客-CSDN博客_git 清除历史&lt;/a>&lt;/p></description></item></channel></rss>

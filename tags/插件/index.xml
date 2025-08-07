@@ -1,1 +1,78 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>插件 on 时砂凝几页</title><link>http://lestua.eu.org/tags/%E6%8F%92%E4%BB%B6/</link><description>Recent content in 插件 on 时砂凝几页</description><generator>Hugo -- gohugo.io</generator><language>zh</language><copyright> 2021-{year} yaleiyale</copyright><lastBuildDate>Fri, 05 Aug 2022 17:21:40 +0800</lastBuildDate><atom:link href="http://lestua.eu.org/tags/%E6%8F%92%E4%BB%B6/index.xml" rel="self" type="application/rss+xml"/><item><title>obsidian插件使用存档</title><link>http://lestua.eu.org/notes/2022/08/29/223912/</link><pubDate>Fri, 05 Aug 2022 17:21:40 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/08/29/223912/</guid><description>Advanced Tables 高效表格辅助 Better footnote 浮页显示脚注 Dataview obsidian的DBHandler [[Obsidian Emo Uploader]] 集成图床 Excalidraw 绘图支持 Footnote Shortcut 快捷键形式插入脚注尾注 hugoSections 无感辅助生成hug</description></item><item><title>主动型插件使用</title><link>http://lestua.eu.org/notes/2022/08/29/223901/</link><pubDate>Sat, 30 Jul 2022 20:46:11 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/08/29/223901/</guid><description>[!tip] 命令面板的快捷键为Ctrl+P 快捷插入脚注 配置Footnotes Shortcut中的快捷键，如本库中应该是使用~~ shift+F6~~ alt+F以快速添加脚</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>插件 on 时砂凝几页</title><link>http://lestua.eu.org/tags/%E6%8F%92%E4%BB%B6/</link><description>Recent content in 插件 on 时砂凝几页</description><generator>Hugo</generator><language>zh</language><copyright> 2021-{year} yaleiyale</copyright><lastBuildDate>Mon, 14 Aug 2023 23:57:51 +0800</lastBuildDate><atom:link href="http://lestua.eu.org/tags/%E6%8F%92%E4%BB%B6/index.xml" rel="self" type="application/rss+xml"/><item><title>obsidian插件使用存档</title><link>http://lestua.eu.org/notes/2022/08/29/223912/</link><pubDate>Fri, 05 Aug 2022 17:21:40 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/08/29/223912/</guid><description>&lt;ul>
+&lt;li>Advanced Tables
+&lt;ul>
+&lt;li>高效表格辅助&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Better footnote
+&lt;ul>
+&lt;li>浮页显示脚注&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Dataview
+&lt;ul>
+&lt;li>obsidian的DBHandler&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>[[Obsidian Emo Uploader]]
+&lt;ul>
+&lt;li>集成图床&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Excalidraw
+&lt;ul>
+&lt;li>绘图支持&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Footnote Shortcut
+&lt;ul>
+&lt;li>快捷键形式插入脚注尾注&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/yaleiyale/obsidian-hugo-sections-plugin">hugoSections&lt;/a>
+&lt;ul>
+&lt;li>无感辅助生成hugo sections所需_index.html文件&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Linter
+&lt;ul>
+&lt;li>文本格式化&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Recent Files
+&lt;ul>
+&lt;li>最近文件视图&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Remember cursor position
+&lt;ul>
+&lt;li>文件回到上次关注位置&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/yaleiyale/obsidian-shadow-page">ShadowPage&lt;/a>
+&lt;ul>
+&lt;li>obsidian+hugo发布预处理&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>StyleSettings
+&lt;ul>
+&lt;li>主题调整&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Tag Wrangler
+&lt;ul>
+&lt;li>tag工具&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Various Complements
+&lt;ul>
+&lt;li>obsidian的文本提示&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>主动型插件使用</title><link>http://lestua.eu.org/notes/2022/08/29/223901/</link><pubDate>Sat, 30 Jul 2022 20:46:11 +0800</pubDate><guid>http://lestua.eu.org/notes/2022/08/29/223901/</guid><description>&lt;blockquote>
+&lt;p>[!tip]&lt;br>
+命令面板的快捷键为&lt;code>Ctrl+P&lt;/code>&lt;/p>&lt;/blockquote>
+&lt;h1 id="快捷插入脚注">快捷插入脚注&lt;/h1>
+&lt;p>配置Footnotes Shortcut中的快捷键，如本库中应该是使用~~&lt;code> shift+F6&lt;/code>~~ &lt;code>alt+F&lt;/code>以快速添加脚注&lt;/p>
+&lt;h1 id="linter">Linter&lt;/h1>
+&lt;p>操作对象上右键使用linter，或者在开启的情况下使用&lt;code>Ctrl+s&lt;/code>以在保存时进行格式化&lt;/p></description></item></channel></rss>
